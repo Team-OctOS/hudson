@@ -3,12 +3,14 @@ mkdir -p ../android
 cd ../android
 export WORKSPACE=$PWD
 
-if [ ! -d hudson ]
+if [ ! -d hudsonCNA ]
 then
   git clone git://github.com/sixstringsg/hudson.git
+  git checkout CNA
 fi
 
-cd hudson
-git pull
+cd hudsonCNA
+git checkout CNA
+git pull origin CNA
 
 exec ./build.sh
