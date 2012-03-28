@@ -74,11 +74,11 @@ then
     cp -R $BOOTSTRAP/.repo $REPO_BRANCH
   fi
   cd $REPO_BRANCH
-  repo init -u http://github.com/CyanogenMod/android.git -b $REPO_BRANCH
+  repo init -u https://github.com/CNA/android_manifest.git -b $REPO_BRANCH
 else
   cd $REPO_BRANCH
   # temp hack for turl
-  repo init -u http://github.com/CyanogenMod/android.git -b $REPO_BRANCH
+  repo init -u https://github.com/CNA/android_manifest.git -b $REPO_BRANCH
 fi
 
 # make sure ccache is in PATH
@@ -109,29 +109,19 @@ rm -f $OUT/update*.zip*
 
 UNAME=$(uname)
 
-if [ "$RELEASE_TYPE" = "CM_NIGHTLY" ]
+if [ "$RELEASE_TYPE" = "CNA_NIGHTLY" ]
 then
-  if [ "$REPO_BRANCH" = "gingerbread" ]
-  then
-    export CYANOGEN_NIGHTLY=true
-  else
-    export CM_NIGHTLY=true
-  fi
+  export CNA_NIGHTLY=true
 elif [ "$RELEASE_TYPE" = "CM_SNAPSHOT" ]
 then
   export CM_SNAPSHOT=true
-elif [ "$RELEASE_TYPE" = "CM_RELEASE" ]
+elif [ "$RELEASE_TYPE" = "CNA_RELEASE" ]
 then
-  export CM_RELEASE=true
-fi
-
-if [ ! "$(ccache -s|grep -E 'max cache size'|awk '{print $4}')" = "5.0" ]
-then
-  ccache -M 5G
+  export CNA_RELEASE=true
 fi
 
 make $CLEAN_TYPE
-mka bacon recoveryzip recoveryimage checkapi
+mka squish
 check_result Build failed.
 
 cp $OUT/update*.zip* $WORKSPACE/archive
