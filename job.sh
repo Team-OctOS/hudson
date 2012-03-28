@@ -5,7 +5,7 @@ export WORKSPACE=$PWD
 
 if [ ! -d hudsonCNA ]
 then
-  git clone git://github.com/sixstringsg/hudson.git
+  git clone git://github.com/sixstringsg/hudsonCNA.git
   git checkout CNA
 fi
 
