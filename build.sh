@@ -124,5 +124,5 @@ fi
 mka squish 2>&1 | tee "$LUNCH".log
 
 ZIP=$(tail -2 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d ' ' | sed -e '/^$/ d')
-cp /var/lib/jenkins/workspace/android/mod-4.0.3/out/target/product/$DEVICE/$ZIP  /home/website/www/cna.exynos.co/$DEVICE/
+cp /var/lib/jenkins/workspace/android/mod-4.0.3/out/target/product/$DEVICE/$ZIP  /home/website/www/cna.exynos.co/$DEVICE/$ZIP
 check_result Build failed.
