@@ -125,5 +125,5 @@ mka squish 2>&1 | tee "$LUNCH".log
 
 ZIP=$(tail -2 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d ' ' | sed -e '/^$/ d')
 ZIP_LOCATION=$(tail "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d ' ' | sed -e '/^$/ d')
-cp $ZIP_LOCATION  /home/website/www/cna.exynos.co/$DEVICE/$ZIP
+cp $ZIP_LOCATION  /home/website/www/cna.exynos.co/$DEVICE/
 check_result Build failed.
