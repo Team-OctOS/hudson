@@ -123,20 +123,3 @@ fi
 
 mka squish 2>&1 | tee "$LUNCH".log
 check_result Build failed.
-
-cp $OUT/update*.zip* $WORKSPACE/archive
-if [ -f $OUT/utilties/update.zip ]
-then
-  cp $OUT/utilties/update.zip $WORKSPACE/archive/recovery.zip
-fi
-if [ -f $OUT/recovery.img ]
-then
-  cp $OUT/recovery.img $WORKSPACE/archive
-fi
-
-# archive the build.prop as well
-ZIP=$(ls $WORKSPACE/archive/update*.zip)
-unzip -c $ZIP system/build.prop > $WORKSPACE/archive/build.prop
-
-# chmod the files in case UMASK blocks permissions
-chmod -R ugo+r $WORKSPACE/archive
