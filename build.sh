@@ -121,7 +121,7 @@ else
   make $CLEAN_TYPE
 fi
 
-mka squish
+mka squish 2>&1 | tee "$LUNCH".log
 check_result Build failed.
 
 cp $OUT/update*.zip* $WORKSPACE/archive
