@@ -125,4 +125,5 @@ mka squish 2>&1 | tee "$LUNCH".log
 
 ZIP=$(tail -2 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d ' ' | sed -e '/^$/ d')
 cp /var/lib/jenkins/workspace/android/mod-4.0.3/out/target/product/$DEVICE/$ZIP  /home/website/www/cna.exynos.co/public_html/$DEVICE/$ZIP
+echo zip is at http://cna.exynos.co/$DEVICE/$ZIP Happy flashing!
 check_result Build failed.
