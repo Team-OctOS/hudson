@@ -47,6 +47,8 @@ export PATH=~/bin:$PATH
 
 export USE_CCACHE=1
 export BUILD_WITH_COLORS=0
+export CCACHE_DIR=/share/.cna
+ccache -M 60Gbytes
 
 REPO=$(which repo)
 if [ -z "$REPO" ]
@@ -73,14 +75,6 @@ else
   cd $REPO_BRANCH
   # temp hack for turl
   repo init -u https://github.com/CNA/android_manifest.git -b $REPO_BRANCH
-fi
-
-# make sure ccache is in PATH
-export PATH="$PATH:/opt/local/bin/:$PWD/prebuilt/$(uname|awk '{print tolower($0)}')-x86/ccache"
-
-if [ -f ~/.jenkins_profile ]
-then
-  . ~/.jenkins_profile
 fi
 
 cp $WORKSPACE/hudson/$REPO_BRANCH.xml .repo/local_manifest.xml
