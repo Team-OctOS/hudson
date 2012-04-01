@@ -96,7 +96,7 @@ else
   make $CLEAN_TYPE
 fi
 
-mka bacon 2>&1 | tee "$LUNCH".log
+mka gummy 2>&1 | tee "$LUNCH".log
 
 ZIP=$(tail -2 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d ' ' | sed -e '/^$/ d')
 cp /var/lib/jenkins/workspace/android/master/out/target/product/$DEVICE/$ZIP  /home/website/www/gummy.exynos.co/public_html/$DEVICE/$ZIP
