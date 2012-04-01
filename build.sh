@@ -26,12 +26,6 @@ then
   exit 1
 fi
 
-if [ -z "$RELEASE_TYPE" ]
-then
-  echo RELEASE_TYPE not specified
-  exit 1
-fi
-
 # colorization fix in Jenkins
 export CL_PFX="\"\033[34m\""
 export CL_INS="\"\033[32m\""
@@ -47,7 +41,7 @@ export PATH=~/bin:$PATH
 
 export USE_CCACHE=1
 export BUILD_WITH_COLORS=0
-export CCACHE_DIR=/share/.cna
+export CCACHE_DIR=/share/.ccache
 ccache -M 60Gbytes
 
 REPO=$(which repo)
@@ -70,14 +64,14 @@ then
     cp -R $BOOTSTRAP/.repo $REPO_BRANCH
   fi
   cd $REPO_BRANCH
-  repo init -u https://github.com/CNA/android_manifest.git -b $REPO_BRANCH
+  repo init -u https://github.com/teamgummy/platform_manifest.git -b $REPO_BRANCH
 else
   cd $REPO_BRANCH
   # temp hack for turl
-  repo init -u https://github.com/CNA/android_manifest.git -b $REPO_BRANCH
+  repo init -u https://github.com/teamgummy/platform_manifest -b $REPO_BRANCH
 fi
 
-cp $WORKSPACE/hudson/$REPO_BRANCH.xml .repo/local_manifest.xml
+#cp $WORKSPACE/hudson/$REPO_BRANCH.xml .repo/local_manifest.xml
 
 echo Syncing...
 repo sync -d 
@@ -93,20 +87,7 @@ fi
 lunch $LUNCH
 check_result lunch failed.
 
-rm -f $OUT/update*.zip*
-
 UNAME=$(uname)
-
-if [ "$RELEASE_TYPE" = "CNA_NIGHTLY" ]
-then
-  export CNA_NIGHTLY=true
-elif [ "$RELEASE_TYPE" = "CM_SNAPSHOT" ]
-then
-  export CM_SNAPSHOT=true
-elif [ "$RELEASE_TYPE" = "CNA_RELEASE" ]
-then
-  export CNA_RELEASE=true
-fi
 
 if [ -z "$CLEAN_TYPE" ]
 then
@@ -115,9 +96,11 @@ else
   make $CLEAN_TYPE
 fi
 
-mka squish 2>&1 | tee "$LUNCH".log
+mka bacon 2>&1 | tee "$LUNCH".log
 
 ZIP=$(tail -2 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d ' ' | sed -e '/^$/ d')
-cp /var/lib/jenkins/workspace/android/mod-4.0.3/out/target/product/$DEVICE/$ZIP  /home/website/www/cna.exynos.co/public_html/$DEVICE/$ZIP
+cp /var/lib/jenkins/workspace/android/master/out/target/product/$DEVICE/$ZIP  /home/website/www/gummy.exynos.co/public_html/$DEVICE/$ZIP
 echo zip is at http://cna.exynos.co/$DEVICE/$ZIP Happy flashing!
 check_result Build failed.
+mkdir $WORKSPACE/archive
+cp /var/lib/jenkins/workspace/android/master/out/target/product/$DEVICE/$ZIP $WORKSPACE/archive
