@@ -39,9 +39,9 @@ unset BUILD_NUMBER
 
 export PATH=~/bin:$PATH
 
-export USE_CCACHE=1
+#export USE_CCACHE=1
 export BUILD_WITH_COLORS=0
-export CCACHE_DIR=/share/.ccache
+#export CCACHE_DIR=/share/.ccache
 ccache -M 60Gbytes
 
 REPO=$(which repo)
