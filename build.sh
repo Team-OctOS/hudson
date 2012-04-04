@@ -97,8 +97,8 @@ fi
 mka gummy 2>&1 | tee "$LUNCH".log
 
 ZIP=$(tail -2 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d ' ' | sed -e '/^$/ d')
-scp /var/lib/jenkins/workspace/android/master/out/target/product/$DEVICE/$ZIP website@exynos.co:/home/website/www/gummy.exynos.co/public_html/$DEVICE/$ZIP
+scp out/target/product/$DEVICE/$ZIP website@exynos.co:/home/website/www/gummy.exynos.co/public_html/$DEVICE/$ZIP
 echo zip is at http://cna.exynos.co/$DEVICE/$ZIP Happy flashing!
 check_result Build failed.
 mkdir $WORKSPACE/archive
-cp /var/lib/jenkins/workspace/android/master/out/target/product/$DEVICE/$ZIP $WORKSPACE/archive
+cp out/target/product/$DEVICE/$ZIP $WORKSPACE/archive
