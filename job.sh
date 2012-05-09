@@ -1,4 +1,5 @@
 cd $WORKSPACE
+export ANDROID_JAVA_HOME="/opt/jvm/jdk1.6.0_31"
 export WORKSPACE2=$PWD
 mkdir -p ../android
 cd ../android
