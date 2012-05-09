@@ -69,6 +69,9 @@ fi
 #cp $WORKSPACE/hudson/$REPO_BRANCH.xml .repo/local_manifest.xml
 
 echo Syncing...
+cd .repo
+rm local_manifest.xml
+cd ../
 repo sync -d 
 check_result repo sync failed.
 echo Sync complete.
