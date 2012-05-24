@@ -26,6 +26,8 @@ then
   exit 1
 fi
 
+export PATH=~/bin:$PATH
+
 # colorization fix in Jenkins
 export CL_PFX="\"\033[34m\""
 export CL_INS="\"\033[32m\""
