@@ -37,8 +37,6 @@ mkdir -p archive
 export BUILD_NO=$BUILD_NUMBER
 unset BUILD_NUMBER
 
-export PATH=~/bin:$PATH
-
 export USE_CCACHE=1
 export BUILD_WITH_COLORS=0
 
