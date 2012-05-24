@@ -8,8 +8,6 @@ function check_result {
   fi
 }
 
-export ANDROID_JAVA_HOME=/opt/jvm/jdk1.6.0_31
-
 if [ -z "$WORKSPACE" ]
 then
   echo WORKSPACE not specified
