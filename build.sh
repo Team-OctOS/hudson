@@ -27,6 +27,7 @@ then
 fi
 
 export PATH=~/bin:$PATH
+. ~/.profile
 
 # colorization fix in Jenkins
 export CL_PFX="\"\033[34m\""
