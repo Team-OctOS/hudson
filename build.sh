@@ -60,11 +60,11 @@ then
     cp -R $BOOTSTRAP/.repo $REPO_BRANCH
   fi
   cd $REPO_BRANCH
-  repo init -u https://github.com/teamgummy/platform_manifest.git -b $REPO_BRANCH
+  repo init -u https://github.com/CarbonDev/android.git -b $REPO_BRANCH
 else
   cd $REPO_BRANCH
   # temp hack for turl
-  repo init -u https://github.com/teamgummy/platform_manifest -b $REPO_BRANCH
+  repo init -u https://github.com/CarbonDev/android.git -b $REPO_BRANCH
 fi
 
 #cp $WORKSPACE/hudson/$REPO_BRANCH.xml .repo/local_manifest.xml
@@ -76,10 +76,6 @@ cd ../
 repo sync -d 
 check_result repo sync failed.
 echo Sync complete.
-
-cd vendor/Gummy
-./get-prebuilts
-cd ../../
 
 if [ -f $WORKSPACE/hudson/$REPO_BRANCH-setup.sh ]
 then
@@ -99,7 +95,7 @@ else
   make $CLEAN_TYPE
 fi
 
-mka gummy 2>&1 | tee "$LUNCH".log
+mka carbon 2>&1 | tee "$LUNCH".log
 
 ZIP=$(tail -2 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d ' ' | sed -e '/^$/ d')
 rm -rf $WORKSPACE2/archive
