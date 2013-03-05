@@ -67,7 +67,10 @@ else
   repo init -u https://github.com/CarbonDev/android.git -b $REPO_BRANCH
 fi
 
-#cp $WORKSPACE/hudson/$REPO_BRANCH.xml .repo/local_manifest.xml
+
+## TEMPORARY: Some kernels are building _into_ the source tree and messing
+## up posterior syncs due to changes
+rm -rf kernel/*
 
 echo Syncing...
 cd .repo
