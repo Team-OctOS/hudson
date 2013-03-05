@@ -41,7 +41,12 @@ export BUILD_NO=$BUILD_NUMBER
 unset BUILD_NUMBER
 
 export USE_CCACHE=1
+export CCACHE_NLEVELS=4
 export BUILD_WITH_COLORS=0
+
+# make sure ccache is in PATH
+export PATH="$PATH:/opt/local/bin/:$PWD/prebuilts/misc/$(uname|awk '{print tolower($0)}')-x86/ccache"
+export CCACHE_DIR=~/.jb_ccache
 
 REPO=$(which repo)
 if [ -z "$REPO" ]
