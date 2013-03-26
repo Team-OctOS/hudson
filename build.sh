@@ -100,7 +100,7 @@ if [ -z "$CLEAN_TYPE" ]
 then
   echo CLEAN_TYPE not specified, assuming already clean
 else
-  make $CLEAN_TYPE
+  mka $CLEAN_TYPE
 fi
 
 time mka carbon 2>&1 | tee "$LUNCH".log
