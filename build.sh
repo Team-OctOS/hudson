@@ -105,7 +105,7 @@ fi
 
 time mka carbon 2>&1 | tee "$LUNCH".log
 
-ZIP=$(tail -3 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d '"' |  sed -e '/^$/ d')
+ZIP="CARBON-JB*.zip"
 rm -rf $WORKSPACE2/archive
 mkdir $WORKSPACE2/archive
 cp $ZIP $WORKSPACE2/archive
