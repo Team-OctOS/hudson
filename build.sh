@@ -42,6 +42,7 @@ unset BUILD_NUMBER
 
 export USE_CCACHE=1
 export CCACHE_NLEVELS=4
+export CCACHE_SLOPPINESS=file_macro
 export BUILD_WITH_COLORS=0
 
 # make sure ccache is in PATH
