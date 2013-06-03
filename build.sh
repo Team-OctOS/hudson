@@ -83,7 +83,7 @@ echo Syncing...
 cd .repo
 rm local_manifest.xml
 cd ../
-reposync -d -f -l
+reposync -d -f 
 check_result repo sync failed.
 echo Sync complete.
 
@@ -92,6 +92,7 @@ then
   $WORKSPACE/hudson/$REPO_BRANCH-setup.sh
 fi
 
+. build/envsetup.sh
 lunch $LUNCH
 check_result lunch failed.
 
