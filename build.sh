@@ -79,10 +79,11 @@ fi
 rm -rf kernel/*
 
 echo Syncing...
+. build/envsetup.sh
 cd .repo
 rm local_manifest.xml
 cd ../
-repo sync -d 
+reposync -d -f -l
 check_result repo sync failed.
 echo Sync complete.
 
@@ -91,7 +92,6 @@ then
   $WORKSPACE/hudson/$REPO_BRANCH-setup.sh
 fi
 
-. build/envsetup.sh
 lunch $LUNCH
 check_result lunch failed.
 
