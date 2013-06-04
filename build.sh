@@ -82,7 +82,8 @@ echo Syncing...
 cd .repo
 rm local_manifest.xml
 cd ../
-repo sync -d -f 
+. build/envsetup.sh
+reposync -d -f 
 check_result repo sync failed.
 echo Sync complete.
 
