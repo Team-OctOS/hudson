@@ -82,7 +82,7 @@ echo Syncing...
 cd .repo
 rm local_manifest.xml
 cd ../
-reposync -d -f 
+repo sync -d -f 
 check_result repo sync failed.
 echo Sync complete.
 
