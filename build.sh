@@ -79,7 +79,6 @@ fi
 rm -rf kernel/*
 
 echo Syncing...
-. build/envsetup.sh
 cd .repo
 rm local_manifest.xml
 cd ../
