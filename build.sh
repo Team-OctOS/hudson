@@ -79,9 +79,9 @@ fi
 rm -rf kernel/*
 
 echo Syncing...
-cd .repo
-rm local_manifest.xml
-cd ../
+#cd .repo
+#rm local_manifest.xml
+#cd ../
 repo sync -f 
 check_result repo sync failed.
 echo Sync complete.
