@@ -66,11 +66,11 @@ then
     cp -R $BOOTSTRAP/.repo $REPO_BRANCH
   fi
   cd $REPO_BRANCH
-  repo init -u https://github.com/CarbonDev/android.git -b $REPO_BRANCH
+  repo init -u https://github.com/TEAM-Gummy/android.git -b $REPO_BRANCH
 else
   cd $REPO_BRANCH
   # temp hack for turl
-  repo init -u https://github.com/CarbonDev/android.git -b $REPO_BRANCH
+  repo init -u https://github.com/TEAM-Gummy/android.git -b $REPO_BRANCH
 fi
 
 
