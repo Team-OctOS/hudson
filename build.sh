@@ -104,7 +104,7 @@ else
   mka $CLEAN_TYPE
 fi
 
-time mka gummy 2>&1 | tee "$LUNCH".log
+time mka gummy 2>&1 TG_BUILDTYPE=$BUILD_TYPE | tee "$LUNCH".log
 
 ZIP=$(tail -3 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d '"' |  sed -e '/^$/ d')
 rm -rf $WORKSPACE2/archive
