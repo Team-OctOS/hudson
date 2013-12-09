@@ -5,7 +5,6 @@ cd ../android
 export WORKSPACE=$PWD
 echo $ANDROID_JAVA_HOME
 
-rm -rf hudson
 if [ ! -d hudson ]
 then
   git clone git://github.com/TEAM-Gummy/hudson.git -b jb4.3
