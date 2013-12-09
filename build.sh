@@ -29,6 +29,8 @@ fi
 export PATH=~/bin:$PATH
 . ~/.profile
 
+export PYTHONDONTWRITEBYTECODE=1
+
 # colorization fix in Jenkins
 export CL_PFX="\"\033[34m\""
 export CL_INS="\"\033[32m\""
