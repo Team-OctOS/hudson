@@ -112,6 +112,8 @@ echo "Cleaning!"
   make clobber
 else
 echo "Skipping clean: $TIME_SINCE_LAST_CLEAN hours since last clean."
+echo "However, we will 'make novo'"
+make novo
 fi
 
 if [ -z "$CLEAN_TYPE" ]
