@@ -42,6 +42,23 @@ export CCACHE_NLEVELS=4
 export CCACHE_SLOPPINESS=file_macro
 export BUILD_WITH_COLORS=0
 
+project_device=$(echo $LUNCH | cut -d'-' -f1)
+project=$(echo $project_device | cut -d'_' -f1)
+device=$(echo $project_device | cut -d'_' -f2)
+
+# Setup ccache
+CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
+if [ -z "$CCACHE_ROOT" ]; then
+	CCACHE_ROOT="$HOME"
+fi
+export CCACHE_DIR="$CCACHE_ROOT/.ccache-$project_device"
+if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]; then
+	mkdir -p "$CCACHE_DIR"
+	$CCACHE_BIN -M 8G
+fi
+touch "$CCACHE_DIR/.lastused"
+export CCACHE_BASEDIR=$PWD
+
 # make sure ccache is in PATH
 export PATH="$PATH:/opt/local/bin/:$PWD/prebuilts/misc/$(uname|awk '{print tolower($0)}')-x86/ccache"
 
