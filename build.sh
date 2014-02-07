@@ -51,6 +51,12 @@ CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
 if [ -z "$CCACHE_ROOT" ]; then
 	CCACHE_ROOT="$HOME"
 fi
+if [ mountpoint /cache ]
+then
+        CCACHE_ROOT="/cache/$USER"
+else
+        CCACHE_ROOT="$HOME"
+fi
 export CCACHE_DIR="$CCACHE_ROOT/.ccache-$project_device"
 if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]; then
 	mkdir -p "$CCACHE_DIR"
