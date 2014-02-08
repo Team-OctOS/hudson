@@ -44,7 +44,7 @@ export BUILD_WITH_COLORS=0
 
 project_device=$(echo $LUNCH | cut -d'-' -f1)
 project=$(echo $project_device | cut -d'_' -f1)
-device=$(echo $project_device | cut -d'_' -f2)
+device=$(echo $project_device | cut -b 4-)
 
 # Setup ccache
 CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
@@ -141,8 +141,11 @@ fi
 time mka gummy 2>&1 TG_BUILDTYPE=$BUILD_TYPE | tee "$LUNCH".log
 
 ZIP=$(tail -3 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d '"' |  sed -e '/^$/ d')
+RECOVERY=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery.img
+RECOVERYNAME=Gummy-CWM-based-recovery-$device.img
 rm -rf $WORKSPACE2/archive
 mkdir $WORKSPACE2/archive
 cp $ZIP $WORKSPACE2/archive
+cp $RECOVERY $WORKSPACE2/archive/$RECOVERYNAME
 check_result Build failed
 make installclean
