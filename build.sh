@@ -48,18 +48,20 @@ device=$(echo $project_device | cut -b 4-)
 
 # Setup ccache
 CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
-if [ -z "$CCACHE_ROOT" ]; then
-	CCACHE_ROOT="$HOME"
-fi
-if [ -d /cache ]; then
-        CCACHE_ROOT="/cache/$USER"
-else
-        CCACHE_ROOT="$HOME"
+if [ -z "$CCACHE_ROOT" ]
+then
+  if [ -d /cache ]
+  then
+    CCACHE_ROOT="/cache/$USER"
+  else
+    CCACHE_ROOT="$HOME"
+  fi
 fi
 export CCACHE_DIR="$CCACHE_ROOT/.ccache-$project_device"
-if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]; then
-	mkdir -p "$CCACHE_DIR"
-	$CCACHE_BIN -M 8G
+if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]
+then
+  mkdir -p "$CCACHE_DIR"
+  $CCACHE_BIN -M 8G
 fi
 touch "$CCACHE_DIR/.lastused"
 export CCACHE_BASEDIR=$PWD
