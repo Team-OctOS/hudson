@@ -51,8 +51,7 @@ CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
 if [ -z "$CCACHE_ROOT" ]; then
 	CCACHE_ROOT="$HOME"
 fi
-if [ mountpoint /cache ]
-then
+if [ -d /cache ]; then
         CCACHE_ROOT="/cache/$USER"
 else
         CCACHE_ROOT="$HOME"
