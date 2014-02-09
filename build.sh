@@ -47,7 +47,12 @@ project=$(echo $project_device | cut -d'_' -f1)
 device=$(echo $project_device | cut -b 4-)
 
 # Setup ccache
-CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
+CCACHE_BIN="which ccache"
+if [ "$CCACHE_BIN" == "" ]
+then
+  CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
+fi
+
 if [ -z "$CCACHE_ROOT" ]
 then
   if [ -d /cache ]
@@ -68,7 +73,6 @@ export CCACHE_BASEDIR=$PWD
 
 # make sure ccache is in PATH
 export PATH="$PATH:/opt/local/bin/:$PWD/prebuilts/misc/$(uname|awk '{print tolower($0)}')-x86/ccache"
-
 
 REPO=$(which repo)
 if [ -z "$REPO" ]
