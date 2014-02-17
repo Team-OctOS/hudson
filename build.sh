@@ -115,7 +115,7 @@ echo Syncing...
 #rm local_manifest.xml
 #cd ../
 repo sync -j16 -f 
-check_result repo sync failed.
+check_result "repo sync failed."
 echo Sync complete.
 
 if [ -f $WORKSPACE/hudson/$REPO_BRANCH-setup.sh ]
@@ -125,7 +125,7 @@ fi
 
 . build/envsetup.sh
 lunch $LUNCH
-check_result lunch failed.
+check_result "lunch failed."
 
 UNAME=$(uname)
 
@@ -162,5 +162,5 @@ rm -rf $WORKSPACE2/archive
 mkdir $WORKSPACE2/archive
 cp $ZIP $WORKSPACE2/archive
 cp $RECOVERY $WORKSPACE2/archive/$RECOVERYNAME
-check_result Build failed
+check_result "Build failed."
 make installclean
