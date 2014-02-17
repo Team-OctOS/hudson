@@ -28,7 +28,10 @@ then
 fi
 
 export PATH=~/bin:$PATH
+if [ -f ~/.profile ]
+then
 . ~/.profile
+fi
 
 export PYTHONDONTWRITEBYTECODE=1
 
