@@ -3,6 +3,7 @@
 function check_result {
   if [ "0" -ne "$?" ]
   then
+    (repo forall -c "git reset --hard") >/dev/null
     echo $1
     exit 1
   fi
