@@ -14,16 +14,9 @@ tg_hammerhead-userdebug
 tg_hlte-userdebug
 tg_i605-userdebug
 tg_i9300-userdebug
-tg_jflteatt-userdebug
-tg_jfltecan-userdebug
-tg_jfltecri-userdebug
-tg_jfltecsp-userdebug
-tg_jfltesprint-userdebug
-tg_jfltetmo-userdebug
-tg_jflteusc-userdebug
-tg_jfltevzw-userdebug
-tg_jfltexx-userdebug
+tg_jflte-userdebug
 tg_m7-userdebug
+tg_m7vzw-userdebug
 tg_maguro-userdebug
 tg_mako-userdebug
 tg_maserati-userdebug
@@ -31,6 +24,8 @@ tg_moto_msm8960-userdebug
 tg_p930-userdebug
 tg_spyder-userdebug
 tg_t0lte-userdebug
+tg_t0lteatt-userdebug
+tg_t0ltetmo-userdebug
 tg_t769-userdebug
 tg_targa-userdebug
 tg_toro-userdebug

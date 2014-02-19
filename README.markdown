@@ -5,8 +5,8 @@ http://jenkins.gummyrom.com
 You must be a member of the Team Gummy.
 
 # Using the Build Server
-    Click the job for your device.
-    Check the parameters.
+    Click the job "android".
+    Set the parameters for your device.
     Build it.
 
 #  Adding Nodes to the Build Server
@@ -17,4 +17,8 @@ You must be a member of the Team Gummy.
     access is not required.
     You can also configure your node to only perform builds during certain hours. This will prevent your
     machine from being swamped when during the hours you are planning on using it.
+
+
+# Adding or updating a device
+    Edit tg-build-targets and submit a change to gerrit for review.
 
