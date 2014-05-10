@@ -163,7 +163,7 @@ time mka gummy 2>&1 TG_BUILDTYPE=$BUILD_TYPE | tee "$LUNCH".log
 
 ZIP=$(tail -3 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d '"' |  sed -e '/^$/ d')
 RECOVERY=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery.img
-RECOVERYNAME=Gummy-CWM-based-recovery-$device.img
+RECOVERYNAME=Gummy-CWM-based-touch-recovery-$device.img
 rm -rf $WORKSPACE2/archive
 mkdir $WORKSPACE2/archive
 cp $ZIP $WORKSPACE2/archive
