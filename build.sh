@@ -11,7 +11,7 @@ function check_result {
 
 if [ -z "$HOME" ]
 then
-echo HOME not in environment, guessing...
+  echo HOME not in environment, guessing...
   export HOME=$(awk -F: -v v="$USER" '{if ($1==v) print $6}' /etc/passwd)
 fi
 
@@ -52,10 +52,6 @@ export CCACHE_NLEVELS=4
 export CCACHE_SLOPPINESS=file_macro
 export BUILD_WITH_COLORS=0
 
-project_device=$(echo $LUNCH | cut -d'-' -f1)
-project=$(echo $project_device | cut -d'_' -f1)
-device=$(echo $project_device | cut -b 4-)
-
 # Setup ccache
 CCACHE_BIN="which ccache"
 if [ "$CCACHE_BIN" == "" ]
@@ -63,26 +59,14 @@ then
   CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
 fi
 
-if [ -z "$CCACHE_ROOT" ]
-then
-  if [ -d /cache ]
-  then
-    CCACHE_ROOT="/cache/$USER"
-  else
-    CCACHE_ROOT="$HOME"
-  fi
-fi
-export CCACHE_DIR="$CCACHE_ROOT/.ccache-$project_device"
-if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]
-then
-  mkdir -p "$CCACHE_DIR"
-  $CCACHE_BIN -M 8G
-fi
-touch "$CCACHE_DIR/.lastused"
-export CCACHE_BASEDIR=$PWD
 
 # make sure ccache is in PATH
 export PATH="$PATH:/opt/local/bin/:$PWD/prebuilts/misc/$(uname|awk '{print tolower($0)}')-x86/ccache"
+export CCACHE_DIR=/ccache
+if [ ! "$($CCACHE_BIN -s|grep -E 'max cache size'|awk '{print $4}')" = "1000.0" ]
+then
+  $CCACHE_BIN -M 1000G
+fi
 
 REPO=$(which repo)
 if [ -z "$REPO" ]
@@ -120,7 +104,7 @@ echo Syncing...
 #cd .repo
 #rm local_manifest.xml
 #cd ../
-repo sync -j16 -f 
+repo sync -j16 -d -c -f > /dev/null
 check_result "repo sync failed."
 echo Sync complete.
 
@@ -138,14 +122,14 @@ UNAME=$(uname)
 LAST_CLEAN=0
 if [ -f .clean ]
 then
-LAST_CLEAN=$(date -r .clean +%s)
+  LAST_CLEAN=$(date -r .clean +%s)
 fi
 TIME_SINCE_LAST_CLEAN=$(expr $(date +%s) - $LAST_CLEAN)
 # convert this to hours
 TIME_SINCE_LAST_CLEAN=$(expr $TIME_SINCE_LAST_CLEAN / 60 / 60)
 if [ $TIME_SINCE_LAST_CLEAN -gt "72" ]
 then
-echo "Cleaning!"
+  echo "Cleaning!"
   touch .clean
   make clobber
 else
