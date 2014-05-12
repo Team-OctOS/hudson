@@ -52,6 +52,9 @@ export CCACHE_NLEVELS=4
 export CCACHE_SLOPPINESS=file_macro
 export BUILD_WITH_COLORS=0
 
+project_device=$(echo $LUNCH | cut -d'-' -f1)
+device=$(echo $project_device | cut -b 4-)
+
 # Setup ccache
 CCACHE_BIN="which ccache"
 if [ "$CCACHE_BIN" == "" ]
