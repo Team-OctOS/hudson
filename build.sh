@@ -117,7 +117,25 @@ fi
 lunch $LUNCH
 check_result "lunch failed."
 
+rm -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/Gummy-*.zip*
+
 UNAME=$(uname)
+
+# Generate git logs for all platform repos
+rm -f $WORKSPACE/changecount
+WORKSPACE=$WORKSPACE LUNCH=$LUNCH bash $WORKSPACE/hudson/changes/buildlog.sh 2>&1
+
+# Abort build if it's exactly the same as the previous one
+if [ -f $WORKSPACE/changecount ]
+then
+  CHANGE_COUNT=$(cat $WORKSPACE/changecount)
+  rm -f $WORKSPACE/changecount
+  if [ $CHANGE_COUNT -eq "0" ]
+  then
+    echo "Zero changes since last build, aborting"
+    exit 1
+  fi
+fi
 
 LAST_CLEAN=0
 if [ -f .clean ]
@@ -145,12 +163,16 @@ fi
 
 time mka gummy 2>&1 TG_BUILDTYPE=$BUILD_TYPE | tee "$LUNCH".log
 
-ZIP=$(tail -3 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d '"' |  sed -e '/^$/ d')
 RECOVERY=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery.img
 RECOVERYNAME=Gummy-CWM-based-touch-recovery-$device.img
-rm -rf $WORKSPACE2/archive
+MODVERSION=$(cat $WORKSPACE/$REPO_BRANCH/out/target/product/$device/system/build.prop | grep ro.tg.version | cut -d = -f 2)
 mkdir $WORKSPACE2/archive
-cp $ZIP $WORKSPACE2/archive
+for f in $(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/Gummy-*.zip*)
+do
+  cp $f $WORKSPACE2/archive/$(basename $f)
+done
 cp $RECOVERY $WORKSPACE2/archive/$RECOVERYNAME
+# changelog
+cp $WORKSPACE2/archive/CHANGES.txt $WORKSPACE2/archive/Gummy-$MODVERSION.txt
 check_result "Build failed."
 make installclean
