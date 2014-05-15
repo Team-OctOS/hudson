@@ -166,13 +166,15 @@ time mka gummy 2>&1 TG_BUILDTYPE=$BUILD_TYPE | tee "$LUNCH".log
 RECOVERY=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery.img
 RECOVERYNAME=Gummy-CWM-based-touch-recovery-$device.img
 MODVERSION=$(cat $WORKSPACE/$REPO_BRANCH/out/target/product/$device/system/build.prop | grep ro.tg.version | cut -d = -f 2)
-mkdir $WORKSPACE2/archive
 for f in $(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/Gummy-*.zip*)
 do
   cp $f $WORKSPACE2/archive/$(basename $f)
 done
 cp $RECOVERY $WORKSPACE2/archive/$RECOVERYNAME
 # changelog
-cp $WORKSPACE2/archive/CHANGES.txt $WORKSPACE2/archive/Gummy-$MODVERSION.txt
+if [ -f "$RECOVERY" ]
+then
+  cp $WORKSPACE2/archive/CHANGES.txt $WORKSPACE2/archive/Gummy-$MODVERSION.txt
+fi
 check_result "Build failed."
 make installclean
