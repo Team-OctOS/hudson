@@ -175,6 +175,9 @@ cp $RECOVERY $WORKSPACE2/archive/$RECOVERYNAME
 if [ -f "$RECOVERY" ]
 then
   cp $WORKSPACE2/archive/CHANGES.txt $WORKSPACE2/archive/Gummy-$MODVERSION.txt
+else
+  echo Build failed!!
+  exit 1
 fi
 check_result "Build failed."
 make installclean
