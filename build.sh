@@ -121,6 +121,17 @@ rm -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/Gummy-*.zip*
 
 UNAME=$(uname)
 
+if [ "$BUILD_TYPE" = "NIGHTLY" ]
+then
+  export TG_NIGHTLY=true
+elif [ "$BUILD_TYPE" = "EXPERIMENTAL" ]
+then
+  export TG_EXPERIMENTAL=true
+elif [ "$BUILD_TYPE" = "RELEASE" ]
+then
+  export TG_RELEASE=true
+fi
+
 # Generate git logs for all platform repos
 rm -f $WORKSPACE/changecount
 WORKSPACE=$WORKSPACE LUNCH=$LUNCH bash $WORKSPACE/hudson/changes/buildlog.sh 2>&1
