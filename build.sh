@@ -172,7 +172,7 @@ else
   mka $CLEAN_TYPE
 fi
 
-time mka gummy 2>&1 TG_BUILDTYPE=$BUILD_TYPE | tee "$LUNCH".log
+time mka gummy 2>&1 TG_BUILDTYPE=$BUILD_TYPE
 
 RECOVERY=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery.img
 RECOVERYNAME=Gummy-CWM-based-touch-recovery-$device.img

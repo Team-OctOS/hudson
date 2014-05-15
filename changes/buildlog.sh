@@ -26,5 +26,7 @@ done
 
 if [ -z "$prevts" ]; then
   rm -f $WORKSPACE/changecount
+  echo "==================================="
   echo "This is the first $BUILD_TYPE build of Gummy for device $TG_BUILD" >> $CHANGESPATH
+  echo "==================================="
 fi
