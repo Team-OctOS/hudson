@@ -48,27 +48,26 @@ export BUILD_NO=$BUILD_NUMBER
 unset BUILD_NUMBER
 
 export USE_CCACHE=1
-export CCACHE_NLEVELS=4
-export CCACHE_SLOPPINESS=file_macro
 export BUILD_WITH_COLORS=0
 
 project_device=$(echo $LUNCH | cut -d'-' -f1)
 device=$(echo $project_device | cut -b 4-)
 
 # Setup ccache
-CCACHE_BIN="which ccache"
-if [ "$CCACHE_BIN" == "" ]
+CCACHE_BIN=$(which ccache)
+if [ -z "$CCACHE_BIN" ]
 then
   CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
 fi
 
-
-# make sure ccache is in PATH
-export PATH="$PATH:/opt/local/bin/:$PWD/prebuilts/misc/$(uname|awk '{print tolower($0)}')-x86/ccache"
-export CCACHE_DIR=/ccache
-if [ ! "$($CCACHE_BIN -s|grep -E 'max cache size'|awk '{print $4}')" = "1000.0" ]
+if [ -z "$CCACHE_DIR" ]
 then
-  $CCACHE_BIN -M 1000G
+  export CCACHE_DIR="$HOME/.ccache-$device"
+  if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]
+  then
+    mkdir -p "$CCACHE_DIR"
+    $CCACHE_BIN -M 20G
+  fi
 fi
 
 REPO=$(which repo)
