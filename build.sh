@@ -60,6 +60,7 @@ then
   CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
 fi
 
+CCACHE_DIR=$(echo $CCACHE_DIR)
 if [ -z "$CCACHE_DIR" ]
 then
   export CCACHE_DIR="$HOME/.ccache-$device"
