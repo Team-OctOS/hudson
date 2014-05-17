@@ -9,6 +9,18 @@ function check_result {
   fi
 }
 
+# Jenkins logs in with "bash -c ..." which does not read any profile or rc
+# files (that is, it's not a login or interactive shell).  Source the system
+# profile here to pull in system settings such as ccache variables, etc.
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+fi
+
 if [ -z "$HOME" ]
 then
   echo HOME not in environment, guessing...
@@ -60,23 +72,19 @@ then
   CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
 fi
 
-CCACHE_DIR=$(echo $CCACHE_DIR)
+# Temporary for debugging for build servers
+if [ -z "$CCACHE_DIR" -a -d "/cache/.ccache" ]; then
+  echo "ERROR: CCACHE_DIR was not set but /cache/.ccache exists. Fixing."
+  export CCACHE_DIR="/cache/.ccache"
+fi
+
 if [ -z "$CCACHE_DIR" ]
 then
-  if [ -d "/cache/.ccache" ]
+  export CCACHE_DIR="$HOME/.ccache-$device"
+  if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]
   then
-    export CCACHE_DIR="/cache/.ccache"
-    if [ ! "$($CCACHE_BIN -s|grep -E 'max cache size'|awk '{print $4}')" = "500.0" ]
-    then
-      $CCACHE_BIN -M 500G
-    fi
-  else
-    export CCACHE_DIR="$HOME/.ccache-$device"
-    if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]
-    then
-      mkdir -p "$CCACHE_DIR"
-      $CCACHE_BIN -M 20G
-    fi
+    mkdir -p "$CCACHE_DIR"
+    $CCACHE_BIN -M 20G
   fi
 fi
 
