@@ -172,6 +172,8 @@ else
   mka $CLEAN_TYPE
 fi
 
+$CCACHE_BIN -s
+
 time mka gummy 2>&1 TG_BUILDTYPE=$BUILD_TYPE
 
 RECOVERY=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery.img
@@ -198,3 +200,4 @@ else
 fi
 check_result "Build failed."
 make installclean
+$CCACHE_BIN -s
