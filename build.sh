@@ -63,11 +63,20 @@ fi
 CCACHE_DIR=$(echo $CCACHE_DIR)
 if [ -z "$CCACHE_DIR" ]
 then
-  export CCACHE_DIR="$HOME/.ccache-$device"
-  if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]
+  if [ -d "/cache/.ccache" ]
   then
-    mkdir -p "$CCACHE_DIR"
-    $CCACHE_BIN -M 20G
+    export CCACHE_DIR="/cache/.ccache"
+    if [ ! "$($CCACHE_BIN -s|grep -E 'max cache size'|awk '{print $4}')" = "500.0" ]
+    then
+      $CCACHE_BIN -M 500G
+    fi
+  else
+    export CCACHE_DIR="$HOME/.ccache-$device"
+    if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]
+    then
+      mkdir -p "$CCACHE_DIR"
+      $CCACHE_BIN -M 20G
+    fi
   fi
 fi
 
