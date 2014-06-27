@@ -216,5 +216,5 @@ else
   exit 1
 fi
 check_result "Build failed."
-make installclean
+rm -rf out/target/product/$device
 $CCACHE_BIN -s
