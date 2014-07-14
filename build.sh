@@ -194,7 +194,7 @@ $CCACHE_BIN -s
 time mka gummy 2>&1 TG_BUILDTYPE=$BUILD_TYPE
 
 RECOVERY=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery.img
-RECOVERYNAME=Gummy-CWM-based-touch-recovery-$device.img
+RECOVERYNAME=Gummy-TWRP-2.7.1.0-$device.img
 MODVERSION=$(cat $WORKSPACE/$REPO_BRANCH/out/target/product/$device/system/build.prop | grep ro.tg.version | cut -d = -f 2)
 if [ -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/Gummy-$MODVERSION.zip ]
 then
