@@ -194,8 +194,7 @@ $CCACHE_BIN -s
 time mka gummy 2>&1 TG_BUILDTYPE=$BUILD_TYPE
 
 RECOVERY=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery.img
-echo "Recovery is $RECOVERY_VARIANT"
-if [ "RECOVERY_VARIANT" = "twrp" ]
+if [ "$RECOVERY_VARIANT" = "twrp" ]
 then
 RECOVERYNAME=Gummy-TWRP-2.7.1.0-$device.img
 else
