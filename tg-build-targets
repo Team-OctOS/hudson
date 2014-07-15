@@ -9,10 +9,10 @@ tg_encore-userdebug
 tg_evita-userdebug
 tg_exhilarate-userdebug
 tg_falcon-userdebug
-tg_find7-userdebug
-tg_flo-userdebug
+tg_find7-userdebug twrp
+tg_flo-userdebug twrp
 tg_grouper-userdebug
-tg_hammerhead-userdebug
+tg_hammerhead-userdebug twrp
 tg_hlte-userdebug
 tg_i605-userdebug
 tg_i9300-userdebug
@@ -23,7 +23,7 @@ tg_m7spr-userdebug
 tg_m7vzw-userdebug
 tg_m8-userdebug
 tg_maguro-userdebug
-tg_mako-userdebug
+tg_mako-userdebug twrp
 tg_p930-userdebug
 tg_t0lte-userdebug
 tg_t0lteatt-userdebug
