@@ -72,12 +72,6 @@ then
   CCACHE_BIN="prebuilts/misc/linux-x86/ccache/ccache"
 fi
 
-# Temporary for debugging for build servers
-if [ -z "$CCACHE_DIR" -a -d "/cache/.ccache" ]; then
-  echo "ERROR: CCACHE_DIR was not set but /cache/.ccache exists. Fixing."
-  export CCACHE_DIR="/cache/.ccache"
-fi
-
 if [ -z "$CCACHE_DIR" ]
 then
   export CCACHE_DIR="$HOME/.ccache-$device"
