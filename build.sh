@@ -91,7 +91,7 @@ then
 fi
 
 git config --global user.name $(whoami)@$NODE_NAME
-git config --global user.email jenkins@gummyrom.com
+git config --global user.email teamoctos@gmail.com
 
 if [ ! -d $REPO_BRANCH ]
 then
@@ -102,11 +102,11 @@ then
     cp -R $BOOTSTRAP/.repo $REPO_BRANCH
   fi
   cd $REPO_BRANCH
-  repo init -u https://github.com/TEAM-Gummy/platform_manifest.git -b $REPO_BRANCH
+  repo init -u https://github.com/Team-OctOS/platform_manifest.git -b $REPO_BRANCH
 else
   cd $REPO_BRANCH
   # temp hack for turl
-  repo init -u https://github.com/TEAM-Gummy/platform_manifest.git -b $REPO_BRANCH
+  repo init -u https://github.com/Team-OctOS/platform_manifest.git -b $REPO_BRANCH
 fi
 
 
@@ -128,19 +128,19 @@ fi
 lunch $LUNCH
 check_result "lunch failed."
 
-rm -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/Gummy-*.zip*
+rm -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/OCT-L-*.zip*
 
 UNAME=$(uname)
 
 if [ "$BUILD_TYPE" = "NIGHTLY" ]
 then
-  export TG_NIGHTLY=true
+  export TO_NIGHTLY=true
 elif [ "$BUILD_TYPE" = "EXPERIMENTAL" ]
 then
-  export TG_EXPERIMENTAL=true
+  export TO_EXPERIMENTAL=true
 elif [ "$BUILD_TYPE" = "RELEASE" ]
 then
-  export TG_RELEASE=true
+  export TO_RELEASE=true
 fi
 
 # Generate git logs for all platform repos
@@ -185,25 +185,25 @@ fi
 
 $CCACHE_BIN -s
 
-time mka gummy 2>&1 TG_BUILDTYPE=$BUILD_TYPE
+time mka bacon 2>&1 TO_BUILDTYPE=$BUILD_TYPE
 
 RECOVERY=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery.img
 RECOVERY_VARIANT=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery/root/sbin/teamwin
 if [ -f "$RECOVERY_VARIANT" ]
 then
-RECOVERYNAME=Gummy-TWRP-2.7.1.0-$device.img
+RECOVERYNAME=OctOs-TWRP-2.7.1.0-$device.img
 else
-RECOVERYNAME=Gummy-CWM-based-touch-recovery-$device.img
+RECOVERYNAME=OctOs-CWM-based-touch-recovery-$device.img
 fi
 
 MODVERSION=$(cat $WORKSPACE/$REPO_BRANCH/out/target/product/$device/system/build.prop | grep ro.tg.version | cut -d = -f 2)
-if [ -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/Gummy-$MODVERSION.zip ]
+if [ -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/OCT-L-$MODVERSION.zip ]
 then
-  for f in $(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/Gummy-$MODVERSION.zip*)
+  for f in $(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/OCT-L-$MODVERSION.zip*)
   do
     cp $f $WORKSPACE2/archive/$(basename $f)
   done
-  cp $WORKSPACE2/archive/CHANGES.txt $WORKSPACE2/archive/Gummy-$MODVERSION.txt
+  cp $WORKSPACE2/archive/CHANGES.txt $WORKSPACE2/archive/OCT-L-$MODVERSION.txt
 else
   echo Build failed!!
   exit 1

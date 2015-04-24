@@ -1,6 +1,6 @@
-if [ -z "$TG_BUILD" ]; then
+if [ -z "$TO_BUILD" ]; then
   ## Use jenkins' variable
-  TG_BUILD=$LUNCH
+  TO_BUILD=$LUNCH
 fi
 
 MYPATH=$(dirname $0)
@@ -8,7 +8,7 @@ export CHANGESPATH=$WORKSPACE2/archive/CHANGES.txt
 rm $CHANGESPATH 2>/dev/null
 
 prevts=
-for ts in `python2 $MYPATH/getdates.py $TG_BUILD | sort -rn`; do
+for ts in `python2 $MYPATH/getdates.py $TO_BUILD | sort -rn`; do
 
 export ts
 (echo "==================================="
@@ -27,6 +27,6 @@ done
 if [ -z "$prevts" ]; then
   rm -f $WORKSPACE/changecount
   echo "==================================="
-  echo "This is the first $BUILD_TYPE build of Gummy for device $TG_BUILD" >> $CHANGESPATH
+  echo "This is the first $BUILD_TYPE build of OctOs for device $TO_BUILD" >> $CHANGESPATH
   echo "==================================="
 fi

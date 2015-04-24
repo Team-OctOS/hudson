@@ -13,7 +13,7 @@ echo $ANDROID_JAVA_HOME
 
 if [ ! -d hudson ]
 then
-  git clone git://github.com/TEAM-Gummy/hudson.git -b kk4.4
+  git clone git://github.com/Team-OctOS/hudson.git -b to-5.1
 fi
 
 cd hudson

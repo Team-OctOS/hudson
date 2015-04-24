@@ -20,21 +20,21 @@ if len(sys.argv) != 2:
   sys.exit(1)
 
 device = sys.argv[1]
-device = re.sub('^tg_','',device,1)
+device = re.sub('^TO_','',device,1)
 device = re.sub('-[^-]*$','',device,1)
 
 if len(device) <= 0:
   print("No device left after parsing input?")
   sys.exit(2)
 
-if 'TG_RELEASE' in os.environ or 'GUMMY_RELEASE' in os.environ:
+if 'TO_RELEASE' in os.environ or 'OCTOS_RELEASE' in os.environ:
   channel = 'release","RC'
   limit = 1
-elif 'TG_NIGHTLY' in os.environ or 'GUMMY_NIGHTLY' in os.environ:
+elif 'TO_NIGHTLY' in os.environ or 'OCTOS_NIGHTLY' in os.environ:
   channel = 'nightly'
   limit = 5
-elif 'TG_EXTRAVERSION' in os.environ:
-  if re.search("^M\d+",os.environ['TG_EXTRAVERSION']) is not None:
+elif 'TO_EXTRAVERSION' in os.environ:
+  if re.search("^M\d+",os.environ['TO_EXTRAVERSION']) is not None:
     channel = 'snapshot'
     limit = 1
   else:
@@ -50,7 +50,7 @@ else:
 
 headers = {}
 headers['Content-Type'] = 'application/json'
-headers['User-Agent'] = 'Gummy changelog builder'
+headers['User-Agent'] = 'OctOs changelog builder'
 headers['Accept'] = '*/*'
 headers['Content-Length'] = "%d" % (len(logrequest))
 

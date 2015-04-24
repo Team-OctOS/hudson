@@ -1,8 +1,8 @@
 # Accessing the Build Server
-http://jenkins.gummyrom.com
+http://jenkins.teamoctos.com:8080
 
 # Authenticating to the Build Server
-You must be a member of the Team Gummy.
+You must be a member of the Team-OctOS.
 
 # Using the Build Server
     Click the job "android".
