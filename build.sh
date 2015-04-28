@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+LUNCH=$*
+
 function check_result {
   if [ "0" -ne "$?" ]
   then
@@ -65,6 +67,8 @@ export BUILD_WITH_COLORS=0
 project_device=$(echo $LUNCH | cut -d'-' -f1)
 device=$(echo $project_device | cut -b 4-)
 
+mkdir -p out/$device
+
 # Setup ccache
 CCACHE_BIN=$(which ccache)
 if [ -z "$CCACHE_BIN" ]
@@ -74,11 +78,13 @@ fi
 
 if [ -z "$CCACHE_DIR" ]
 then
-  export CCACHE_DIR="$HOME/.ccache-$device"
+  #export CCACHE_DIR="$HOME/.ccache-$device"
+  export CCACHE_DIR="$HOME/.ccache"
   if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]
   then
     mkdir -p "$CCACHE_DIR"
-    $CCACHE_BIN -M 20G
+    #$CCACHE_BIN -M 20G
+    $CCACHE_BIN -M 30G
   fi
 fi
 
@@ -109,15 +115,31 @@ else
   repo init -u https://github.com/Team-OctOS/platform_manifest.git -b $REPO_BRANCH
 fi
 
+## We don't want to have to resync for each item in the build list and run the risk
+## of pulling in upstream changed mid build out so we will only allow resyncing after 12 hours.
 
-## TEMPORARY: Some kernels are building _into_ the source tree and messing
-## up posterior syncs due to changes
-rm -rf kernel/*
+LAST_SYNC=0
+if [ -f .sync ]
+then
+  LAST_SYNC=$(date -r .sync +%s)
+fi
+TIME_SINCE_LAST_SYNC=$(expr $(date +%s) - $LAST_SYNC)
+# convert this to hours
+TIME_SINCE_LAST_SYNC=$(expr $TIME_SINCE_LAST_SYNC / 60 / 60)
+if [ $TIME_SINCE_LAST_SYNC -gt "12" ]
+then
+  touch .sync
+  echo "Syncing..."
+    ## TEMPORARY: Some kernels are building _into_ the source tree and messing
+    ## up posterior syncs due to changes
+  rm -rf kernel/*
 
-echo Syncing...
-repo sync -j16 -d -c -f > /dev/null
-check_result "repo sync failed."
-echo Sync complete.
+  repo sync -j14 -d -c -f > /dev/null
+  check_result "repo sync failed."
+  echo "Sync complete."
+else
+echo "Skipping sync: $TIME_SINCE_LAST_SYNC hours since last sync."
+fi
 
 if [ -f $WORKSPACE/hudson/$REPO_BRANCH-setup.sh ]
 then
@@ -143,21 +165,21 @@ then
   export TO_RELEASE=true
 fi
 
-# Generate git logs for all platform repos
-rm -f $WORKSPACE/changecount
-WORKSPACE=$WORKSPACE LUNCH=$LUNCH bash $WORKSPACE/hudson/changes/buildlog.sh 2>&1
+## Generate git logs for all platform repos
+#rm -f $WORKSPACE/changecount
+#WORKSPACE=$WORKSPACE LUNCH=$LUNCH bash $WORKSPACE/hudson/changes/buildlog.sh 2>&1
 
-# Abort build if it's exactly the same as the previous one
-if [ -f $WORKSPACE/changecount ]
-then
-  CHANGE_COUNT=$(cat $WORKSPACE/changecount)
-  rm -f $WORKSPACE/changecount
-  if [ $CHANGE_COUNT -eq "0" ]
-  then
-    echo "Zero changes since last build, aborting"
-    exit 1
-  fi
-fi
+## Abort build if it's exactly the same as the previous one
+#if [ -f $WORKSPACE/changecount ]
+#then
+#  CHANGE_COUNT=$(cat $WORKSPACE/changecount)
+#  rm -f $WORKSPACE/changecount
+#  if [ $CHANGE_COUNT -eq "0" ]
+#  then
+#    echo "Zero changes since last build, aborting"
+#    exit 1
+#  fi
+#fi
 
 LAST_CLEAN=0
 if [ -f .clean ]
@@ -185,37 +207,44 @@ fi
 
 $CCACHE_BIN -s
 
-time mka bacon 2>&1 TO_BUILDTYPE=$BUILD_TYPE
+#time mka bacon 2>&1 TO_BUILDTYPE=$BUILD_TYPE
+time mka bacon 2>&1
 
-RECOVERY=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery.img
-RECOVERY_VARIANT=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery/root/sbin/teamwin
-if [ -f "$RECOVERY_VARIANT" ]
-then
-RECOVERYNAME=OctOs-TWRP-2.7.1.0-$device.img
-else
-RECOVERYNAME=OctOs-CWM-based-touch-recovery-$device.img
-fi
+#RECOVERY=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery.img
+#RECOVERY_VARIANT=$WORKSPACE/$REPO_BRANCH/out/target/product/$device/recovery/root/sbin/teamwin
+#if [ -f "$RECOVERY_VARIANT" ]
+#then
+#RECOVERYNAME=OctOs-TWRP-2.7.1.0-$device.img
+#else
+#RECOVERYNAME=OctOs-CWM-based-touch-recovery-$device.img
+#fi
 
-MODVERSION=$(cat $WORKSPACE/$REPO_BRANCH/out/target/product/$device/system/build.prop | grep ro.tg.version | cut -d = -f 2)
-if [ -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/OCT-L-$MODVERSION.zip ]
+MODVERSION=$(cat $WORKSPACE/$REPO_BRANCH/out/target/product/$device/system/build.prop | grep ro.to.version | cut -d = -f 2)
+if [ -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION-$device.zip ]
 then
-  for f in $(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/OCT-L-$MODVERSION.zip*)
+  for f in $(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION-$device.zip*)
   do
-    cp $f $WORKSPACE2/archive/$(basename $f)
+    echo file:
+    echo $f
+    cp $f $WORKSPACE/out/$device/$(basename $f)
+    #cp $f $WORKSPACE2/archive/$(basename $f)
   done
-  cp $WORKSPACE2/archive/CHANGES.txt $WORKSPACE2/archive/OCT-L-$MODVERSION.txt
+#  cp $WORKSPACE2/archive/CHANGES.txt $WORKSPACE2/archive/$MODVERSION-$device.txt
 else
+  echo did not find file
+  echo "$(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION-$device.zip*)"
+  echo $MODVERSION-$device
   echo Build failed!!
   exit 1
 fi
 
-if [ -f "$RECOVERY" ]
-then
-  cp $RECOVERY $WORKSPACE2/archive/$RECOVERYNAME
-else
-  echo Recovery build failed!!
-  exit 1
-fi
+#if [ -f "$RECOVERY" ]
+#then
+#  cp $RECOVERY $WORKSPACE2/archive/$RECOVERYNAME
+#else
+#  echo Recovery build failed!!
+#  exit 1
+#fi
 check_result "Build failed."
 rm -rf out/target/product/$device
 $CCACHE_BIN -s
