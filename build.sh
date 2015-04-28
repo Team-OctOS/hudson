@@ -79,7 +79,7 @@ fi
 if [ -z "$CCACHE_DIR" ]
 then
   #export CCACHE_DIR="$HOME/.ccache-$device"
-  export CCACHE_DIR="$HOME/.ccache"
+  export CCACHE_DIR="$WORKSPACE/.ccache"
   if [ ! -d "$CCACHE_DIR" -a -x "$CCACHE_BIN" ]
   then
     mkdir -p "$CCACHE_DIR"
@@ -246,5 +246,5 @@ fi
 #  exit 1
 #fi
 check_result "Build failed."
-rm -rf out/target/product/$device
+#rm -rf out/target/product/$device
 $CCACHE_BIN -s
