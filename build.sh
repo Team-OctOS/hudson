@@ -233,6 +233,11 @@ then
   do
     echo file:
     echo $f
+    if [ $HOSTNAME != $STORAGE_HOST ]
+    then
+        ssh $(whoami)@$STORAGE_HOST mkdir -p $WORKSPACE/out/$device
+        scp $f $(whoami)@$STORAGE_HOST:$WORKSPACE/out/$device/$(basename $f)
+    fi
     cp $f $WORKSPACE/out/$device/$(basename $f)
     #cp $f $WORKSPACE2/archive/$(basename $f)
   done
