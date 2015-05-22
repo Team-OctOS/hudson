@@ -146,6 +146,13 @@ then
   $WORKSPACE/hudson/$REPO_BRANCH-setup.sh
 fi
 
+## Clean up vendor and roomservice
+## to avoid uncommited change errors
+## because we do some funky overlay stuff with some vendor files.
+rm -f $WORKSPACE/$REPO_BRANCH/.repo/local_manifests/roomservice.xml
+rm -rf $WORKSPACE/$REPO_BRANCH/vendor/samsung
+rm -rf $WORKSPACE/$REPO_BRANCH/vendor/lge
+
 . build/envsetup.sh
 lunch $LUNCH
 check_result "lunch failed."
