@@ -56,8 +56,6 @@ fi
 export PYTHONDONTWRITEBYTECODE=1
 
 cd $WORKSPACE
-rm -rf archive
-mkdir -p archive
 export BUILD_NO=$BUILD_NUMBER
 unset BUILD_NUMBER
 
@@ -239,9 +237,7 @@ then
         scp $f $(whoami)@$STORAGE_HOST:$WORKSPACE/out/$device/$(basename $f)
     fi
     cp $f $WORKSPACE/out/$device/$(basename $f)
-    #cp $f $WORKSPACE2/archive/$(basename $f)
   done
-#  cp $WORKSPACE2/archive/CHANGES.txt $WORKSPACE2/archive/$MODVERSION-$device.txt
 else
   echo did not find file
   echo "$(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION-$device.zip*)"
