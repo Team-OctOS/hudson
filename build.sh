@@ -157,7 +157,7 @@ rm -rf $WORKSPACE/$REPO_BRANCH/vendor/lge
 lunch $LUNCH
 check_result "lunch failed."
 
-rm -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/OCT-L-*.zip*
+rm -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/OCT-L-*.*
 
 UNAME=$(uname)
 
@@ -229,7 +229,7 @@ time mka bacon 2>&1
 MODVERSION=$(cat $WORKSPACE/$REPO_BRANCH/out/target/product/$device/system/build.prop | grep ro.to.version | cut -d = -f 2)
 if [ -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION-$device.zip ]
 then
-  for f in $(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION-$device.zip*)
+  for f in $(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION-$device*)
   do
     echo file:
     echo $f
