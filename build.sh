@@ -2,6 +2,8 @@
 
 LUNCH=$*
 
+J_NUM=$((`nproc` * 2))
+
 function check_result {
   if [ "0" -ne "$?" ]
   then
@@ -132,7 +134,7 @@ then
     ## up posterior syncs due to changes
   rm -rf kernel/*
 
-  repo sync -j14 -d -c -f > /dev/null
+  repo sync -j$J_NUM --force-sync -d -c -f > /dev/null
   check_result "repo sync failed."
   echo "Sync complete."
 else
