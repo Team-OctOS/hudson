@@ -153,11 +153,14 @@ rm -f $WORKSPACE/$REPO_BRANCH/.repo/local_manifests/roomservice.xml
 rm -rf $WORKSPACE/$REPO_BRANCH/vendor/samsung
 rm -rf $WORKSPACE/$REPO_BRANCH/vendor/lge
 
+## Clean up devices to keep from running out of space
+rm -rf $WORKSPACE/$REPO_BRANCH/out/target/product/*
+
 . build/envsetup.sh
 lunch $LUNCH
 check_result "lunch failed."
 
-rm -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/OCT-L-*.*
+## rm -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/OCT-L-*.*
 
 UNAME=$(uname)
 
