@@ -67,7 +67,13 @@ export BUILD_WITH_COLORS=0
 project_device=$(echo $LUNCH | cut -d'-' -f1)
 device=$(echo $project_device | cut -b 4-)
 
-mkdir -p out/$device
+#Set TO_BUILDTYPE if not set
+if [ -z "$TO_BUILDTYPE" ]
+then
+  TO_BUILDTYPE="TEST_BUILDS"
+fi
+
+mkdir -p out/$TO_BUILDTYPE/$device
 
 # Setup ccache
 CCACHE_BIN=$(which ccache)
@@ -238,10 +244,10 @@ then
     echo $f
     if [ $HOSTNAME != $STORAGE_HOST ]
     then
-        ssh $(whoami)@$STORAGE_HOST mkdir -p $WORKSPACE/out/$device
-        scp $f $(whoami)@$STORAGE_HOST:$WORKSPACE/out/$device/$(basename $f)
+        ssh $(whoami)@$STORAGE_HOST mkdir -p $WORKSPACE/out/jenkins/$REPO_BRANCH/$TO_BUILDTYPE/$device
+        scp $f $(whoami)@$STORAGE_HOST:$WORKSPACE/out/jenkins/$REPO_BRANCH/$TO_BUILDTYPE/$device/$(basename $f)
     fi
-    cp $f $WORKSPACE/out/$device/$(basename $f)
+    cp $f $WORKSPACE/out/$TO_BUILDTYPE/$device/$(basename $f)
   done
 else
   echo did not find file
