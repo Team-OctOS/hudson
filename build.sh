@@ -122,7 +122,7 @@ else
 fi
 
 ## We don't want to have to resync for each item in the build list and run the risk
-## of pulling in upstream changed mid build out so we will only allow resyncing after 12 hours.
+## of pulling in upstream changed mid build out so we will only allow resyncing after 18 hours.
 
 LAST_SYNC=0
 if [ -f .sync ]
@@ -132,7 +132,7 @@ fi
 TIME_SINCE_LAST_SYNC=$(expr $(date +%s) - $LAST_SYNC)
 # convert this to hours
 TIME_SINCE_LAST_SYNC=$(expr $TIME_SINCE_LAST_SYNC / 60 / 60)
-if [ $TIME_SINCE_LAST_SYNC -gt "12" ]
+if [ $TIME_SINCE_LAST_SYNC -gt "18" ]
 then
   touch .sync
   echo "Syncing..."
