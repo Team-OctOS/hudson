@@ -244,8 +244,8 @@ then
     echo $f
     if [ $HOSTNAME != $STORAGE_HOST ]
     then
-        ssh $(whoami)@$STORAGE_HOST mkdir -p $WORKSPACE/out/jenkins/$REPO_BRANCH/$TO_BUILDTYPE/$device
-        scp $f $(whoami)@$STORAGE_HOST:$WORKSPACE/out/jenkins/$REPO_BRANCH/$TO_BUILDTYPE/$device/$(basename $f)
+        ssh $(whoami)@$STORAGE_HOST mkdir -p $WORKSPACE/out/jenkins/$TO_BUILDTYPE/$device
+        scp $f $(whoami)@$STORAGE_HOST:$WORKSPACE/out/jenkins/$TO_BUILDTYPE/$device/$(basename $f)
     fi
     cp $f $WORKSPACE/out/$TO_BUILDTYPE/$device/$(basename $f)
   done
