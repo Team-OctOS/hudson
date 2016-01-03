@@ -147,11 +147,6 @@ else
 echo "Skipping sync: $TIME_SINCE_LAST_SYNC hours since last sync."
 fi
 
-if [ -f $WORKSPACE/hudson/$REPO_BRANCH-setup.sh ]
-then
-  $WORKSPACE/hudson/$REPO_BRANCH-setup.sh
-fi
-
 ## Clean up vendor and roomservice
 ## to avoid uncommited change errors
 ## because we do some funky overlay stuff with some vendor files.
@@ -165,6 +160,28 @@ rm -rf $WORKSPACE/$REPO_BRANCH/out/target/product/*
 . build/envsetup.sh
 lunch $LUNCH
 check_result "lunch failed."
+
+## Set to the latest WEEKLY or RELEASE snapshot
+if [ "$TO_BUILDTYPE" = "WEEKLY" ]
+then
+  # Set latest weekly snapshot
+  SNAPSHOT=`ls jenkins/snapshots/weekly/snapshot_* -1 | tail -n 1`
+  if [ ! -z "$SNAPSHOT" ]
+  then
+    echo "...Loading the latest WEEKLY snapshot from $SNAPSHOT"
+    ./$SNAPSHOT
+  fi
+
+elif [ "$TO_BUILDTYPE" = "RELEASE" ]
+then
+  # Set latests release snapshot
+  SNAPSHOT=`ls jenkins/snapshots/release/snapshot_* -1 | tail -n 1`
+  if [ ! -z "$SNAPSHOT" ]
+  then
+    echo "...Loading the latest RELEASE snapshot from $SNAPSHOT"
+    ./$SNAPSHOT
+  fi
+fi
 
 ## rm -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/OCT-L-*.*
 
