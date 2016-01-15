@@ -153,6 +153,9 @@ fi
 rm -f $WORKSPACE/$REPO_BRANCH/.repo/local_manifests/roomservice.xml
 rm -rf $WORKSPACE/$REPO_BRANCH/vendor/samsung
 rm -rf $WORKSPACE/$REPO_BRANCH/vendor/lge
+rm -rf $WORKSPACE/$REPO_BRANCH/vendor/qcom/flo
+rm -rf $WORKSPACE/$REPO_BRANCH/vendor/qcom/grouper
+rm -rf $WORKSPACE/$REPO_BRANCH/vendor/qcom/.git
 
 ## Clean up devices to keep from running out of space
 rm -rf $WORKSPACE/$REPO_BRANCH/out/target/product/*
