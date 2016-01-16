@@ -155,6 +155,7 @@ rm -rf $WORKSPACE/$REPO_BRANCH/vendor/samsung
 rm -rf $WORKSPACE/$REPO_BRANCH/vendor/lge
 rm -rf $WORKSPACE/$REPO_BRANCH/vendor/qcom/flo
 rm -rf $WORKSPACE/$REPO_BRANCH/vendor/qcom/grouper
+rm -rf $WORKSPACE/$REPO_BRANCH/vendor/qcom/hammerhead
 rm -rf $WORKSPACE/$REPO_BRANCH/vendor/qcom/.git
 
 ## Clean up devices to keep from running out of space
