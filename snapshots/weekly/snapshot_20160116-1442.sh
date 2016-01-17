@@ -1622,6 +1622,6 @@ cd $ANDROID_BUILD_TOP/vendor/samsung/
 git checkout c86d290cf792c8f0aad04247e747706fa49c99ac
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout 4433fdce11dd2259886654f64943245b3079d978
+git checkout 992e024440b3e9b17e247e2a34db7621b6bdce10
 
 cd $CUR_DIR
