@@ -1256,7 +1256,7 @@ cd $ANDROID_BUILD_TOP/libnativehelper/
 git checkout b7a25286026b49f0f7d95b25f2d32c4f47f498ef
 
 cd $ANDROID_BUILD_TOP/manifest/
-git checkout 6d2e6938b976edc40e559b20e3a34b39fdf698c5
+git checkout 36bcc4cb34a73c0a6c747b5997efed7c1045294e
 
 cd $ANDROID_BUILD_TOP/ndk/
 git checkout e6403c6a048bdec5a7fc7c6c0cc149fc5f098f80
@@ -1468,6 +1468,9 @@ git checkout f4ccdc155fa2929026de150e7666f9f1ed21ba35
 cd $ANDROID_BUILD_TOP/packages/wallpapers/Basic/
 git checkout 21699347a4b7b71857455a6e8d452e1ef92087bc
 
+cd $ANDROID_BUILD_TOP/packages/wallpapers/BlueBalls/
+git checkout 594f01f935854c02e628a518b2086c86fe179aba
+
 cd $ANDROID_BUILD_TOP/packages/wallpapers/Galaxy4/
 git checkout 83ce967f34f1b099fafef55d5c23ba4aea78dd64
 
@@ -1658,7 +1661,7 @@ cd $ANDROID_BUILD_TOP/vendor/samsung/
 git checkout cd35e9aa17234ab23a974cee277a08471eb35e01
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout b0268a4f602d9ef52c491ce04e904c89e76d7fe8
+git checkout 65353d0080ec43ccfd84fb42be2f59b4b135d7db
 
 cd $ANDROID_BUILD_TOP/vendor/widevine/
 git checkout e85cfe27030a790ea128884d63e883c717f66c5a
