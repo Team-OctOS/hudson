@@ -1,0 +1,14 @@
+#!/bin/sh
+#Usage basketbuild_push <file_to_upload> <destination_directory>
+
+USERNAME="username"
+PASSWORD="password"
+SERVER="ftp://basketbuild.com"
+
+# file_to_upload
+FILE="$1"
+# destination_directory
+DIR="$2"
+
+#use curl to send file
+nohup curl -T "$FILE" -u $USERNAME:$PASSWORD $SERVER/$DIR/ &

@@ -269,6 +269,23 @@ then
         scp $f $(whoami)@$STORAGE_HOST:$WORKSPACE/out/jenkins/$TO_BUILDTYPE/$device/$(basename $f)
     fi
     cp $f $WORKSPACE/out/$TO_BUILDTYPE/$device/$(basename $f)
+
+    BASKETBUILD=`which basketbuild_push`
+    if [ "$BASKETBUILD" ]
+    then
+      if [ "$TO_BUILDTYPE" = "WEEKLY" ]
+      then
+        # push to basketbuild
+        $BASKETBUILD $f /weekly/$device
+      elif [ "$TO_BUILDTYPE" = "RELEASE" ]
+      then
+        # push to basketbuild
+        $BASKETBUILD $f /milestone/$device
+      fi
+    else
+      echo "basketbuild_push scrip not found: Skipping push to basketbuild."
+    fi
+
   done
 else
   echo did not find file
