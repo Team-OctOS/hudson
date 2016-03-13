@@ -1631,7 +1631,7 @@ cd $ANDROID_BUILD_TOP/vendor/samsung/
 git checkout 36263d36d33af6375c1abed9ad3f073a00e0fb74
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout 869a4ed84688e9b802ea5c551954adae4af9b57a
+git checkout 84fd28c578fa102d7f4b12de1c44e2d9c949d0d9
 
 cd $ANDROID_BUILD_TOP/vendor/widevine/
 git checkout e85cfe27030a790ea128884d63e883c717f66c5a
