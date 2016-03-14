@@ -70,7 +70,13 @@ device=$(echo $project_device | cut -b 4-)
 #Set TO_BUILDTYPE if not set
 if [ -z "$TO_BUILDTYPE" ]
 then
-  TO_BUILDTYPE="TEST_BUILDS"
+  TO_BUILDTYPE="TEST_BUILD"
+fi
+
+#Set TO_BB_PUSH if not set
+if [ -z "$TO_BB_PUSH" ]
+then
+  TO_BB_PUSH="false"
 fi
 
 mkdir -p out/$TO_BUILDTYPE/$device
@@ -185,6 +191,15 @@ then
     echo "...Loading the latest RELEASE snapshot from $SNAPSHOT"
     ./$SNAPSHOT
   fi
+elif [ "$TO_BUILDTYPE" = "TEST_BUILD" ]
+then
+  # Set latests test snapshot
+  SNAPSHOT=`ls jenkins/snapshots/test/snapshot_* -1 | tail -n 1`
+  if [ ! -z "$SNAPSHOT" ]
+  then
+    echo "...Loading the latest TEST snapshot from $SNAPSHOT"
+    ./$SNAPSHOT
+  fi
 fi
 
 ## rm -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/OCT-L-*.*
@@ -270,21 +285,28 @@ then
     fi
     cp $f $WORKSPACE/out/$TO_BUILDTYPE/$device/$(basename $f)
 
-    BASKETBUILD=`which basketbuild_push`
-    if [ "$BASKETBUILD" ]
-    then
-      if [ "$TO_BUILDTYPE" = "WEEKLY" ]
+  if [ "$TO_BB_PUSH" = "true" ]
+  then
+      BASKETBUILD=`which basketbuild_push`
+      if [ "$BASKETBUILD" ]
       then
-        # push to basketbuild
-        $BASKETBUILD $f /weekly/$device
-      elif [ "$TO_BUILDTYPE" = "RELEASE" ]
-      then
-        # push to basketbuild
-        $BASKETBUILD $f /milestone/$device
+        if [ "$TO_BUILDTYPE" = "WEEKLY" ]
+        then
+          # push to basketbuild
+          $BASKETBUILD $f /weekly/$device
+        elif [ "$TO_BUILDTYPE" = "RELEASE" ]
+        then
+          # push to basketbuild
+          $BASKETBUILD $f /milestone/$device
+        elif [ "$TO_BUILDTYPE" = "TEST_BUILD" ]
+        then
+          # push to basketbuild
+          $BASKETBUILD $f /private/jenkins/$device
+        fi
+      else
+        echo "basketbuild_push scrip not found: Skipping push to basketbuild."
       fi
-    else
-      echo "basketbuild_push scrip not found: Skipping push to basketbuild."
-    fi
+  fi
 
   done
 else
