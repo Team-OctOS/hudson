@@ -1636,4 +1636,22 @@ git checkout 84fd28c578fa102d7f4b12de1c44e2d9c949d0d9
 cd $ANDROID_BUILD_TOP/vendor/widevine/
 git checkout e85cfe27030a790ea128884d63e883c717f66c5a
 
+cd $ANDROID_BUILD_TOP/device/lge/bullhead/
+git checkout feebb2c3373e5e2bd42d7d0ff5acde90214fbe74
+
+cd $ANDROID_BUILD_TOP/kernel/lge/bullhead/
+git checkout 3e127ab4bad318b412e2fc9fc43e77386effac25
+
+cd $ANDROID_BUILD_TOP/vendor/lge/
+git checkout 78ad0630172a6eb382f909af54b5744f01ddeaf7
+
+cd $ANDROID_BUILD_TOP/device/huawei/angler/
+git checkout 2854033b882358f3a2b5c316cc869cbb7ec3036b
+
+cd $ANDROID_BUILD_TOP/kernel/huawei/angler/
+git checkout d621ea9e2782c75538eb7550b9ed8fbe91c268ee
+
+cd $ANDROID_BUILD_TOP/vendor/huawei/
+git checkout e3ed0efaa71773cd87a022fa077959ef1711b20a
+
 cd $CUR_DIR
