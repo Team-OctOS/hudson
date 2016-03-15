@@ -2,7 +2,7 @@
 #
 # Team Octos source snapshot script
 #
-# Time of this snapshot: 20160314-1948
+# Time of this snapshot: 20160315-1512
 #
 # This file contains commands to set each repo to the position
 # when this snapshot was taken
@@ -40,8 +40,11 @@ git checkout 049d382f23bae257d8cf2dd2303eb2c3a166b932
 cd $ANDROID_BUILD_TOP/development/
 git checkout 0a521f6d93206567c14bbacdc13819bf4baf82d3
 
+cd $ANDROID_BUILD_TOP/device/asus/flo/
+git checkout 19cda0585f4abd6e7984b13945da4c35db493fd6
+
 cd $ANDROID_BUILD_TOP/device/asus/grouper/
-git checkout a0b17b966710f924887d95abbc8633556cc0e946
+git checkout 81571e4bbeeb3ce9dff255f632b1dfd485a256f2
 
 cd $ANDROID_BUILD_TOP/device/common/
 git checkout e0e0d5b4b4e81fafd4bc1c96744b367ce3e73f6e
@@ -1300,6 +1303,9 @@ git checkout 107d8fce2f9201d4b8845c11b65f24bccbb2a841
 cd $ANDROID_BUILD_TOP/hardware/ti/wpan/
 git checkout bcf2967acf1a644a59cb113891ad618b1a4cad5f
 
+cd $ANDROID_BUILD_TOP/jenkins/
+git checkout 37dd42f199388be7a4092355657aff20d49a3dbf
+
 cd $ANDROID_BUILD_TOP/kernel/asus/grouper/
 git checkout d7d8473a70608c8cb0d71c6e0218d78c9e1df848
 
@@ -1733,7 +1739,10 @@ cd $ANDROID_BUILD_TOP/system/vold/
 git checkout cba83a9a0508a2f77758f8a74bfb5c0cff107aa2
 
 cd $ANDROID_BUILD_TOP/vendor/asus/
-git checkout 8fe61bb49a84beac1e94c583b5b8fe87fd23d42d
+git checkout 788b76f89903a949ea9f0be52cf07ad6721a3bc8
+
+cd $ANDROID_BUILD_TOP/vendor/asus-grouper/
+git checkout 3a8bc2da173f85c42be713ff4c3e4bcdfe29f590
 
 cd $ANDROID_BUILD_TOP/vendor/broadcom/
 git checkout 437e61e72ad2ff7a49334e93c7959e308ea724d5
@@ -1778,7 +1787,7 @@ cd $ANDROID_BUILD_TOP/vendor/samsung/
 git checkout a1fa0d506e5a0d935f7e839aaba10db614f4c724
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout 0e10940b9728ec4dce92faa4f4ea0bf50074395e
+git checkout 97fe046f5df6f3be71644310b0c38f091c28fb3b
 
 cd $ANDROID_BUILD_TOP/vendor/widevine/
 git checkout e85cfe27030a790ea128884d63e883c717f66c5a
