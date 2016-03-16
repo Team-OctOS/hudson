@@ -1442,7 +1442,7 @@ cd $ANDROID_BUILD_TOP/packages/apps/Launcher3/
 git checkout f630789246e5782b05d5f4035d72ffe256e7abae
 
 cd $ANDROID_BUILD_TOP/packages/apps/LockClock/
-git checkout 26e01f4714a5d285b851dcb136bc049fed336abc
+git checkout 4b87df70576af19e571070be3523a3a1e18ca98a
 
 cd $ANDROID_BUILD_TOP/packages/apps/ManagedProvisioning/
 git checkout b011fe6afd4c88ab4a69ba9cfe5ddb94d35c2565
