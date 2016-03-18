@@ -2,7 +2,7 @@
 #
 # Team Octos source snapshot script
 #
-# Time of this snapshot: 20160316-1834
+# Time of this snapshot: 20160318-1504
 #
 # This file contains commands to set each repo to the position
 # when this snapshot was taken
@@ -175,8 +175,14 @@ git checkout 803a0875596c271b774ce4115fdb1a4366e102e7
 cd $ANDROID_BUILD_TOP/device/samsung/d2vzw/
 git checkout 58bb0f9d4457cf0519294f957d587f6a233a1396
 
+cd $ANDROID_BUILD_TOP/device/samsung/galaxys2-common/
+git checkout 2415f7d812d19d3840cb186e55c7c0b09ff4f3b2
+
 cd $ANDROID_BUILD_TOP/device/samsung/i605/
 git checkout b1c6e537bfbfe196210107b421f80af9c65ae057
+
+cd $ANDROID_BUILD_TOP/device/samsung/i9100/
+git checkout ad7468b66cec447f60080f99a97781d5d797c916
 
 cd $ANDROID_BUILD_TOP/device/samsung/jf-common/
 git checkout babf3d215d64f72bed56495a3cda3e642071ef23
@@ -219,6 +225,12 @@ git checkout 20237caa07e89d73446929d80992045f44604ca9
 
 cd $ANDROID_BUILD_TOP/device/samsung/t0lte/
 git checkout a4804aa8dc206ef968e48d9fd567090060e7e673
+
+cd $ANDROID_BUILD_TOP/device/xiaomi/armani/
+git checkout 85c81b8892a6972f271dc1588f0bd52b016b24ab
+
+cd $ANDROID_BUILD_TOP/device/xiaomi/cancro/
+git checkout 5923b30238761d1f7557265fb0f67b1dc31a068e
 
 cd $ANDROID_BUILD_TOP/docs/source.android.com/
 git checkout 918070543c8989f1088953e525a22176eb00caa0
@@ -1070,7 +1082,7 @@ cd $ANDROID_BUILD_TOP/frameworks/rs/
 git checkout c882d498464a78f70560f85d9f42af637f560235
 
 cd $ANDROID_BUILD_TOP/frameworks/support/
-git checkout 98e06d73262bc654d546ef2ded2cd6c4db5b92bf
+git checkout 91464abe5a634bbbbd20c29cc9362e5e22a91f86
 
 cd $ANDROID_BUILD_TOP/frameworks/volley/
 git checkout d52d625faa1abe72f25d1699361b69c079b1eb96
@@ -1303,9 +1315,6 @@ git checkout 107d8fce2f9201d4b8845c11b65f24bccbb2a841
 cd $ANDROID_BUILD_TOP/hardware/ti/wpan/
 git checkout bcf2967acf1a644a59cb113891ad618b1a4cad5f
 
-cd $ANDROID_BUILD_TOP/jenkins/
-git checkout f265133c092773bc8f053ba452fa66774e3a9a22
-
 cd $ANDROID_BUILD_TOP/kernel/asus/grouper/
 git checkout d7d8473a70608c8cb0d71c6e0218d78c9e1df848
 
@@ -1319,7 +1328,7 @@ cd $ANDROID_BUILD_TOP/kernel/lge/bullhead/
 git checkout 144e472e6e950a4e60cc25dbf1b772af2abb9bec
 
 cd $ANDROID_BUILD_TOP/kernel/lge/g3/
-git checkout 0855cd91c2d9a746781b0d49369ff98889d13a01
+git checkout 642fb19ae83f04e28c3cc43be82ec93473c3665d
 
 cd $ANDROID_BUILD_TOP/kernel/lge/hammerhead/
 git checkout c46bfe85722b9e0386f1e32c7aa026250e32e886
@@ -1348,6 +1357,12 @@ git checkout 0ed8690cfa8eecd7712c739f74bc8e356497be15
 cd $ANDROID_BUILD_TOP/kernel/samsung/smdk4412/
 git checkout f0f6cbaf4d48a251a2a37078f82ae96c4f6079fe
 
+cd $ANDROID_BUILD_TOP/kernel/xiaomi/armani/
+git checkout 6d456ce25c2cb9ed8428c6d244b3264a6e00c55a
+
+cd $ANDROID_BUILD_TOP/kernel/xiaomi/cancro/
+git checkout 87712f3b47b6cea6c18f7c8c2a7af8c7285e83cc
+
 cd $ANDROID_BUILD_TOP/libcore/
 git checkout 72904992b3e2803487c0deda965dc510d6d84fb5
 
@@ -1355,7 +1370,7 @@ cd $ANDROID_BUILD_TOP/libnativehelper/
 git checkout b7a25286026b49f0f7d95b25f2d32c4f47f498ef
 
 cd $ANDROID_BUILD_TOP/manifest/
-git checkout 83dc0945c19021acee70cd2dc4470a21875dab07
+git checkout 0fb157cdc7020595a659f77270ef4448221df4fe
 
 cd $ANDROID_BUILD_TOP/ndk/
 git checkout e6403c6a048bdec5a7fc7c6c0cc149fc5f098f80
@@ -1787,9 +1802,12 @@ cd $ANDROID_BUILD_TOP/vendor/samsung/
 git checkout a1fa0d506e5a0d935f7e839aaba10db614f4c724
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout 8775bbdde702384d022641094e40aaca955c988d
+git checkout 0ad741cb2ffbf0046c5c8bb6d5a7de5494535ea3
 
 cd $ANDROID_BUILD_TOP/vendor/widevine/
 git checkout e85cfe27030a790ea128884d63e883c717f66c5a
+
+cd $ANDROID_BUILD_TOP/vendor/xiaomi/
+git checkout b6f7d9df3a3fd80a9e2edeb01a27ff45ea170979
 
 cd $CUR_DIR
