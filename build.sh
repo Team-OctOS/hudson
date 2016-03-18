@@ -297,7 +297,7 @@ then
         elif [ "$TO_BUILDTYPE" = "RELEASE" ]
         then
           # push to basketbuild
-          $BASKETBUILD $f /milestone/$device
+          $BASKETBUILD $f /release/$device
         elif [ "$TO_BUILDTYPE" = "TEST_BUILD" ]
         then
           # push to basketbuild
