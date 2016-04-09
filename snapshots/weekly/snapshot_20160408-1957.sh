@@ -1312,9 +1312,6 @@ git checkout 107d8fce2f9201d4b8845c11b65f24bccbb2a841
 cd $ANDROID_BUILD_TOP/hardware/ti/wpan/
 git checkout bcf2967acf1a644a59cb113891ad618b1a4cad5f
 
-cd $ANDROID_BUILD_TOP/jenkins/
-git checkout 0420caf9150edde528e8d29ef08cbf296a48fc36
-
 cd $ANDROID_BUILD_TOP/kernel/asus/grouper/
 git checkout d7d8473a70608c8cb0d71c6e0218d78c9e1df848
 
