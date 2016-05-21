@@ -1,4 +1,4 @@
-# Accessing the Build Server
+# View the Build Server
 http://review.teamoctos.com:8000
 
 # Authenticating to the Build Server
