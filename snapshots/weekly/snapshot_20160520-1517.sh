@@ -1346,7 +1346,7 @@ cd $ANDROID_BUILD_TOP/kernel/samsung/msm8930-common/
 git checkout 77ee15ddc005810cf1a8104485b73735459b212d
 
 cd $ANDROID_BUILD_TOP/kernel/samsung/smdk4412/
-git checkout f991b824bffa2034b7c5403a22245a97642b6d31
+git checkout 36fa542e882882638e4359e7ccc6297c2f8adad0
 
 cd $ANDROID_BUILD_TOP/kernel/xiaomi/armani/
 git checkout 4c10b6c7667259179a7777dd8a43ba9b7927655c
