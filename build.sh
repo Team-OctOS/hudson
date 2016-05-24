@@ -64,6 +64,16 @@ unset BUILD_NUMBER
 export USE_CCACHE=1
 export BUILD_WITH_COLORS=0
 
+# Check the java version
+CHECK_JAVA_VERSION=`java -version 2>&1 | grep -i version | cut -d'"' -f2 | cut -d'.' -f1-2`
+
+echo "java version: $CHECK_JAVA_VERSION"
+
+if [ "$CHECK_JAVA_VERSION" = "1.8" ]
+then
+  export EXPERIMENTAL_USE_JAVA8=1
+fi
+
 project_device=$(echo $LUNCH | cut -d'-' -f1)
 device=$(echo $project_device | cut -b 4-)
 
