@@ -1316,7 +1316,7 @@ cd $ANDROID_BUILD_TOP/hardware/ti/wpan/
 git checkout bcf2967acf1a644a59cb113891ad618b1a4cad5f
 
 cd $ANDROID_BUILD_TOP/kernel/asus/grouper/
-git checkout 8ada7542e7104201066ffa1de2e73191fe566418
+git checkout e48dd94a4a29c607bd38447b2cc8e95e13916883
 
 cd $ANDROID_BUILD_TOP/kernel/google/msm/
 git checkout 9098987f05fc47cdfaba1514fa0fc6f2cd8526e7
