@@ -992,7 +992,7 @@ cd $ANDROID_BUILD_TOP/frameworks/av/
 git checkout fbef511c958b5f1b3e015d032dcac4ed7cc84876
 
 cd $ANDROID_BUILD_TOP/frameworks/base/
-git checkout e1bbe17f5c0d15f0bfd1a1aa4f105bbc8486ee18
+git checkout cd9bca2290deb59b7b6e3429a2dd93da6cd8c9dc
 
 cd $ANDROID_BUILD_TOP/frameworks/compile/libbcc/
 git checkout b7f05114e5f408479b50647837cdf25187bfd164
