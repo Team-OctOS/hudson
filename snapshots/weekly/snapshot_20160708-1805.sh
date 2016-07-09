@@ -173,7 +173,7 @@ cd $ANDROID_BUILD_TOP/device/samsung/i9100/
 git checkout c85f266ec3303a72604af01db68bd204bea1f0ac
 
 cd $ANDROID_BUILD_TOP/device/samsung/jf-common/
-git checkout f3de0ff6ae6970a5836443760f060e636fdebda9
+git checkout 14cfce7547681122f6992272e3df05e16fdbcc04
 
 cd $ANDROID_BUILD_TOP/device/samsung/jflteatt/
 git checkout 533573bb49920264a0f36690b6b41a47dca7473a
@@ -1358,7 +1358,7 @@ cd $ANDROID_BUILD_TOP/kernel/samsung/d2/
 git checkout 868d51d6571f3c9e35fd424b32de8708152a7bc5
 
 cd $ANDROID_BUILD_TOP/kernel/samsung/jf/
-git checkout 73ed9ab793c9eb3cdd00bbb29ce9ac1766df96e4
+git checkout 49f23158dc56db9648e56469b31f733e116ba910
 
 cd $ANDROID_BUILD_TOP/kernel/samsung/msm8930-common/
 git checkout 74f29c83a5d4adee49f54272a4ff3fcc918a2a45
