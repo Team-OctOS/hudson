@@ -1391,7 +1391,7 @@ cd $ANDROID_BUILD_TOP/ndk/
 git checkout e6403c6a048bdec5a7fc7c6c0cc149fc5f098f80
 
 cd $ANDROID_BUILD_TOP/packages/apps/AboutOctOs/
-git checkout d823bd99523954ee09db330278e004bb8108035a
+git checkout 8fa30ae00fe227755df649082673c4fc60a70d07
 
 cd $ANDROID_BUILD_TOP/packages/apps/AudioFX/
 git checkout 65dc5b0ff1f57f44d1f35229d26306f39ddec283
