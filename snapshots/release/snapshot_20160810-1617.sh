@@ -211,6 +211,9 @@ git checkout 77a7834975a44f5a98019c82dfba8d95bf6d206f
 cd $ANDROID_BUILD_TOP/device/samsung/serranolteusc/
 git checkout 3f66aa0e62a243aca8b3ae30c37b5bd3d2d046c4
 
+cd $ANDROID_BUILD_TOP/device/samsung/serranoltexx/
+git checkout da5b1f99fa72cf210ab6d1f997fc3fac6aba8b81
+
 cd $ANDROID_BUILD_TOP/device/samsung/smdk4412-common/
 git checkout d508a5afb5ef8a760a09c6f0e8e1a3da07a17a47
 
@@ -1850,7 +1853,7 @@ cd $ANDROID_BUILD_TOP/vendor/samsung/
 git checkout 2e7d953bcfa98a85ad7754d71a0a1fa75b6875fc
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout a1c004fa2e5386997c348ee16bab8afb7807b146
+git checkout 99259829faf4ae2b7ef1fae76f3cb2f9b71415ce
 
 cd $ANDROID_BUILD_TOP/vendor/widevine/
 git checkout e85cfe27030a790ea128884d63e883c717f66c5a
