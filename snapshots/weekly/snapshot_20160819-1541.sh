@@ -1367,7 +1367,7 @@ cd $ANDROID_BUILD_TOP/kernel/motorola/msm8974/
 git checkout 0e6fb483dcd7cf746725d02f92b9961dc472ee49
 
 cd $ANDROID_BUILD_TOP/kernel/samsung/d2/
-git checkout 868d51d6571f3c9e35fd424b32de8708152a7bc5
+git checkout 2ed16e47e441a62f501840e5b90ddf2d83a2f982
 
 cd $ANDROID_BUILD_TOP/kernel/samsung/jf/
 git checkout 3467b10841b4bac957f1d408f5ca05081d963192
