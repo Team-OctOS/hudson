@@ -67,12 +67,12 @@
   <project name="android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="cm" revision="cm-13.0" />
   <project name="android_device_samsung_d2spr" path="device/samsung/d2spr" remote="cm" revision="cm-13.0" />
   <project name="android_device_samsung_d2-common" path="device/samsung/d2-common" remote="cm" revision="cm-13.0" />
-  <project name="platform_kernel_samsung_d2" path="kernel/samsung/d2" remote="to" revision="oct-mm" />
+  <project name="android_kernel_samsung_d2" path="kernel/samsung/d2" remote="cm" revision="cm-13.0" />
   <project name="android_device_motorola_victara" path="device/motorola/victara" remote="cm" revision="cm-13.0" />
   <project name="platform_kernel_motorola_msm8974" path="kernel/motorola/msm8974" remote="to" revision="oct-mm" />
   <project name="android_device_lge_d850" path="device/lge/d850" remote="cm" revision="cm-13.0" />
   <project name="platform_device_lge_g3-common" path="device/lge/g3-common" remote="to" revision="oct-mm" />
-  <project name="platform_kernel_lge_g3" path="kernel/lge/g3" remote="to" revision="oct-mm" />
+  <project name="android_kernel_lge_g3" path="kernel/lge/g3" remote="cm" revision="cm-13.0" />
   <project name="proprietary_vendor_lge" path="vendor/lge" remote="tm" revision="cm-13.0" />
   <project name="android_device_lge_d851" path="device/lge/d851" remote="cm" revision="cm-13.0" />
   <project name="android_device_lge_d855" path="device/lge/d855" remote="cm" revision="cm-13.0" />
