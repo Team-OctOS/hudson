@@ -2,7 +2,7 @@
 #
 # Team Octos source snapshot script
 #
-# Time of this snapshot: 20160722-1853
+# Time of this snapshot: 20160909-1605
 #
 # This file contains commands to set each repo to the position
 # when this snapshot was taken
@@ -17,16 +17,16 @@ cd $ANDROID_BUILD_TOP/art/
 git checkout 7592c94124e7fd7ea8bd8592c4a8e1001d6f6e4d
 
 cd $ANDROID_BUILD_TOP/bionic/
-git checkout 4e646507b980f2a1cd5dd8dee3e9e70e8880ce54
+git checkout 92595081575c82ace07201a3ea32004eba968c0b
 
 cd $ANDROID_BUILD_TOP/bootable/recovery/
 git checkout 8e507d8e0f11076a40a46235cf5a13fc90bb3bb8
 
 cd $ANDROID_BUILD_TOP/build/
-git checkout 0e039ef09c41b2e02d3617f296afb42c8623de9b
+git checkout 73f2cafaa8cad7cebf201f4196c924c1bcf64927
 
 cd $ANDROID_BUILD_TOP/cts/
-git checkout 9f2e0bee95f6b3a2c96b4515ab0b06b5ff714969
+git checkout 3eab954ba1a608ad2917cd3d2cfae77627955145
 
 cd $ANDROID_BUILD_TOP/dalvik/
 git checkout c27cc462b6c89d1e32c5e6641f2935e2c52bf91e
@@ -41,7 +41,7 @@ cd $ANDROID_BUILD_TOP/development/
 git checkout 87654bc0a08a4da5813c719a65087120068d5341
 
 cd $ANDROID_BUILD_TOP/device/asus/flo/
-git checkout e71a54f1bfcc2e7d3ade6770e879901dd61ecfbf
+git checkout 7098f15c9fc0fadd81344d88d0b68d7c3694ee9b
 
 cd $ANDROID_BUILD_TOP/device/asus/grouper/
 git checkout 0a6def36d0eb77feb6b099c63bbba5cc717db27b
@@ -98,10 +98,10 @@ cd $ANDROID_BUILD_TOP/device/google/atv/
 git checkout 6ed67b2e600169010776823f8b6edbe39304d662
 
 cd $ANDROID_BUILD_TOP/device/huawei/angler/
-git checkout 599011d44ae3368d6f745b8ef2418de0be5b52a4
+git checkout 544220cb183049be14d2d01c15b619a7ee67bdb4
 
 cd $ANDROID_BUILD_TOP/device/lge/bullhead/
-git checkout df8d3422db001cf0c9fec261a30a3559c862c536
+git checkout 52b7f4d699a846c375bc21cf47a088e73da1e5b0
 
 cd $ANDROID_BUILD_TOP/device/lge/d850/
 git checkout d3351a3fcc3dad8f8edee935d3288640e1101cde
@@ -113,19 +113,19 @@ cd $ANDROID_BUILD_TOP/device/lge/d855/
 git checkout 3fd56c6236e282596f6f2da57c230e11edfc1a60
 
 cd $ANDROID_BUILD_TOP/device/lge/g3-common/
-git checkout 13978fc8fece44825f2c00e787e6ed0a2a2d6390
+git checkout 1083800a5cd9d4c4289b0324bc56f9336e34b75a
 
 cd $ANDROID_BUILD_TOP/device/lge/g4-common/
-git checkout 67911e5fef7717b8684b2414300fb61c8bab85c3
+git checkout a7fe1170e6916bc139bb14d038b95fcde718785c
 
 cd $ANDROID_BUILD_TOP/device/lge/h811/
-git checkout 8e24d73a867302bae65d8ca690b7469a71fca594
+git checkout 55eb6e5461662acef61510257d00de08d20fcb45
 
 cd $ANDROID_BUILD_TOP/device/lge/h815/
 git checkout de1ea523c6ebf680f891d9a0a67a6a65d8d213a7
 
 cd $ANDROID_BUILD_TOP/device/lge/hammerhead/
-git checkout 03ff1a9928010d3f4c962122f108980335176896
+git checkout 5ec8b802ab021db0feb426d2ceadafa3a77309c0
 
 cd $ANDROID_BUILD_TOP/device/lge/ls990/
 git checkout 4db43dab37c979f0c75f0be2e76219fd146db686
@@ -137,31 +137,34 @@ cd $ANDROID_BUILD_TOP/device/lge/vs985/
 git checkout 323323e8d5671382367c3d06f1f90f5ddce005cd
 
 cd $ANDROID_BUILD_TOP/device/moto/shamu/
-git checkout 65c50ad07cda868fe4a4e461217b24b3702b732f
+git checkout 59a37b2abb8347f7ea179c624311af5439e72223
 
 cd $ANDROID_BUILD_TOP/device/motorola/ghost/
-git checkout cd2cb5b67a94abf94af603a1f159171016304120
+git checkout e06b7cf0ea407ecf79cc9981ebb022560d83c586
 
 cd $ANDROID_BUILD_TOP/device/motorola/msm8960dt-common/
 git checkout 1bc86a0000dd1988c97a8675ac599eb8fdd1e041
 
 cd $ANDROID_BUILD_TOP/device/motorola/victara/
-git checkout 0e1f72ffcb71ba47c9a82ce21c00d8587996a718
+git checkout 6a8e0e4616b710c4240cabf27b0f23eca14b6ad5
 
 cd $ANDROID_BUILD_TOP/device/qcom/common/
-git checkout 8485af000a94e46a759560b795fdb834d9c2d46e
+git checkout 1a2515cb234de1eca1078eb32f34faa7baba0fee
 
 cd $ANDROID_BUILD_TOP/device/qcom/sepolicy/
-git checkout b6467539556079b858b3c9b51aca4461916e07cf
+git checkout d805fbcf82e932c519b9a0a79a5995b3f84218fe
 
 cd $ANDROID_BUILD_TOP/device/sample/
 git checkout b239828ba6f282793de417a46770c192c153ac47
 
 cd $ANDROID_BUILD_TOP/device/samsung/d2-common/
-git checkout 75e693a3e7f37ea3f2b61d85f91712df9b80039d
+git checkout 9575e6d4f1990b574a200cab5159a693300743da
 
 cd $ANDROID_BUILD_TOP/device/samsung/d2spr/
 git checkout 810156718ddfc00430f1479450f25fce75609414
+
+cd $ANDROID_BUILD_TOP/device/samsung/d2vzw/
+git checkout 58bb0f9d4457cf0519294f957d587f6a233a1396
 
 cd $ANDROID_BUILD_TOP/device/samsung/galaxys2-common/
 git checkout db66d93fea7407d02a279819ecc211020f58b95d
@@ -173,37 +176,46 @@ cd $ANDROID_BUILD_TOP/device/samsung/i9100/
 git checkout c85f266ec3303a72604af01db68bd204bea1f0ac
 
 cd $ANDROID_BUILD_TOP/device/samsung/jf-common/
-git checkout f73dcf01accd31124363d964856932604f1b46fd
+git checkout d049853cdcc92127e048d4d0184afe3b0d3d61c2
 
 cd $ANDROID_BUILD_TOP/device/samsung/jflteatt/
-git checkout 533573bb49920264a0f36690b6b41a47dca7473a
+git checkout 0228e44047f1db4c4fb5adb9c6179ac6ad1f3de3
 
 cd $ANDROID_BUILD_TOP/device/samsung/jfltespr/
-git checkout 89bea86fd85aa072f727658f73cfc2ee9b2612ef
+git checkout 9019a7fa63fb5aa4c057e5553727c2b2ee1ae5ea
 
 cd $ANDROID_BUILD_TOP/device/samsung/jfltetmo/
-git checkout 1279b86af654f3101525f89f7acff07898570a47
+git checkout 4a706c35b12f477b07618101cd8cbf0912bd5c62
 
 cd $ANDROID_BUILD_TOP/device/samsung/jfltevzw/
-git checkout 2d9a04f1c52fd2e437dd08285676724c30aed665
+git checkout 31252e9dc458ce8f03d846ba63e9f9d6d7efc0f5
 
 cd $ANDROID_BUILD_TOP/device/samsung/jfltexx/
-git checkout a581a574d6e76b7737bbc83190ad3ad2ed126284
+git checkout a80eb1a95b96280081153f5fac33255b49b2d286
 
 cd $ANDROID_BUILD_TOP/device/samsung/msm8930-common/
-git checkout 3e82d461e6b9105a67fec37f3cdf986f8875783a
+git checkout fbc4f8c4e39f5310aa44ea7e4497cea2e628a54f
 
 cd $ANDROID_BUILD_TOP/device/samsung/msm8960-common/
-git checkout 30ba352b6b49e06b10806b0d10fed161f0fc9291
+git checkout 74f67959fad6bb06d5712743b5bd40b53ea3dad8
 
 cd $ANDROID_BUILD_TOP/device/samsung/qcom-common/
-git checkout a13222f81321ab0f2c57088d826c0131c33fdce7
+git checkout b0b67ad3800f9232ba383097bf2c38e3419e5ac0
 
 cd $ANDROID_BUILD_TOP/device/samsung/serrano-common/
-git checkout a95f6dbe97ffdc2387d952b9f6a564de7585fb86
+git checkout ccd7af43fdb7f9145fd26082a98ec15f8afb1821
+
+cd $ANDROID_BUILD_TOP/device/samsung/serrano3gxx/
+git checkout 65f0b6d8e4795e70af1dbaffe24efdf380882120
+
+cd $ANDROID_BUILD_TOP/device/samsung/serranodsdd/
+git checkout 77a7834975a44f5a98019c82dfba8d95bf6d206f
 
 cd $ANDROID_BUILD_TOP/device/samsung/serranolteusc/
 git checkout 3f66aa0e62a243aca8b3ae30c37b5bd3d2d046c4
+
+cd $ANDROID_BUILD_TOP/device/samsung/serranoltexx/
+git checkout da5b1f99fa72cf210ab6d1f997fc3fac6aba8b81
 
 cd $ANDROID_BUILD_TOP/device/samsung/smdk4412-common/
 git checkout d508a5afb5ef8a760a09c6f0e8e1a3da07a17a47
@@ -212,13 +224,13 @@ cd $ANDROID_BUILD_TOP/device/samsung/smdk4412-qcom-common/
 git checkout 8db8e872e35c792d7228a6e812fec7e68c16cab0
 
 cd $ANDROID_BUILD_TOP/device/samsung/t0lte/
-git checkout a4804aa8dc206ef968e48d9fd567090060e7e673
+git checkout d535349f976f93c84a75578a166c898167444ac8
 
 cd $ANDROID_BUILD_TOP/device/xiaomi/armani/
-git checkout 23a27a257e03650a71372bfde036500c68a92861
+git checkout d4707d5082899f90effa870c7c6436af74830330
 
 cd $ANDROID_BUILD_TOP/device/xiaomi/cancro/
-git checkout 6b1865b032ed5d869d13334bae3db6e7a9c8f07a
+git checkout c596565291dbd99d2187e3f292d807799c4da281
 
 cd $ANDROID_BUILD_TOP/docs/source.android.com/
 git checkout 918070543c8989f1088953e525a22176eb00caa0
@@ -248,7 +260,7 @@ cd $ANDROID_BUILD_TOP/external/ant-glob/
 git checkout 0f189400fd2a36bf11bfb058e7f3917eb7ed163a
 
 cd $ANDROID_BUILD_TOP/external/ant-wireless/ant_native/
-git checkout 9fb40f0af51b80751eff7da8094d0e946f1935a0
+git checkout 78c80f0343e57cb71b063ce4c3f90d5ca5574533
 
 cd $ANDROID_BUILD_TOP/external/ant-wireless/ant_service/
 git checkout d1cd68eca1bbcfe523b365edc9808fe79cc20c90
@@ -284,7 +296,7 @@ cd $ANDROID_BUILD_TOP/external/boringssl/
 git checkout 9eeaa8c0f3b6324cc1cd518e18b33f2032bb173c
 
 cd $ANDROID_BUILD_TOP/external/bouncycastle/
-git checkout ac1940f0b140951d36575ebc2162ff946a4c7303
+git checkout e73530ddf96e4a82a245c5d96cef9a2606b6d110
 
 cd $ANDROID_BUILD_TOP/external/brctl/
 git checkout 85130b403dea07b2230efed3287236fa0caefb1c
@@ -329,7 +341,7 @@ cd $ANDROID_BUILD_TOP/external/connectivity/
 git checkout 9a6a5e7b56f1e67c7e585d75f18eacc54398695d
 
 cd $ANDROID_BUILD_TOP/external/conscrypt/
-git checkout 1638945d4ed9403790962ec7abed1b7a232a9ff8
+git checkout 5af5e93463f4333187e7e35f3bd2b846654aa214
 
 cd $ANDROID_BUILD_TOP/external/crcalc/
 git checkout 9666c57ab247046b716e9c1e56f0dcc7d4a1545f
@@ -410,13 +422,13 @@ cd $ANDROID_BUILD_TOP/external/fdlibm/
 git checkout a80590655471025cfdbbd1328afc3ae5e6feab6a
 
 cd $ANDROID_BUILD_TOP/external/ffmpeg/
-git checkout c459d7c8c2cb7225b90e37dbae95a52a6cfb68b9
+git checkout 0a27fb6d73b5e644ff9ea7099afbbdfc6c69e23a
 
 cd $ANDROID_BUILD_TOP/external/fio/
 git checkout b9da4221fd8a628a696d70c33ba1e7e8cc00a8fe
 
 cd $ANDROID_BUILD_TOP/external/flac/
-git checkout 8882a5aee3ecad8199a5ccbb3a544a600b1119a3
+git checkout 4523c1d8b382d125cad47f96e23dc05436cb134a
 
 cd $ANDROID_BUILD_TOP/external/fonttools/
 git checkout fe6c510afddcf7f5d980b49e4398dc31953b43d3
@@ -488,7 +500,7 @@ cd $ANDROID_BUILD_TOP/external/hyphenation-patterns/
 git checkout c15709c28e9623c1937038f08af603c492901cbd
 
 cd $ANDROID_BUILD_TOP/external/icu/
-git checkout 3212c4073e39743a9e86470b9e77b56aa7f65c39
+git checkout b09e1cec0c75aaaa5c716e4d7246800401491ab2
 
 cd $ANDROID_BUILD_TOP/external/iproute2/
 git checkout 791d8c99b8cad6b3b41a679e1ae0f236f43d75a3
@@ -521,7 +533,7 @@ cd $ANDROID_BUILD_TOP/external/jetty/
 git checkout 03928aee4356845252ac6b662d5c72c29903813e
 
 cd $ANDROID_BUILD_TOP/external/jhead/
-git checkout 5c8f937269957e6651383e988006824781fd021a
+git checkout cbbecf71a7ef5e5b9f80fad1461c94be3d82a3e8
 
 cd $ANDROID_BUILD_TOP/external/jmdns/
 git checkout f4eb7466d5c09098f9dc54137ed3235e3c43fc9f
@@ -563,7 +575,7 @@ cd $ANDROID_BUILD_TOP/external/ksoap2/
 git checkout f13853ff0fa5eb65afc847176e55ca6db293eb3c
 
 cd $ANDROID_BUILD_TOP/external/libavc/
-git checkout a76695a86559023014f495c263b111ce2bd6b473
+git checkout f94f384efaccbeb55e87ec442a8ee38a2e3e9170
 
 cd $ANDROID_BUILD_TOP/external/libcap-ng/
 git checkout 52447887e50b49f33f959077c31232edff6659d8
@@ -665,7 +677,7 @@ cd $ANDROID_BUILD_TOP/external/libvorbis/
 git checkout 61a5b54ff699f0cd339121c14432d0d2517907b1
 
 cd $ANDROID_BUILD_TOP/external/libvpx/
-git checkout 2246e67d67f7c22d496c5e02d4d272ef0c425560
+git checkout 883c0aeb48c63785d7c58b6f1e5212da3eb8475f
 
 cd $ANDROID_BUILD_TOP/external/libvterm/
 git checkout 6d78f36633063dad0689ca42be1ad8d0313ebfab
@@ -725,7 +737,7 @@ cd $ANDROID_BUILD_TOP/external/mksh/
 git checkout db58d5b9dbfca1c956cf29d957b170af2b59aaa7
 
 cd $ANDROID_BUILD_TOP/external/mm-dash/
-git checkout 7c3145f49b239dfc8ed3a44428b466985116c7c1
+git checkout d8c8a353cecf77183b3f3d3e7561a3505dee2f64
 
 cd $ANDROID_BUILD_TOP/external/mockftpserver/
 git checkout 00dc7bdcf1df9e86789d963984dfc6912a8854c6
@@ -800,7 +812,7 @@ cd $ANDROID_BUILD_TOP/external/owasp/sanitizer/
 git checkout bbfb25464ff30c5a62dce351d719a8c533afb2a3
 
 cd $ANDROID_BUILD_TOP/external/p7zip/
-git checkout 5553c3f628defb4c042e1addb471f362b56d6f9a
+git checkout 5af5e5699d1a4e8ad8dd0f03ad64b5354eb45d08
 
 cd $ANDROID_BUILD_TOP/external/parameter-framework/
 git checkout 7f346c9058f39a533a2eaadc9ebc4001397c6ff9
@@ -854,13 +866,13 @@ cd $ANDROID_BUILD_TOP/external/selinux/
 git checkout 7d48e4a4a2c77a7cbb8f74af34c85563c2c1d81c
 
 cd $ANDROID_BUILD_TOP/external/sepolicy/
-git checkout 0d2bc4350ad290c0f5bdf69dbbc5baa716889b0b
+git checkout c6c90b3a7188a8ee30c446bda1e0e5ee3ff52b85
 
 cd $ANDROID_BUILD_TOP/external/sfntly/
 git checkout a01a58c85ae6f0b1fe97e4a383bb7536285264d8
 
 cd $ANDROID_BUILD_TOP/external/skia/
-git checkout b632abecd091ee480cc3f10628c2b7fc9eeab7e9
+git checkout 20d94523acceeaed59bca57e5c75d56bc066c21b
 
 cd $ANDROID_BUILD_TOP/external/slf4j/
 git checkout 7122d7eba20aeeaf319017b655271889f825f750
@@ -872,7 +884,7 @@ cd $ANDROID_BUILD_TOP/external/sonic/
 git checkout 10c16fc60582d7e8bcf7533793871485d339e241
 
 cd $ANDROID_BUILD_TOP/external/sonivox/
-git checkout bba9df6bdd1563c930ef5bf0d97f52ce355fb4bb
+git checkout 3511c9d7c958abed41ae7395e458c9aea0e40377
 
 cd $ANDROID_BUILD_TOP/external/sony/boringssl-compat/
 git checkout 3f339d21936ede85b4f1507559c350908ec2ec75
@@ -899,7 +911,7 @@ cd $ANDROID_BUILD_TOP/external/stlport/
 git checkout 176973f0a182bab49f43993aefa34e0d76790ac9
 
 cd $ANDROID_BUILD_TOP/external/strace/
-git checkout a0ef057d0e1e8bfd4a4cb84113668f516ce8ba57
+git checkout d11ea977261016ccf81738eafd6f208a832c237f
 
 cd $ANDROID_BUILD_TOP/external/svox/
 git checkout 7498f9aafbafa48960689439f0cd69da0c1ab34f
@@ -965,7 +977,7 @@ cd $ANDROID_BUILD_TOP/external/webrtc/
 git checkout e4dce38d3d19cc36b32c33a87f504bdb6dbb76ae
 
 cd $ANDROID_BUILD_TOP/external/wpa_supplicant_8/
-git checkout 3d3b2ea0a8954a0927520ab9495774716fd9e001
+git checkout dc6ca4340a7ad6005a2e13b66bb2995e8010aa82
 
 cd $ANDROID_BUILD_TOP/external/xmlwriter/
 git checkout e95d92246ee35273dde2bee8b00485cc14c12be5
@@ -989,10 +1001,10 @@ cd $ANDROID_BUILD_TOP/external/zxing/
 git checkout d2256df36df8778a3743e0a71eab0cc5106b98c9
 
 cd $ANDROID_BUILD_TOP/frameworks/av/
-git checkout a5ec3545f879e882ed5397707f65a4757f7232d5
+git checkout d9a8909b45b516f54460c2bb13af31a9639fe703
 
 cd $ANDROID_BUILD_TOP/frameworks/base/
-git checkout f295653fd9d864b19c651f994cf1059c71133358
+git checkout 09462597ea25ecff8cd44a2c15be1b925ce4825b
 
 cd $ANDROID_BUILD_TOP/frameworks/compile/libbcc/
 git checkout b7f05114e5f408479b50647837cdf25187bfd164
@@ -1019,7 +1031,7 @@ cd $ANDROID_BUILD_TOP/frameworks/multidex/
 git checkout 805db15e4d7baa57062ad08fb03eeac8691475c8
 
 cd $ANDROID_BUILD_TOP/frameworks/native/
-git checkout d67b177ff6a6dbbd950f1aaa84669351d6f26b9e
+git checkout 1c6eb19ad51cafda32df4d688cfbc329e0bce445
 
 cd $ANDROID_BUILD_TOP/frameworks/opt/bitmap/
 git checkout 856e2a9d72fe3a79cd7bfa5cf443d13a60495c4b
@@ -1043,7 +1055,7 @@ cd $ANDROID_BUILD_TOP/frameworks/opt/emoji/
 git checkout 709f713ebcd62c61defc270d945810efca179621
 
 cd $ANDROID_BUILD_TOP/frameworks/opt/hardware/
-git checkout 40bc2f399c75c33cdad191f8fdfd66c5babe9abd
+git checkout c11abf0e47473978c197b0c4ea5438e2c7c3a29a
 
 cd $ANDROID_BUILD_TOP/frameworks/opt/inputconnectioncommon/
 git checkout 3baece9b20fa480da46d860acd7320fd9eee3386
@@ -1061,7 +1073,7 @@ cd $ANDROID_BUILD_TOP/frameworks/opt/net/voip/
 git checkout 7b21ed512efedc31ab4acb93f02efb8f4a1329a2
 
 cd $ANDROID_BUILD_TOP/frameworks/opt/net/wifi/
-git checkout 4b473858028ff1a8bd328a8e788b35c2caaff609
+git checkout 19adf4868804c246816504493c7d08b224258150
 
 cd $ANDROID_BUILD_TOP/frameworks/opt/photoviewer/
 git checkout 4fe7a6da051ef57951bbb7f95a56d73014e2e653
@@ -1070,7 +1082,7 @@ cd $ANDROID_BUILD_TOP/frameworks/opt/setupwizard/
 git checkout a30259bf61a6676d546dcd4907b515212b4d23fa
 
 cd $ANDROID_BUILD_TOP/frameworks/opt/telephony/
-git checkout 9bc00b7833706376edff31e31be0b36cd6930280
+git checkout 09cb481a272165ce5e93cb3d350640e1d55a5cc5
 
 cd $ANDROID_BUILD_TOP/frameworks/opt/timezonepicker/
 git checkout 5969b9a0b925095ca0bfe036a54b98c1f479abe4
@@ -1103,7 +1115,7 @@ cd $ANDROID_BUILD_TOP/hardware/broadcom/wlan/
 git checkout 69156496b818572241b00d514945d1dc7babf8df
 
 cd $ANDROID_BUILD_TOP/hardware/cyanogen/
-git checkout bb0293fbf0dfda7aa24c40cfcf2f0c1b945283c5
+git checkout 74128e2849286af0ad3b0b19b140887e1a8b59db
 
 cd $ANDROID_BUILD_TOP/hardware/intel/audio_media/
 git checkout 218f0d6bc9532d0b707ea325fd96998249fe47bf
@@ -1151,7 +1163,7 @@ cd $ANDROID_BUILD_TOP/hardware/invensense/
 git checkout 85c5a9a6ce65949004581e53a74b84bfc854278f
 
 cd $ANDROID_BUILD_TOP/hardware/libhardware/
-git checkout 65ea8efbcdb83d94db3e149bf93c5ab90ab0bcf9
+git checkout 7659cdd34d33498b3e172730a888f8ea793e1ef3
 
 cd $ANDROID_BUILD_TOP/hardware/libhardware_legacy/
 git checkout 1f27ca88dc332eecf1dda3a6dc1afcdef6591e78
@@ -1166,37 +1178,37 @@ cd $ANDROID_BUILD_TOP/hardware/qcom/audio-caf/apq8084/
 git checkout a9bf1aa5507d94c89ea3e074d7198e8eb3d1f57b
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/audio-caf/msm8916/
-git checkout 41acd92d53ac93f9daf12608ede5e54dfb8cb6eb
+git checkout 255a26d950925f9ef7a2301bd33af0ab110da87b
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/audio-caf/msm8937/
-git checkout d0f20097320bba541c8179c7f5cea785a13315bc
+git checkout bf8c1abdcc53b2ad7228eba42fbff798e81d7e24
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/audio-caf/msm8952/
 git checkout dc4a1f62715a7cc49d4b659aa2c791b49d0d9acf
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/audio-caf/msm8960/
-git checkout a1225ab3224802d12b8cf5460d5b6153e4adcd2c
+git checkout 9cf54f469fc5385d0bca8e533fd8986d9826c500
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/audio-caf/msm8974/
-git checkout 8c1ea0f3a78d439b0fe20c6051d9bb6b505d76ec
+git checkout a6c911404709825046957029c5cd24d741395417
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/audio-caf/msm8994/
 git checkout 4fdc94188ce5a1a9e05b0a0b2b4c60899b138f75
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/audio-caf/msm8996/
-git checkout 58f49e4d359f80041e7430890a24022d0e461b9e
+git checkout abff8fef577cf293375b7b7b552f823b1c44aca6
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/audio/default/
 git checkout 20bb5b4400ae1051619593e322f8eee5297addf1
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/bt/
-git checkout 6b1e6a67b52644ba0e44d64534c1cd75b62329fa
+git checkout 74b0e9f702d1a2af5e4e95e901270f6a15b878c4
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/bt-caf/
 git checkout e024328cac2c92fb32882e05d4e558d31968812b
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/camera/
-git checkout 4055f69af3dd0de060e34ae2a063862173e68b1d
+git checkout 84a2ea4aa3a87aaab0238aaba2f78761dcaac6b3
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/display/
 git checkout 6b48c2bc749287fb2abc4cc6d369525c88761b1e
@@ -1205,7 +1217,7 @@ cd $ANDROID_BUILD_TOP/hardware/qcom/display-caf/apq8084/
 git checkout 68a2e3a4e0b219ba302587a2f7419e3a071f3fc8
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/display-caf/msm8916/
-git checkout c3dffc0a45f18bc93488533e14287617f06e2ecb
+git checkout f9b87fea3b77cd9b5e24f30c84218556e195d024
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/display-caf/msm8937/
 git checkout e435cea769e8619e4f46bd6ace39765ccdd05aa7
@@ -1214,7 +1226,7 @@ cd $ANDROID_BUILD_TOP/hardware/qcom/display-caf/msm8952/
 git checkout 1605e822fda6d6ac9c3c72d8fb2413ac24128fba
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/display-caf/msm8960/
-git checkout 42ac23bbe602cb6906eec604b5614e223ca2f95c
+git checkout 08b30db524a1a879bb4903ae123c48721821c8bb
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/display-caf/msm8974/
 git checkout 59e66c66fe0bcde9c884cb0e3a93af96d4c53270
@@ -1223,10 +1235,10 @@ cd $ANDROID_BUILD_TOP/hardware/qcom/display-caf/msm8994/
 git checkout cedd62af6303983c7e61f2f188c25b2d28bd7b5b
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/display-caf/msm8996/
-git checkout 0bbc94947140f87e873f4d34e3819d4f83ff5c0e
+git checkout b2ef0dbddc90ea70d3240c2ddc25c93fc111204f
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/fm/
-git checkout 49630ffcfbae7f7864fd3dba92ccac1951429cac
+git checkout acf84fb67db816488c267e3d0b42660b40baec32
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/gps/
 git checkout b2278c8670f7f4743847e1fee76fd68ddb1453bd
@@ -1238,28 +1250,28 @@ cd $ANDROID_BUILD_TOP/hardware/qcom/media-caf/apq8084/
 git checkout e79efd8fa991c8a9f717c447728f46d7dc5937ca
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/media-caf/msm8916/
-git checkout b6fceabe9293920181bf8f28aa0bc202a769155d
+git checkout 7c1a7af144b2a69d445d738ed94376f68ac18fa2
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/media-caf/msm8937/
-git checkout e0a2ec2947d950aa635e41bc903126d171d153de
+git checkout a7b48861f9105998248612b559098e748181f4d5
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/media-caf/msm8952/
-git checkout d81a7565853df452aaa111a13c3affbb9a05c527
+git checkout 2182d032d7e203b5dedefc7291ed7ace7ae5ba91
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/media-caf/msm8960/
 git checkout c4e89aca65da7798d5fb99f841c4f0ca791cc641
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/media-caf/msm8974/
-git checkout ca99059c6196eba294c93514ca3fb9d8c9ad42ab
+git checkout 052ff8f9ecb5f29f6967dc665e1fdfa36903dbf4
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/media-caf/msm8994/
-git checkout 3eda402636964752430954806a6e9a8a4ce5cc9c
+git checkout 4e82dac5255269cbfcf848ea935e1d835885e230
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/media-caf/msm8996/
-git checkout 05beae8406e1dec939623c10b0c78b2242daa20f
+git checkout 1cbab898b8ce21e43e2303299c34dd5a707e9847
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/media/default/
-git checkout 487da6eef923a21bff1b067596cb15f5c3d63c75
+git checkout a1b4b98b7f449668b027701f6b5cb96a5d54f47f
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/msm8960/
 git checkout c25a431842a26b5756b58a9d4a42c776e0457ba2
@@ -1283,7 +1295,7 @@ cd $ANDROID_BUILD_TOP/hardware/qcom/wlan/
 git checkout 70d3f9f7afb90a0b6d1d3321ef80175ab3584719
 
 cd $ANDROID_BUILD_TOP/hardware/qcom/wlan-caf/
-git checkout b5ecb1d869dcb662ef412899da1ca98a45e6ffd3
+git checkout 665a3bc42894a04f8e5218fa1a8085831b9cc4b1
 
 cd $ANDROID_BUILD_TOP/hardware/ril/
 git checkout 06af52dbcfdaba653ba61f9597b0905a18d40c8c
@@ -1292,7 +1304,7 @@ cd $ANDROID_BUILD_TOP/hardware/ril-caf/
 git checkout 24443ade2360760e9c357a98c3d9e1675dafd25c
 
 cd $ANDROID_BUILD_TOP/hardware/samsung/
-git checkout 43a5d87023c83e582ecb41a7b6c580cda9d99734
+git checkout 48c7442b414b9a0a50b8a3a89348a61f4b11b0c9
 
 cd $ANDROID_BUILD_TOP/hardware/samsung_slsi/exynos5/
 git checkout 3ac2ff83d66f1abfdb23d695670e631206c19df9
@@ -1325,28 +1337,28 @@ cd $ANDROID_BUILD_TOP/kernel/asus/grouper/
 git checkout e48dd94a4a29c607bd38447b2cc8e95e13916883
 
 cd $ANDROID_BUILD_TOP/kernel/google/msm/
-git checkout 75628e6af1410a769476c8845dbdc444269a97ae
+git checkout 80db3da13ba89edf5b2a59e0e1523e405c77b4d9
 
 cd $ANDROID_BUILD_TOP/kernel/huawei/angler/
-git checkout 43023fa2770d7856a48f70af36bce62a3f92478a
+git checkout 9d281f7775eca9ad0d2cca1621f9feba49f83ace
 
 cd $ANDROID_BUILD_TOP/kernel/lge/bullhead/
-git checkout 821092cbb95204fac1ea2703143fdc2f72a0a079
+git checkout ff4ee7169dc0e8126a8c81fea7518b6f024cd4b6
 
 cd $ANDROID_BUILD_TOP/kernel/lge/g3/
-git checkout f1236466ba2a338e3825dfba0836e59f8095dc99
+git checkout 02f8f9c2e7063217148cb63133e6f2f3cfe6b00e
 
 cd $ANDROID_BUILD_TOP/kernel/lge/hammerhead/
-git checkout b36abc83ce4f0020eb0b64ccf19dd1cd38e29396
+git checkout eead004d71f125edb17b0c306cab3216e47f113f
 
 cd $ANDROID_BUILD_TOP/kernel/lge/msm8992/
-git checkout 388f293b62044de27408c2cfcdf64654768fc948
+git checkout 26f32ac24c4d55dc7905465f24c1a938ae0813f3
 
 cd $ANDROID_BUILD_TOP/kernel/lge/us990/
 git checkout 729a293b96805654e94912b2d84d3efad3c22abc
 
 cd $ANDROID_BUILD_TOP/kernel/moto/shamu/
-git checkout 6b285fb10b369cd8fe96a411c7a3ad1d5bfd6d51
+git checkout f8506e1600b9b6fb2781132707819c627736d5a3
 
 cd $ANDROID_BUILD_TOP/kernel/motorola/ghost/
 git checkout 78767bcedd0f35b323c1c78adbace977e0fe49cb
@@ -1355,55 +1367,55 @@ cd $ANDROID_BUILD_TOP/kernel/motorola/msm8974/
 git checkout 0e6fb483dcd7cf746725d02f92b9961dc472ee49
 
 cd $ANDROID_BUILD_TOP/kernel/samsung/d2/
-git checkout 868d51d6571f3c9e35fd424b32de8708152a7bc5
+git checkout bbc7d65d338e2f7f93a89619816d9dc3e92fc1ac
 
 cd $ANDROID_BUILD_TOP/kernel/samsung/jf/
-git checkout a923658f74d42df028de57c61fef1bdfb657846a
+git checkout e3e259393a76308b737eab4207a6df301b0942a9
 
 cd $ANDROID_BUILD_TOP/kernel/samsung/msm8930-common/
-git checkout d21e3775c28ee65209bf29ae0ba104f2a8bdfd89
+git checkout 6f919e4688fad9662b07e533b6089ade6a9851fd
 
 cd $ANDROID_BUILD_TOP/kernel/samsung/smdk4412/
-git checkout 29bb56e2cc91e8a9a1d44cd14fe04c48f77cce66
+git checkout 43c083aff0ed2b932af1142676adafbc4f9c12eb
 
 cd $ANDROID_BUILD_TOP/kernel/xiaomi/armani/
-git checkout 69f4c41cf19fc32820ad78cf9462ca9396c4b737
+git checkout 5c3cd55fb8e7ea4f5c80bd89108b65a18c48aea4
 
 cd $ANDROID_BUILD_TOP/kernel/xiaomi/cancro/
-git checkout 7b0a024f8c7df2a66750dfecdb23c29cd8b0e96e
+git checkout 92303e46a97944ada696dc4039c674e590790cd0
 
 cd $ANDROID_BUILD_TOP/libcore/
-git checkout 7e191c4204235e56c0a9b129f81b58b56b70e3a0
+git checkout decc54501c266ef9277049cc1ce68a8ae65f232c
 
 cd $ANDROID_BUILD_TOP/libnativehelper/
 git checkout b7a25286026b49f0f7d95b25f2d32c4f47f498ef
 
 cd $ANDROID_BUILD_TOP/manifest/
-git checkout 0b43fda34462f452a4acf5453ada58a8c7942fa9
+git checkout 035cdc6a567b6798bfe3cd874eaec9ffc8d7ed15
 
 cd $ANDROID_BUILD_TOP/ndk/
 git checkout e6403c6a048bdec5a7fc7c6c0cc149fc5f098f80
 
 cd $ANDROID_BUILD_TOP/packages/apps/AboutOctOs/
-git checkout d823bd99523954ee09db330278e004bb8108035a
+git checkout 05538abd8c049e11b60ae83820791f01b1a5eabc
 
 cd $ANDROID_BUILD_TOP/packages/apps/AudioFX/
 git checkout 65dc5b0ff1f57f44d1f35229d26306f39ddec283
 
 cd $ANDROID_BUILD_TOP/packages/apps/BasicSmsReceiver/
-git checkout 3e06852930ab703092cd74aafbbf4acbff3bfd44
+git checkout df317d55ee270d3c5765c7190220668dd8c901d0
 
 cd $ANDROID_BUILD_TOP/packages/apps/Bluetooth/
-git checkout 80bd5e6284f38e7e2ccdf8cb43481f627cbfdf10
+git checkout 20411f6bca196ada55732fee671d26b23c2702b2
 
 cd $ANDROID_BUILD_TOP/packages/apps/BluetoothExt/
-git checkout a92c7d6758cb07546310408cb06bbff53851cd30
+git checkout c54b92b14d678c6a867319340def3247a0b27087
 
 cd $ANDROID_BUILD_TOP/packages/apps/Browser/
 git checkout ec090f9c44460676cc5760c309cbee0eba92de9a
 
 cd $ANDROID_BUILD_TOP/packages/apps/CMBugReport/
-git checkout f66a086796dbe76e3d166226a93fbd1317af32fe
+git checkout 423fdcfac7bbde3005e1f0e7dda7ccae435fd66c
 
 cd $ANDROID_BUILD_TOP/packages/apps/Calendar/
 git checkout 916259681ce2216d95c05a5064ed71d0b0d7f422
@@ -1415,28 +1427,28 @@ cd $ANDROID_BUILD_TOP/packages/apps/CarrierConfig/
 git checkout ad2308f2ae01422dfcc02538584ba3dfaf9cdf47
 
 cd $ANDROID_BUILD_TOP/packages/apps/CellBroadcastReceiver/
-git checkout 248b0a9811930a05f91956c87bd66ce3e02fcae6
+git checkout 4d3ff88806eeb66455fe3b53ef67399ec1dae7d0
 
 cd $ANDROID_BUILD_TOP/packages/apps/CertInstaller/
-git checkout 7fa38ad952362e2eb29c01a536dc0d0ccc2f8028
+git checkout c8f7e9b90ea04c8bed402f896c9168c8214343dd
 
 cd $ANDROID_BUILD_TOP/packages/apps/Contacts/
-git checkout 579cbafc832eaea42f688b7c9c3db22f10d1c997
+git checkout 4185da3af277cba509e1de7afc55634d8cb785af
 
 cd $ANDROID_BUILD_TOP/packages/apps/ContactsCommon/
-git checkout 60677dcf4446831d4381d022773280cb71088086
+git checkout ee586432a28e45e75bc870a05d8fddac1a9c243a
 
 cd $ANDROID_BUILD_TOP/packages/apps/DeskClock/
-git checkout 551b1c653e2aabe49468dfd133c253ddb0b47925
+git checkout db80c46adf84d63eb62c3b58b129368beb4bd0ae
 
 cd $ANDROID_BUILD_TOP/packages/apps/Dialer/
-git checkout 9faff193d2594c83c32e877491d3a364f164f915
+git checkout 0bc1dbd7ebbe26457fb81d500f102d81f4f31c7a
 
 cd $ANDROID_BUILD_TOP/packages/apps/Eleven/
-git checkout 16c100d1a9709438ecdd7a08afa392b8fd75aad3
+git checkout 99370db71ab3e7f393408652c259d9ad2387dabc
 
 cd $ANDROID_BUILD_TOP/packages/apps/Email/
-git checkout 2791f0b33b610247ef87278862e66c6045f89693
+git checkout cb2dfe43f25cb0c32cc73aa4569c0a5186a4ef43
 
 cd $ANDROID_BUILD_TOP/packages/apps/ExactCalculator/
 git checkout 341e4d23dbbde66f837a72f0e16128705496e9a5
@@ -1445,49 +1457,49 @@ cd $ANDROID_BUILD_TOP/packages/apps/Exchange/
 git checkout 9a9367fb6f029640de85cc49825b2eadabc76a00
 
 cd $ANDROID_BUILD_TOP/packages/apps/FMRadio/
-git checkout 480142b3781b394a9f088cba0bc51d8ecbbc4faa
+git checkout 6cc3f185afda981bec47853388c6fbb9de96603a
 
 cd $ANDROID_BUILD_TOP/packages/apps/FileManager/
 git checkout 6373bb0f8fd75bcfcd92030963a5789766d0a0ab
 
 cd $ANDROID_BUILD_TOP/packages/apps/Gallery2/
-git checkout 20be19923f218494ff42f7c300a74855f61495e9
+git checkout 0304394f81c2c12d1da44db927c9b5d3bcedb9f3
 
 cd $ANDROID_BUILD_TOP/packages/apps/Gello/
-git checkout 3bae403fcf0c62c3db6dccb66e5f934c19807735
+git checkout 5148683eafdd6a0210d7ce1afd225657a9b4b44f
 
 cd $ANDROID_BUILD_TOP/packages/apps/HTMLViewer/
 git checkout 3ad9f99e685393bfa2925046f4ec070fd25bd839
 
 cd $ANDROID_BUILD_TOP/packages/apps/InCallUI/
-git checkout be7092d6570ec4af160cc42af7c5b60a63d62a4a
+git checkout 9eb99c11b7162e6ee130bec2f72d94ec17ee476f
 
 cd $ANDROID_BUILD_TOP/packages/apps/KernelAdiutor/
-git checkout 8e2ebbc885fd5320a0fd6d464bf166b936dce295
+git checkout f7828294fc7a0b7967ac2e7519b42e9c9cd677c7
 
 cd $ANDROID_BUILD_TOP/packages/apps/KeyChain/
-git checkout 1d01cb036e553a07dbe3772997abafc8308ed4ef
+git checkout 6852242846b19d69f1d3786c7a4963cf2ab18395
 
 cd $ANDROID_BUILD_TOP/packages/apps/LTMLauncher/
 git checkout a2eb7559d8f6142280e843f05950fb540e6e6a1b
 
 cd $ANDROID_BUILD_TOP/packages/apps/LockClock/
-git checkout 23e004dedaeb8bfe48b804a722446511a6b42aa6
+git checkout cb8ef07721b86156c4c7abdd14fa60587306034e
 
 cd $ANDROID_BUILD_TOP/packages/apps/ManagedProvisioning/
-git checkout be01e942bbcdd842bdb16efbcef464e0a835c4f7
+git checkout 250a661b1d31482b6ec7c60f9715f9d5f7c8da10
 
 cd $ANDROID_BUILD_TOP/packages/apps/Messaging/
-git checkout fd5a2be8f34be44f6fbf72c4f44a0cd6f80723be
+git checkout 2bb428b3a4319a20a52c9c6fa27308501858d3f0
 
 cd $ANDROID_BUILD_TOP/packages/apps/Music/
 git checkout 5826cfe57a25c3aa732d7f3bfdb6f418f7c20101
 
 cd $ANDROID_BUILD_TOP/packages/apps/Nfc/
-git checkout 018ec89d460f8b6389b4ffe787d293090dcc0bdd
+git checkout 375f151cd4855ee9398e710a66a8178f119b7223
 
 cd $ANDROID_BUILD_TOP/packages/apps/OmniSwitch/
-git checkout 0f866ef3c90be46623d417ce3ffd964a8de1b140
+git checkout e97d8cee3c7038069fba011c9946f8a365423acf
 
 cd $ANDROID_BUILD_TOP/packages/apps/OneTimeInitializer/
 git checkout 01e429c08e51291315890de9677151a7e0b6ad35
@@ -1496,10 +1508,10 @@ cd $ANDROID_BUILD_TOP/packages/apps/PackageInstaller/
 git checkout 16c392f4ba6156fef978d6630c952f60a2ade65e
 
 cd $ANDROID_BUILD_TOP/packages/apps/PhoneCommon/
-git checkout cbd20e80a8ec4dfb03a3806580d8e49b57135bb9
+git checkout 2f2b01cdde69b075343cb6f17ae4a1d78bd9ebf7
 
 cd $ANDROID_BUILD_TOP/packages/apps/Profiles/
-git checkout c054befa1923a9e50e9f6a31c5bf462f2c80181d
+git checkout ecadba2c7b9b2bb9d43d31cf7416df96735dd5fc
 
 cd $ANDROID_BUILD_TOP/packages/apps/Provision/
 git checkout 78ca0db658fe6253d506916e36319e620476f809
@@ -1508,34 +1520,34 @@ cd $ANDROID_BUILD_TOP/packages/apps/SamsungServiceMode/
 git checkout 6b752189b6395b83fc8552ad3a06bb3f10016064
 
 cd $ANDROID_BUILD_TOP/packages/apps/Screencast/
-git checkout 95cdd6a67956999b41ec3fb35932d4a9131615e0
+git checkout b2142fc2ea5aee1ce42059122ba23c99102ee3e5
 
 cd $ANDROID_BUILD_TOP/packages/apps/Settings/
-git checkout a9eba3e39d9ac187d1bc2911b519c09433a37d32
+git checkout f41ca44e4ce71e4e137aa6c890f800ba4e725645
 
 cd $ANDROID_BUILD_TOP/packages/apps/SetupWizard/
-git checkout 653d79c7d4b3bd21e8bb1e37655c6c57bbf349a7
+git checkout 1fc92a0531ec50e4b12739dda40b90a505874266
 
 cd $ANDROID_BUILD_TOP/packages/apps/SmartCardService/
 git checkout 29eae320a4bd222b5ff1c092f84f1aebba88d0b7
 
 cd $ANDROID_BUILD_TOP/packages/apps/Snap/
-git checkout 13d7301c24c3c2ed024ea12c68e6e5a7aec9717b
+git checkout 54b3320fbfb16e4802c6a1cf5429b149d161a1e4
 
 cd $ANDROID_BUILD_TOP/packages/apps/SoundRecorder/
-git checkout 82fad2670956e5cb1a52045b31e63b11b4a6505b
+git checkout 2a7a6adcace74d76e51dc559a2c36f0834615ed4
 
 cd $ANDROID_BUILD_TOP/packages/apps/Stk/
-git checkout f983c8ea3f43dfdfb43ebfecb8941901f221c378
+git checkout 9f2f446ee8cdb64f0da70a4e1f31d390ad203d1b
 
 cd $ANDROID_BUILD_TOP/packages/apps/Tag/
-git checkout f26dd7786601267b7e2f90361ebba6247cbac942
+git checkout 12547f35f3cf23f2e8483482747d0d1f893fd6d8
 
 cd $ANDROID_BUILD_TOP/packages/apps/Terminal/
 git checkout 5b68e8ad082625206492ca9baf889f8c5427eb01
 
 cd $ANDROID_BUILD_TOP/packages/apps/ThemeChooser/
-git checkout ea7e6b95bd0bd3491536d1673bf5815a5ea8efd9
+git checkout 4075c50ffe577b315193365cd54744c63d25c11e
 
 cd $ANDROID_BUILD_TOP/packages/apps/TvSettings/
 git checkout ebd4809777068088ef599ad6fec72733554572d2
@@ -1544,34 +1556,34 @@ cd $ANDROID_BUILD_TOP/packages/apps/UnifiedEmail/
 git checkout a55168330d9326ff2120285763c818733590266a
 
 cd $ANDROID_BUILD_TOP/packages/apps/WallpaperPicker/
-git checkout 3cd562df77bdbeb093d104b92a2a4fdc6413e536
+git checkout 1b1b2a8a1b4db6b0acd83987bda3c21b589c7e95
 
 cd $ANDROID_BUILD_TOP/packages/experimental/
 git checkout 7b02b6bbaf0b4330ac05fda8cd47f4044ee2740a
 
 cd $ANDROID_BUILD_TOP/packages/inputmethods/LatinIME/
-git checkout da10ff683939154af5bbc85e3da2bd3a826bcb9f
+git checkout 90bf1b57ad5703c8c66fe5c306105ebc580b3b18
 
 cd $ANDROID_BUILD_TOP/packages/providers/BookmarkProvider/
-git checkout b9f889918ecf8d1c677e5d023a3c239ebc53bf55
+git checkout 9be5364a221a113b4457e480deb0397cee2b2ee3
 
 cd $ANDROID_BUILD_TOP/packages/providers/CalendarProvider/
 git checkout 5d19871f605f7fd08d632556d210ea30893815c9
 
 cd $ANDROID_BUILD_TOP/packages/providers/CallLogProvider/
-git checkout 31525d6c8d2d61d510a6f2e2bf2a832725e7ec1e
+git checkout 1a4649f3495cfd493d7fa307c83afbe470a10075
 
 cd $ANDROID_BUILD_TOP/packages/providers/ContactsProvider/
-git checkout bbb930d51837b36b7e61f1bb154ca3bff1133c05
+git checkout 12cb7eaef800747dba04c5c1ac9432abc25acbc5
 
 cd $ANDROID_BUILD_TOP/packages/providers/DataUsageProvider/
-git checkout 61bb8015dea24ed7eb67e72c98d5a1b8d1623e61
+git checkout 2473a6ade3729999210bef9275c17c6287c7b3f3
 
 cd $ANDROID_BUILD_TOP/packages/providers/DownloadProvider/
-git checkout 7c5833e2f402ddefc857b20ac2126eb534fb0462
+git checkout a19e57a9870c69db76e0a715a0ff9fc64a1d64d2
 
 cd $ANDROID_BUILD_TOP/packages/providers/MediaProvider/
-git checkout d4592ab07637c98cdd1b12898a43bdc78a840674
+git checkout 26e94e7df504f03874ac0c2301893656549b86db
 
 cd $ANDROID_BUILD_TOP/packages/providers/OpenWeatherMapProvider/
 git checkout 8731fe623d25080ce333407d969b5eefa4191cb3
@@ -1580,40 +1592,49 @@ cd $ANDROID_BUILD_TOP/packages/providers/PartnerBookmarksProvider/
 git checkout 96d0a80af45923767baf449fc8c735c2f71d64ae
 
 cd $ANDROID_BUILD_TOP/packages/providers/TelephonyProvider/
-git checkout d62a920b65da5e7fb4e406a254d945efbad87d93
+git checkout 99bc91fcdd1b77c90f3fb5ee99e253fd367e9ae0
 
 cd $ANDROID_BUILD_TOP/packages/providers/ThemesProvider/
-git checkout 37c4dd0dcc437d06fbfdcfc1a6537b3d042ad7ee
+git checkout c8ca3e6729751d7d9b017e08fcfc3f8dde7f3ab5
 
 cd $ANDROID_BUILD_TOP/packages/providers/TvProvider/
 git checkout 3edf32b0129657ef58e8c60d58ad0ead2c0744b6
 
 cd $ANDROID_BUILD_TOP/packages/providers/UserDictionaryProvider/
-git checkout 796f619452f92fb10e5fe89990244d97556f107c
+git checkout 2d21c4f2ca9dc10372ae70b66c14d0d73119eb2f
 
 cd $ANDROID_BUILD_TOP/packages/providers/WeatherProvider/
-git checkout 0c1576fdb81388ad522d95eef2b33d8f322a46cb
+git checkout 823d00c7f9488a41cb5f926a7f464f4a114ede61
 
 cd $ANDROID_BUILD_TOP/packages/screensavers/Basic/
-git checkout 43c7edbcda3c720b52137b81eaf8ff2288a61a0a
+git checkout 1462f1c323e8c9d04d3836265b529fd9567952c6
 
 cd $ANDROID_BUILD_TOP/packages/screensavers/PhotoTable/
-git checkout f98f663e1b8dfe0c069e657ad00c4445c186c46c
+git checkout dd0908bc9dab63ef5e763bb52be0924c7e9152f2
 
 cd $ANDROID_BUILD_TOP/packages/screensavers/WebView/
 git checkout 6e0a80f6faed6191acc8ce1b6c79eada09e9e042
 
+cd $ANDROID_BUILD_TOP/packages/services/CMAudioService/
+git checkout 6e6b71a2b182c3d2f7b71fed59b2079b0a1a81ea
+
 cd $ANDROID_BUILD_TOP/packages/services/LiveLockScreenService/
-git checkout 3853af430d6ed4d9b554291b9bd7abe1a427c482
+git checkout b58a3cc7aac1d7d43f9c6198488278cdd67485d9
 
 cd $ANDROID_BUILD_TOP/packages/services/Mms/
 git checkout 56584b7b626b17b2dafb7b91bbbfde59a3ed9eb5
 
 cd $ANDROID_BUILD_TOP/packages/services/Telecomm/
-git checkout 862401631e0a3e44528698b9e26f2296bae24993
+git checkout cf3c14cc713fc75645b12a1f7756b0e76ec51e3e
 
 cd $ANDROID_BUILD_TOP/packages/services/Telephony/
-git checkout dff2e930307a0529323e8db933a5868a1469759d
+git checkout eb25d170eaf3b13ce950fa8285f3935ef7456e3e
+
+cd $ANDROID_BUILD_TOP/packages/services/ThemeManagerService/
+git checkout 449b0bb69fa6dc96101cd628ef8737c3a841c757
+
+cd $ANDROID_BUILD_TOP/packages/services/WeatherService/
+git checkout 9aebfe4c91425066d1b75ce2d5fe31b5ff60fa7a
 
 cd $ANDROID_BUILD_TOP/packages/wallpapers/Basic/
 git checkout 21699347a4b7b71857455a6e8d452e1ef92087bc
@@ -1649,7 +1670,7 @@ cd $ANDROID_BUILD_TOP/prebuilts/clang/linux-x86/host/3.6/
 git checkout 95af4fa4778f2a58b631388d90c02a877b4d9be3
 
 cd $ANDROID_BUILD_TOP/prebuilts/cmsdk/
-git checkout e029cf3734c303cd341f3ba57989356f027d59bb
+git checkout 755b2245ebe8e65177615966dc45964365718519
 
 cd $ANDROID_BUILD_TOP/prebuilts/devtools/
 git checkout d7638b6496f75e896badacddb40a9dd018553bfc
@@ -1748,10 +1769,10 @@ cd $ANDROID_BUILD_TOP/sdk/
 git checkout c78d07c6e964f23dc12ba739aff49ff1bf74b323
 
 cd $ANDROID_BUILD_TOP/system/bt/
-git checkout 95b17c4c4309cfee7fc0fc180dc9133195579c8b
+git checkout ccde045431d38d4828412149f067631487f8025f
 
 cd $ANDROID_BUILD_TOP/system/core/
-git checkout 53bf23431d5e9f5b320d9e2adb7b10f650178dc9
+git checkout b58cc75fe8243ca0319d6d6db27a750579e01433
 
 cd $ANDROID_BUILD_TOP/system/extras/
 git checkout 0d598afe878adff21637d2673a07a7280c7151c5
@@ -1763,25 +1784,25 @@ cd $ANDROID_BUILD_TOP/system/gatekeeper/
 git checkout e547f93b0089f12c78d33b83e5f49fdb0e0c85bc
 
 cd $ANDROID_BUILD_TOP/system/keymaster/
-git checkout 057d9700782c5b3dc27370b8afba1437cece608f
+git checkout dc06a0f1f26ff5431d13c544b0603c32d97ba2e9
 
 cd $ANDROID_BUILD_TOP/system/media/
 git checkout 92d65f3fd2fdf37b3593ba60a50cd5f551e7f238
 
 cd $ANDROID_BUILD_TOP/system/netd/
-git checkout 4128d747663997f343d21eb0a140cd2b9e767196
+git checkout a178f137f9ab96f79b9c676983036b0c2143b61e
 
 cd $ANDROID_BUILD_TOP/system/qcom/
 git checkout fc46d223c635380bcd0a6fd04f719f89f30ba9aa
 
 cd $ANDROID_BUILD_TOP/system/security/
-git checkout e9010a79710b9012c11fe62e389e3fbe827bd119
+git checkout 6b8a2a31177c7baeabe9a05afb72cdd411698598
 
 cd $ANDROID_BUILD_TOP/system/vold/
-git checkout b72e11424c5ee0c51f0cf8bd7f6f7f70b7f9188e
+git checkout 89599b68da8bca97575add0493e2440d5e204cbe
 
 cd $ANDROID_BUILD_TOP/vendor/asus/
-git checkout d5253abf3ba9b585cf4f6cb29a20e3011eb02722
+git checkout 1b039cbfc82f489eb253680b0ee6bd6430e7038a
 
 cd $ANDROID_BUILD_TOP/vendor/asus-grouper/
 git checkout 3a8bc2da173f85c42be713ff4c3e4bcdfe29f590
@@ -1793,7 +1814,7 @@ cd $ANDROID_BUILD_TOP/vendor/cm/sepolicy/qcom/
 git checkout 2f108c45c4924474e7ac3dcfca9206e19bf02cc3
 
 cd $ANDROID_BUILD_TOP/vendor/cmsdk/
-git checkout 0023da2e44c191da924e7d4cbf626152e9dc5248
+git checkout 83e2957aed62f173aee8ab93bd6c161072aff338
 
 cd $ANDROID_BUILD_TOP/vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
 git checkout e630607144d9c847db86ad5b98f82ad71bf84e0f
@@ -1805,19 +1826,19 @@ cd $ANDROID_BUILD_TOP/vendor/elan/
 git checkout 1b1a5428f76d00f51b5fb5ddd4fcf3608e851c80
 
 cd $ANDROID_BUILD_TOP/vendor/huawei/
-git checkout 9e83d4b81e83ad10a1bd75295ce905acfc1ee7a7
+git checkout 4622a1096e8fb154dfbf2931800283f927260b86
 
 cd $ANDROID_BUILD_TOP/vendor/invensense/
 git checkout b9d5b082e904c19a856901415addb34976a83b24
 
 cd $ANDROID_BUILD_TOP/vendor/lge/
-git checkout 1fc1251047b5303a18972792138aa95e6e5691c5
+git checkout b769d95bfb78552e992be658a38baa4682845173
 
 cd $ANDROID_BUILD_TOP/vendor/lge/g3-common/
 git checkout d9b6889634ee864927086f118ffb22119c50180b
 
 cd $ANDROID_BUILD_TOP/vendor/motorola/
-git checkout a16e8052d5078c68bf448a540ca9270159bc20df
+git checkout 4b9dd8a4bdb05f2fb34d7ef3974fc13364d18a01
 
 cd $ANDROID_BUILD_TOP/vendor/nvidia/
 git checkout 4b51d85bd423adee1ba5821946865d8f0a1f9333
@@ -1835,15 +1856,15 @@ cd $ANDROID_BUILD_TOP/vendor/qcom/opensource/time-services/
 git checkout 6efa6a5100fb0401a02f4df40b98c495a240ce33
 
 cd $ANDROID_BUILD_TOP/vendor/samsung/
-git checkout 5c2cad934c9bb713c944897364572c83ccb83be6
+git checkout ad0fb17d6954a9a44973a5aaaee51c26b8e30cd8
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout f6a595de12abd8f88edbe4edfc9c0f7c01b99341
+git checkout d301dc7a3cc82fdde0856fdaf050bba120f5532c
 
 cd $ANDROID_BUILD_TOP/vendor/widevine/
 git checkout e85cfe27030a790ea128884d63e883c717f66c5a
 
 cd $ANDROID_BUILD_TOP/vendor/xiaomi/
-git checkout 367eb39fecadce11d9bcaf5b7a7b567109cc3097
+git checkout 3c12e5907a121d6990ce2a5fede3c28d06439622
 
 cd $CUR_DIR
