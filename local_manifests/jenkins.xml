@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="jenkins" name="hudson" remote="to" revision="oct-mm"/>
+  <project path="jenkins" name="hudson" remote="to" revision="aosp-7.0"/>
 </manifest>
