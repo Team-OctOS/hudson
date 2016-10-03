@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Please do not manually edit this file-->
+<manifest>
+  <project name="platform_device_huawei_angler" path="device/huawei/angler" remote="to" revision="aosp-7.0" />
+  <project name="device/huawei/angler-kernel" path="device/huawei/angler-kernel" remote="aosp" revision="refs/tags/android-7.0.0_r6" />
+  <project name="platform_vendor_huawei" path="vendor/huawei" remote="to" revision="aosp-7.0" />
+  <project name="platform_device_lge_bullhead" path="device/lge/bullhead" remote="to" revision="aosp-7.0" />
+  <project name="platform_kernel_lge_bullhead" path="kernel/lge/bullhead" remote="to" revision="aosp-7.0" />
+  <project name="proprietary_vendor_lge" path="vendor/lge" remote="to" revision="aosp-7.0" />
+  <project name="platform_device_moto_shamu" path="device/moto/shamu" remote="to" revision="aosp-7.0" />
+  <project name="platform_kernel_moto_shamu" path="kernel/moto/shamu" remote="to" revision="aosp-7.0" />
+  <project name="proprietary_vendor_moto" path="vendor/moto" remote="to" revision="aosp-7.0" />
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />
+</manifest>
