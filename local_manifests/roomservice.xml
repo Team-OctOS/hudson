@@ -11,4 +11,7 @@
   <project name="platform_kernel_moto_shamu" path="kernel/moto/shamu" remote="to" revision="aosp-7.0" />
   <project name="proprietary_vendor_moto" path="vendor/moto" remote="to" revision="aosp-7.0" />
   <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />
+  <project name="platform_kernel_huawei_angler" path="kernel/huawei/angler" remote="to" revision="aosp-7.0" />
+  <project name="platform_device_lge_hammerhead" path="device/lge/hammerhead" remote="to" revision="aosp-7.0" />
+  <project name="platform_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="to" revision="aosp-7.0" />
 </manifest>
