@@ -2,7 +2,7 @@
 #
 # Team Octos source snapshot script
 #
-# Time of this snapshot: 20161119-0301
+# Time of this snapshot: 20161120-1423
 #
 # This file contains commands to set each repo to the position
 # when this snapshot was taken
@@ -827,7 +827,7 @@ cd $ANDROID_BUILD_TOP/frameworks/av/
 git checkout 2eb18c183dc960977add94ea694069cefd66267b
 
 cd $ANDROID_BUILD_TOP/frameworks/base/
-git checkout 15caa7436fc89f397ecfc9d61949f5aff8bdd652
+git checkout ebcb764d19751096e72795b2300e35e8a4fc31fa
 
 cd $ANDROID_BUILD_TOP/frameworks/compile/libbcc/
 git checkout f4f8b80f6b9c281da6f2f87f51f77e48327fa92b
@@ -1333,6 +1333,12 @@ git checkout 6ca6746f5fafd7d1b162451dce2ae40741529e9e
 cd $ANDROID_BUILD_TOP/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/
 git checkout 26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a
 
+cd $ANDROID_BUILD_TOP/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-uber/
+git checkout 3ef26fe1d2129f9e3bfd2debb04af5fcd6c7f07d
+
+cd $ANDROID_BUILD_TOP/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-uber/
+git checkout b7a8754cd675a2d27152db18aa476780fcf9f0d6
+
 cd $ANDROID_BUILD_TOP/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
 git checkout 0390252b6bcc6217966ade31d07f8b12f6f78f89
 
@@ -1445,7 +1451,7 @@ cd $ANDROID_BUILD_TOP/system/security/
 git checkout 04c5e5ae37102cdada2cc9ff082a464248058768
 
 cd $ANDROID_BUILD_TOP/system/sepolicy/
-git checkout bb208977d72730484c7d6cbbc95764c107545350
+git checkout 89fd9977264c8f5303cae14b1df41e18e1783ddb
 
 cd $ANDROID_BUILD_TOP/system/tools/aidl/
 git checkout 3f3924909f21c64ff397511b57169dcebeec7686
