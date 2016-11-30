@@ -2,7 +2,7 @@
 #
 # Team Octos source snapshot script
 #
-# Time of this snapshot: 20161130-0254
+# Time of this snapshot: 20161130-1559
 #
 # This file contains commands to set each repo to the position
 # when this snapshot was taken
@@ -1520,7 +1520,7 @@ cd $ANDROID_BUILD_TOP/vendor/nvidia/
 git checkout 63c5961bc7309a8bed467485ae50b3247a975724
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout 4f413274abeaab1aa186115dcbb5aff17e35155d
+git checkout ee2af8570adc9f421620b39eeca4d6bfdaf5e1e3
 
 cd $ANDROID_BUILD_TOP/vendor/widevine/
 git checkout e43c16355bc75b553bf7d66b91883263a67d4204
