@@ -303,11 +303,11 @@ then
         if [ "$TO_BUILDTYPE" = "WEEKLY" ]
         then
           # push to basketbuild
-          $BASKETBUILD $f /weekly/$device
+          $BASKETBUILD $f /weekly_OCT-N/$device
         elif [ "$TO_BUILDTYPE" = "RELEASE" ]
         then
           # push to basketbuild
-          $BASKETBUILD $f /release/$device
+          $BASKETBUILD $f /release_OCT-N/$device
         elif [ "$TO_BUILDTYPE" = "TEST_BUILD" ]
         then
           # push to basketbuild
