@@ -282,9 +282,9 @@ time mka bacon 2>&1
 #fi
 
 MODVERSION=$(cat $WORKSPACE/$REPO_BRANCH/out/target/product/$device/system/build.prop | grep ro.to.version | cut -d = -f 2)
-if [ -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION-$device.zip ]
+if [ -f $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION.zip ]
 then
-  for f in $(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION-$device*)
+  for f in $(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION*)
   do
     echo file:
     echo $f
@@ -321,8 +321,8 @@ then
   done
 else
   echo did not find file
-  echo "$(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION-$device.zip*)"
-  echo $MODVERSION-$device
+  echo "$(ls $WORKSPACE/$REPO_BRANCH/out/target/product/$device/$MODVERSION.zip*)"
+  echo $MODVERSION
   echo Build failed!!
   exit 1
 fi
