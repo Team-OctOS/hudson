@@ -2,7 +2,7 @@
 #
 # Team Octos source snapshot script
 #
-# Time of this snapshot: 20161129-0156
+# Time of this snapshot: 20161130-0254
 #
 # This file contains commands to set each repo to the position
 # when this snapshot was taken
@@ -23,7 +23,7 @@ cd $ANDROID_BUILD_TOP/bootable/recovery/
 git checkout 1e8c0deed08c6531e406729756fa044fcc312749
 
 cd $ANDROID_BUILD_TOP/build/
-git checkout 9c5452947c10035acb9e1d87fe7149879d6bbf94
+git checkout 0a1d04eaee6ae9b0a5a09730ea8546c1fd9f11ff
 
 cd $ANDROID_BUILD_TOP/build/blueprint/
 git checkout f2e665cc17425f1c0e5f975f0c568b650dcdc240
@@ -53,7 +53,7 @@ cd $ANDROID_BUILD_TOP/development/
 git checkout ff390458f27975e78134ad71443189162d2ce3bb
 
 cd $ANDROID_BUILD_TOP/device/asus/grouper/
-git checkout 19e463be99d67edd0830b67db42980f9f5ae0774
+git checkout d9f93355ea505b44ac6b2429b41f3505a781b4b4
 
 cd $ANDROID_BUILD_TOP/device/common/
 git checkout c7c34b7538275728e162689a2f86ac8f30cd170e
@@ -1520,7 +1520,7 @@ cd $ANDROID_BUILD_TOP/vendor/nvidia/
 git checkout 63c5961bc7309a8bed467485ae50b3247a975724
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout 766e1a53515ed673956a4f06247b2bcff8eb4a5c
+git checkout 4f413274abeaab1aa186115dcbb5aff17e35155d
 
 cd $ANDROID_BUILD_TOP/vendor/widevine/
 git checkout e43c16355bc75b553bf7d66b91883263a67d4204
