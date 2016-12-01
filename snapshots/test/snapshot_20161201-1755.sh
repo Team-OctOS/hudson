@@ -2,7 +2,7 @@
 #
 # Team Octos source snapshot script
 #
-# Time of this snapshot: 20161130-1559
+# Time of this snapshot: 20161201-1755
 #
 # This file contains commands to set each repo to the position
 # when this snapshot was taken
@@ -17,7 +17,7 @@ cd $ANDROID_BUILD_TOP/art/
 git checkout 1ba5a3f6e8dd8cd9dfa63264b9606f54af884976
 
 cd $ANDROID_BUILD_TOP/bionic/
-git checkout 9ba30752ee9fb7426f063000878597a483291136
+git checkout 63e63eafed57fdb46f118d3a290cd28fb8ffdd40
 
 cd $ANDROID_BUILD_TOP/bootable/recovery/
 git checkout 1e8c0deed08c6531e406729756fa044fcc312749
@@ -839,7 +839,7 @@ cd $ANDROID_BUILD_TOP/frameworks/av/
 git checkout 85ecf5c08efc04d12ff03e91a02028134d58ba3a
 
 cd $ANDROID_BUILD_TOP/frameworks/base/
-git checkout 3c6aa55d660754dd4ca8e163fa5fb73c9916413d
+git checkout c3ff5e2361c7b87b70e65e06ab49c84b13225c96
 
 cd $ANDROID_BUILD_TOP/frameworks/compile/libbcc/
 git checkout d2e35f95915d480fe203d6614df8b0f5d14de0e5
@@ -1073,16 +1073,16 @@ cd $ANDROID_BUILD_TOP/kernel/asus/grouper/
 git checkout 371c86ca07292c481e5942f0246bb6c1530de520
 
 cd $ANDROID_BUILD_TOP/kernel/huawei/angler/
-git checkout 875b81610c16f4e9a8f30f129d5e7e9900b86cd3
+git checkout f3b90077f5021c106ce4801ba614d770473f6a81
 
 cd $ANDROID_BUILD_TOP/kernel/lge/bullhead/
-git checkout 76d746ef04ca2836cac196d0f86c47aad0e38fe9
+git checkout adbc0f57d108e4d7ae6ec017245801c5e00fd60b
 
 cd $ANDROID_BUILD_TOP/kernel/lge/hammerhead/
-git checkout 547f9577549b958885e44840495843621092f97a
+git checkout 12c9a2afbc6cd5599eb0b15d5857b96ffb860255
 
 cd $ANDROID_BUILD_TOP/kernel/moto/shamu/
-git checkout 02be3a1bdda108fbb98239504c839755a9fff8b2
+git checkout c9d4f82a3d248dde65b3bee892dc683c2de1ce40
 
 cd $ANDROID_BUILD_TOP/libcore/
 git checkout e3ea491edb0f20226fe9e28eef64fd650a5377c9
@@ -1199,7 +1199,7 @@ cd $ANDROID_BUILD_TOP/packages/apps/SafetyRegulatoryInfo/
 git checkout b1da14d3684714d43b0dcb9463c0c495e3d6ffa3
 
 cd $ANDROID_BUILD_TOP/packages/apps/Settings/
-git checkout c508b0e7c53380c36d067b6b559cc4e74adcc01e
+git checkout 3cd09fad244aadc2dd83f708c96b20dc36114b1a
 
 cd $ANDROID_BUILD_TOP/packages/apps/SoundRecorder/
 git checkout 31427dda121e243e104d820c2923d3ebc0627b9b
@@ -1220,7 +1220,7 @@ cd $ANDROID_BUILD_TOP/packages/apps/Tag/
 git checkout 587be905460f85e28888fe54ccba9d17b105b018
 
 cd $ANDROID_BUILD_TOP/packages/apps/Tentacles/
-git checkout 9d6bc99abee2829bcac16db449a1e50d7760d10c
+git checkout c3f4238a07ba8fb2b1099e8547cdfbbcd0604d23
 
 cd $ANDROID_BUILD_TOP/packages/apps/Terminal/
 git checkout 5b68e8ad082625206492ca9baf889f8c5427eb01
@@ -1520,7 +1520,7 @@ cd $ANDROID_BUILD_TOP/vendor/nvidia/
 git checkout 63c5961bc7309a8bed467485ae50b3247a975724
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout ee2af8570adc9f421620b39eeca4d6bfdaf5e1e3
+git checkout 107f5635bb7d0efa49290fbdd1e8f88fc5c24a28
 
 cd $ANDROID_BUILD_TOP/vendor/widevine/
 git checkout e43c16355bc75b553bf7d66b91883263a67d4204
