@@ -290,7 +290,7 @@ then
     echo $f
     if [ $HOSTNAME != $STORAGE_HOST ]
     then
-        ssh $(whoami)@$STORAGE_HOST mkdir -p $WORKSPACE/out/jenkins/$TO_BUILDTYPE/$device
+        ssh $(whoami)@$STORAGE_HOST mkdir -p $WORKSPACE/out/$REPO_BRANCH/$TO_BUILDTYPE/$device
         scp $f $(whoami)@$STORAGE_HOST:$WORKSPACE/out/$REPO_BRANCH/$TO_BUILDTYPE/$device/$(basename $f)
     fi
     cp $f $WORKSPACE/out/$TO_BUILDTYPE/$device/$(basename $f)
