@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Please do not manually edit this file-->
 <manifest>
-  <project name="platform_device_moto_shamu" path="device/moto/shamu" remote="to" revision="aosp-7.1" />
-  <project name="platform_kernel_moto_shamu" path="kernel/moto/shamu" remote="to" revision="aosp-7.1" />
-  <project name="proprietary_vendor_moto" path="vendor/moto" remote="to" revision="aosp-7.1" />
-  <project name="platform_device_huawei_angler" path="device/huawei/angler" remote="to" revision="aosp-7.1" />
-  <project name="platform_kernel_huawei_angler" path="kernel/huawei/angler" remote="to" revision="aosp-7.1" />
-  <project name="platform_vendor_huawei" path="vendor/huawei" remote="to" revision="aosp-7.1" />
-  <project name="platform_device_lge_bullhead" path="device/lge/bullhead" remote="to" revision="aosp-7.1" />
-  <project name="platform_kernel_lge_bullhead" path="kernel/lge/bullhead" remote="to" revision="aosp-7.1" />
-  <project name="proprietary_vendor_lge" path="vendor/lge" remote="to" revision="aosp-7.1" />
-  <project name="platform_device_lge_hammerhead" path="device/lge/hammerhead" remote="to" revision="aosp-7.1" />
-  <project name="platform_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="to" revision="aosp-7.1" />
+  <project name="android_device_samsung_d2vzw" path="device/samsung/d2vzw" remote="cm" revision="cm-14.1" />
+  <project name="android_device_samsung_d2-common" path="device/samsung/d2-common" remote="cm" revision="cm-14.1" />
+  <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" revision="cm-14.1" />
+  <project name="android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="cm" revision="cm-14.1" />
+  <project name="android_device_samsung_msm8960-common" path="device/samsung/msm8960-common" remote="cm" revision="cm-14.1" />
+  <project name="android_kernel_samsung_d2" path="kernel/samsung/d2" remote="cm" revision="cm-14.1" />
+  <project name="proprietary_vendor_samsung" path="vendor/samsung" remote="tm" revision="cm-14.1" />
+  <project name="android_hardware_samsung" path="hardware/samsung" remote="cm" revision="cm-14.1" />
+  <project name="android_external_stlport" path="external/stlport" remote="cm" revision="cm-14.1" />
+  <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="cm" revision="cm-14.1" />
+  <project name="android_device_samsung_d2spr" path="device/samsung/d2spr" remote="cm" revision="cm-14.1" />
 </manifest>
