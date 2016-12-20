@@ -2,7 +2,7 @@
 #
 # Team Octos source snapshot script
 #
-# Time of this snapshot: 20161220-1921
+# Time of this snapshot: 20161220-1938
 #
 # This file contains commands to set each repo to the position
 # when this snapshot was taken
@@ -1787,6 +1787,6 @@ cd $ANDROID_BUILD_TOP/vendor/samsung/
 git checkout deb5a91103a58dc45cff4dd5418407cf8cec9b5c
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout 34692174bed1b80c79ef17738beb90e159873bb5
+git checkout 230efbe3c23e29eb777bab383d95d2fd73b33434
 
 cd $CUR_DIR
