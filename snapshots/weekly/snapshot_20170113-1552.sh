@@ -1922,6 +1922,6 @@ cd $ANDROID_BUILD_TOP/vendor/to/
 git checkout ff5bb022bc50fbe5452998ebd3449ebdafd657ff
 
 cd $ANDROID_BUILD_TOP/vendor/to/product/
-git checkout 97b88e0bd90c06a038e60f0ded13130739a0b31b
+git checkout c45abf616a239ab299680f2a8a93530b9ae66b1e
 
 cd $CUR_DIR
