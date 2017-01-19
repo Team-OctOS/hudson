@@ -9,11 +9,11 @@
   <project name="proprietary_vendor_lge" path="vendor/lge" remote="to-d" revision="aosp-7.1.1" />
   <project name="platform_device_lge_hammerhead" path="device/lge/hammerhead" remote="to-d" revision="aosp-7.1.1" />
   <project name="platform_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="to-d" revision="aosp-7.1.1" />
+  <project name="platform_device_google_marlin" path="device/google/marlin" remote="to-d" revision="aosp-7.1.1" />
+  <project name="platform_device_google_contexthub" path="device/google/contexthub" remote="to-d" revision="aosp-7.1.1" />
+  <project name="proprietary_vendor_google_devices" path="vendor/google_devices" remote="to-d" revision="aosp-7.1.1" />
+  <project name="platform_kernel_google_marlin" path="kernel/google/marlin" remote="to-d" revision="aosp-7.1.1" />
   <project name="platform_device_moto_shamu" path="device/moto/shamu" remote="to-d" revision="aosp-7.1.1" />
   <project name="platform_kernel_moto_shamu" path="kernel/moto/shamu" remote="to-d" revision="aosp-7.1.1" />
   <project name="proprietary_vendor_moto" path="vendor/moto" remote="to-d" revision="aosp-7.1.1" />
-  <project name="platform_device_google_marlin" path="device/google/marlin" remote="to-d" revision="aosp-7.1.1" />
-  <project name="platform_device_google_contexthub" path="device/google/contexthub" remote="to-d" revision="aosp-7.1.1" />
-  <project name="proprietary_vendor_google" path="vendor/google" remote="to-d" revision="aosp-7.1.1" />
-  <project name="platform_kernel_google_marlin" path="kernel/google/marlin" remote="to-d" revision="aosp-7.1.1" />
 </manifest>
