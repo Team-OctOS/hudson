@@ -1,0 +1,11 @@
+#!/bin/sh
+#Usage afh_push <file_to_upload>
+USERNAME="username"
+PASSWORD="password"
+SERVER="uploads.androidfilehost.com"
+
+#  Filename be transfered
+FILE="$1"
+
+#use scp to send file
+nohup sshpass -p $PASSWORD scp $FILE $USERNAME@$SERVER: &

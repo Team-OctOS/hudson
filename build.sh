@@ -89,6 +89,12 @@ then
   TO_BB_PUSH="false"
 fi
 
+#Set TO_AFH_PUSH if not set
+if [ -z "$TO_AFH_PUSH" ]
+then
+  TO_AFH_PUSH="false"
+fi
+
 mkdir -p out/$TO_BUILDTYPE/$device
 
 # Setup ccache
@@ -315,6 +321,29 @@ then
         fi
       else
         echo "basketbuild_push scrip not found: Skipping push to basketbuild."
+      fi
+  fi
+
+  if [ "$TO_AFH_PUSH" = "true" ]
+  then
+      AFH=`which afh_push`
+      if [ "$AFH" ]
+      then
+        if [ "$TO_BUILDTYPE" = "WEEKLY" ]
+        then
+          # push to afh
+          $AFH $f
+        elif [ "$TO_BUILDTYPE" = "RELEASE" ]
+        then
+          # push to afh
+          $AFH $f
+        elif [ "$TO_BUILDTYPE" = "TEST_BUILD" ]
+        then
+          # push to afh
+          $AFH $f
+        fi
+      else
+        echo "afh_push scrip not found: Skipping push to android file host."
       fi
   fi
 
