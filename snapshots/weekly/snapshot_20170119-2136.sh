@@ -107,13 +107,13 @@ cd $ANDROID_BUILD_TOP/device/google/contexthub/
 git checkout 14247887cb18f87f000cb5f2c8f84a01c9ba9b84
 
 cd $ANDROID_BUILD_TOP/device/lge/d850/
-git checkout 00f640b3a323801e3bb2763db9a62509ba19a598
+git checkout 8607139fb9610b26dcd3dbb856d252874a733481
 
 cd $ANDROID_BUILD_TOP/device/lge/d851/
 git checkout 77b024d763e248ba6293e602f4351374ad391a0b
 
 cd $ANDROID_BUILD_TOP/device/lge/d855/
-git checkout 10c92c4b0b6d79f21d786b51cc00028e0af22cf3
+git checkout f7ad2ec3b038f17107527280b4544e69a81d0664
 
 cd $ANDROID_BUILD_TOP/device/lge/g3-common/
 git checkout 5b859aa8dc4c3a63ff8a96cf0585418dfde8f6ca
