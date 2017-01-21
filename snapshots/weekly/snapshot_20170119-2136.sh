@@ -131,7 +131,7 @@ cd $ANDROID_BUILD_TOP/device/oneplus/bacon/
 git checkout d206554c2e428e52e4a4edefc034ebab0746536b
 
 cd $ANDROID_BUILD_TOP/device/oneplus/oneplus3/
-git checkout e36f24b1caffadcdd5e150438efe86f68f5a9f4e
+git checkout 9c254adc8b0c711182a16a794ad4aee7ccfe9ff4
 
 cd $ANDROID_BUILD_TOP/device/oppo/common/
 git checkout e070687e608ee26872e1467e9f9e4b612b046b3e
