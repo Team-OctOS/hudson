@@ -33,7 +33,7 @@
   <project name="platform_device_lge_d851" path="device/lge/d851" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_lge_d855" path="device/lge/d855" remote="to-d" revision="oct-14.1" />
   <project name="android_device_samsung_jflteatt" path="device/samsung/jflteatt" remote="cm" revision="cm-14.1" />
-  <project name="android_device_samsung_jf-common" path="device/samsung/jf-common" remote="cm" revision="cm-14.1" />
+  <project name="platform_device_samsung_jf-common" path="device/samsung/jf-common" remote="to-d" revision="oct-14.1" />
   <project name="android_kernel_samsung_jf" path="kernel/samsung/jf" remote="cm" revision="cm-14.1" />
   <project name="proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="tm" revision="cm-14.1" />
   <project name="android_device_samsung_jfltespr" path="device/samsung/jfltespr" remote="cm" revision="cm-14.1" />
