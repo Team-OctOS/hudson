@@ -73,4 +73,7 @@
   <project name="android_device_asus_msm8916-common" path="device/asus/msm8916-common" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_asus_msm8916" path="kernel/asus/msm8916" remote="cm" revision="cm-14.1" />
   <project name="android_device_asus_Z008" path="device/asus/Z008" remote="cm" revision="cm-14.1" />
+  <project name="platform_device_Y550" path="device/huawei/Y550" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_msm8916-common" path="device/huawei/msm8916-common" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_huawei_msm8916" path="kernel/huawei/msm8916" remote="to-d" revision="oct-14.1" />
 </manifest>
