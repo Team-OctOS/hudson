@@ -149,7 +149,7 @@ cd $ANDROID_BUILD_TOP/device/moto/shamu/
 git checkout 7048f6389bcc63ce2070e494132448d6e8b924ab
 
 cd $ANDROID_BUILD_TOP/device/motorola/athene/
-git checkout 1991c750b675efda6bc5046aed3d03fd697ed02f
+git checkout 260b9c9bda749235818514b58d77d3d7b4789a32
 
 cd $ANDROID_BUILD_TOP/device/oneplus/bacon/
 git checkout f41ffb09d89cfb8bad245c0d3abc56e45790d4b8
