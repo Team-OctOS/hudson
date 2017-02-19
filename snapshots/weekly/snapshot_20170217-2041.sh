@@ -52,6 +52,9 @@ git checkout 6a2f5da66a9325f3999b5acaa4df257e87ffeb4a
 cd $ANDROID_BUILD_TOP/device/asus/Z00A/
 git checkout a4a2e431d2f316cccbdfed782112e44e3b39a809
 
+cd $ANDROID_BUILD_TOP/device/asus/Z00L/
+git checkout b3e2662674efc78e034ad63478208fc2772d1535
+
 cd $ANDROID_BUILD_TOP/device/asus/Z00T/
 git checkout 53cbec0b0bf5d6fe3faf75db5ce172202059cd15
 
@@ -116,7 +119,7 @@ cd $ANDROID_BUILD_TOP/device/huawei/angler/
 git checkout 0f32d4bbeeeff14fba128557d4b708689246fffc
 
 cd $ANDROID_BUILD_TOP/device/huawei/msm8916-common/
-git checkout 219e688c8abb178fd57a7da5086f41182013bedb
+git checkout c99b95454f7833b763dbe1e5b0be6dbcc4bfcef8
 
 cd $ANDROID_BUILD_TOP/device/leeco/s2/
 git checkout ca0819606ffb74475ca74242823cc6260bef696c
@@ -1943,7 +1946,7 @@ cd $ANDROID_BUILD_TOP/vendor/google/
 git checkout 0fbc3956dd60e9b9b3de69aa57437e6403223d3e
 
 cd $ANDROID_BUILD_TOP/vendor/huawei/
-git checkout d418fab411ab9f0ac8bfc63293ec1bc1e5bfbf05
+git checkout 1cf465cb5b5a9af0eb717e23a305bdd66246882e
 
 cd $ANDROID_BUILD_TOP/vendor/leeco/
 git checkout 978bd8d7f0c2aab9522d960700a02459f86b6b0c
