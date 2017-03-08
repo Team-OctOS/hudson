@@ -4,7 +4,7 @@
   <project name="android_device_huawei_angler" path="device/huawei/angler" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_huawei_angler" path="kernel/huawei/angler" remote="cm" revision="cm-14.1" />
   <project name="proprietary_vendor_huawei" path="vendor/huawei" remote="to-d" revision="oct-14.1" />
-  <project name="android_device_motorola_athene" path="device/motorola/athene" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_motorola_athene" path="device/motorola/athene" remote="to-d" revision="oct-14.1" />
   <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" revision="cm-14.1" />
   <project name="kraken_kernel_motorola_msm8952" path="kernel/motorola/msm8952" remote="to-d" revision="oct-14.1" />
   <project name="proprietary_vendor_motorola" path="vendor/motorola" remote="tm" revision="cm-14.1" />
@@ -42,7 +42,6 @@
   <project name="android_device_samsung_jflteatt" path="device/samsung/jflteatt" remote="cm" revision="cm-14.1" />
   <project name="platform_device_samsung_jf-common" path="device/samsung/jf-common" remote="to-d" revision="oct-14.1" />
   <project name="android_kernel_samsung_jf" path="kernel/samsung/jf" remote="cm" revision="cm-14.1" />
-  <project name="proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="tm" revision="cm-14.1" />
   <project name="android_device_samsung_jfltespr" path="device/samsung/jfltespr" remote="cm" revision="cm-14.1" />
   <project name="android_device_samsung_jfltexx" path="device/samsung/jfltexx" remote="cm" revision="cm-14.1" />
   <project name="platform_device_lge_ls990" path="device/lge/ls990" remote="to-d" revision="oct-14.1" />
@@ -54,13 +53,16 @@
   <project name="android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" remote="cm" revision="cm-14.1" />
   <project name="android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" remote="cm" revision="cm-14.1" />
   <project name="android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" remote="cm" revision="cm-14.1" />
-  <project name="platform_kernel_leeco_msm8976" path="kernel/leeco/msm8976" remote="to-d" revision="oct-14.1" />
-  <project name="platform_device_leeco_s2" path="device/leeco/s2" remote="to-d" revision="oct-14.1" />
+  <project name="android_kernel_leeco_msm8976" path="kernel/leeco/msm8976" remote="cm" revision="cm-14.1" />
+  <project name="android_device_leeco_s2" path="device/leeco/s2" remote="cm" revision="cm-14.1" />
   <project name="proprietary_vendor_leeco" path="vendor/leeco" remote="tm" revision="cm-14.1" />
   <project name="platform_device_samsung_serranolteusc" path="device/samsung/serranolteusc" remote="to-d" revision="oct-14.1" />
   <project name="android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="cm" revision="cm-14.1" />
   <project name="android_device_samsung_serrano-common" path="device/samsung/serrano-common" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="cm" revision="cm-14.1" />
+  <project name="platform_device_samsung_serrano3gxx" path="device/samsung/serrano3gxx" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_samsung_serranodsdd" path="device/samsung/serranodsdd" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_samsung_serranoltexx" path="device/samsung/serranoltexx" remote="to-d" revision="oct-14.1" />
   <project name="android_device_moto_shamu" path="device/moto/shamu" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_moto_shamu" path="kernel/moto/shamu" remote="cm" revision="cm-14.1" />
   <project name="platform_device_lge_vs985" path="device/lge/vs985" remote="to-d" revision="oct-14.1" />
@@ -85,4 +87,5 @@
   <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="tm" revision="cm-14.1" />
   <project name="android_device_xiaomi_cancro" path="device/xiaomi/cancro" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_xiaomi_cancro" path="kernel/xiaomi/cancro" remote="cm" revision="cm-14.1" />
+
 </manifest>
