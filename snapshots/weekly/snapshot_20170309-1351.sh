@@ -2024,7 +2024,7 @@ cd $ANDROID_BUILD_TOP/vendor/to/
 git checkout e22a10c9cef90716520a77aafa6445eac7bee5f9
 
 cd $ANDROID_BUILD_TOP/vendor/to/product/
-git checkout 5053e021096b329d5ba4dc57f792c53698d91ffa
+git checkout 9516eb9acedba00ba03aebbc427c0260e1dab58a
 
 cd $ANDROID_BUILD_TOP/vendor/xiaomi/
 git checkout c202f1fd97f433c4ddaaf87069fa1b161d09491b
