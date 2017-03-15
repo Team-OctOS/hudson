@@ -87,5 +87,7 @@
   <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="tm" revision="cm-14.1" />
   <project name="android_device_xiaomi_cancro" path="device/xiaomi/cancro" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_xiaomi_cancro" path="kernel/xiaomi/cancro" remote="cm" revision="cm-14.1" />
-
+  <project name="android_device_xiaomi_msm8996-common" path="device/xiaomi/msm8996-common" remote="cm" revision="cm-14.1" />
+  <project name="android_device_xiaomi_gemini" path="device/xiaomi/gemini" remote="cm" revision="cm-14.1" />
+  <project name="android_kernel_xiaomi_msm8996" path="kernel/xiaomi/msm8996" remote="cm" revision="cm-14.1" />
 </manifest>
