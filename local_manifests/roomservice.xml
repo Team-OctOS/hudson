@@ -90,4 +90,6 @@
   <project name="android_device_xiaomi_msm8996-common" path="device/xiaomi/msm8996-common" remote="cm" revision="cm-14.1" />
   <project name="android_device_xiaomi_gemini" path="device/xiaomi/gemini" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_xiaomi_msm8996" path="kernel/xiaomi/msm8996" remote="cm" revision="cm-14.1" />
+  <project name="android_device_oneplus_oneplus2" path="device/oneplus/oneplus2" remote="cm" revision="cm-14.1" />
+  <project name="android_kernel_oneplus_msm8994" path="kernel/oneplus/msm8994" remote="cm" revision="cm-14.1" />
 </manifest>
