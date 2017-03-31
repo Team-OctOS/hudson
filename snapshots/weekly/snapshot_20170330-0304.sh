@@ -1580,7 +1580,7 @@ cd $ANDROID_BUILD_TOP/packages/apps/FlipFlap/
 git checkout d08398aca74ad325249a4dbc7338cf9b6957aace
 
 cd $ANDROID_BUILD_TOP/packages/apps/Gallery2/
-git checkout 980d319030dbd7f16fb40c43548f190be404b6a8
+git checkout e2c405d167286a3899cc71caf8dd120ae7d67180
 
 cd $ANDROID_BUILD_TOP/packages/apps/HTMLViewer/
 git checkout eb1c5fae595b1156374660a4c021b9d46beafe01
