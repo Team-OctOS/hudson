@@ -268,6 +268,9 @@ git checkout 0c7808f09d2a6ba242197f9914eff3fc320f9d09
 cd $ANDROID_BUILD_TOP/external/aac/
 git checkout acbe346dd9546ecd4623103ea14c6a6abbf2ea3f
 
+cd $ANDROID_BUILD_TOP/external/ahbottomnavigation
+git checkout db5dd3444071add22989f47e6ca2acc0387e8239
+
 cd $ANDROID_BUILD_TOP/external/android-clat/
 git checkout fbc7e056ed22ce3eb3924293733571a12eee7363
 
@@ -1499,7 +1502,7 @@ cd $ANDROID_BUILD_TOP/libnativehelper/
 git checkout 8ebb2fb2e4b92592368c1360d49d5dfa16ef56cc
 
 cd $ANDROID_BUILD_TOP/manifest/
-git checkout ea0d8ec76c05e09b74a49e63af14ac99a173acb3
+git checkout 5c5355269f807c581b61c223f6fc68d8b3555fad
 
 cd $ANDROID_BUILD_TOP/ndk/
 git checkout 76ca48a9270bead748bdc8feec16ee40e0ae6f98
@@ -1580,7 +1583,7 @@ cd $ANDROID_BUILD_TOP/packages/apps/FlipFlap/
 git checkout d08398aca74ad325249a4dbc7338cf9b6957aace
 
 cd $ANDROID_BUILD_TOP/packages/apps/Gallery2/
-git checkout e2c405d167286a3899cc71caf8dd120ae7d67180
+git checkout 6c18534a3d6ea6fef9422d4103502be1d3e83904
 
 cd $ANDROID_BUILD_TOP/packages/apps/HTMLViewer/
 git checkout eb1c5fae595b1156374660a4c021b9d46beafe01
