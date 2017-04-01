@@ -67,6 +67,9 @@ git checkout c28d943469f72e1f38181edb94bf3e3761eda954
 cd $ANDROID_BUILD_TOP/device/common/
 git checkout ce8d3a16fd31621ff1d6fd3af783dfecf62ed15f
 
+cd $ANDROID_BUILD_TOP/device/cyanogen/msm8916-common/
+git checkout 1fc6b4176109997fc075bd6c26b625b680aab383
+
 cd $ANDROID_BUILD_TOP/device/generic/arm64/
 git checkout e6ecf6be2f8acdd21253a08f26ab0f942f76c46d
 
@@ -259,6 +262,9 @@ git checkout f2d80403780779bca44fa6ebe66ebc2b5ddeeb1a
 cd $ANDROID_BUILD_TOP/device/xiaomi/msm8996-common/
 git checkout dd92ccd42e4f7f60e5c7504ff38098ef3dfed9b8
 
+cd $ANDROID_BUILD_TOP/device/yu/tomato/
+git checkout 55ab8eea457df55f4daf93d3201d4c3497bd7aa5
+
 cd $ANDROID_BUILD_TOP/external/DUtils/
 git checkout f9ad33329a42b3dd6ffcefa6bf784a0dbe62a28b
 
@@ -268,7 +274,7 @@ git checkout 0c7808f09d2a6ba242197f9914eff3fc320f9d09
 cd $ANDROID_BUILD_TOP/external/aac/
 git checkout acbe346dd9546ecd4623103ea14c6a6abbf2ea3f
 
-cd $ANDROID_BUILD_TOP/external/ahbottomnavigation
+cd $ANDROID_BUILD_TOP/external/ahbottomnavigation/
 git checkout db5dd3444071add22989f47e6ca2acc0387e8239
 
 cd $ANDROID_BUILD_TOP/external/android-clat/
@@ -1438,6 +1444,9 @@ git checkout 795a0b37bfbfef09caffb80ad77344239a866c4a
 cd $ANDROID_BUILD_TOP/kernel/asus/msm8916/
 git checkout c134f3043c36a271ddec98f9c8c9af364af51cbe
 
+cd $ANDROID_BUILD_TOP/kernel/cyanogen/msm8916/
+git checkout 59944d1beb46f086e4508f08543dc283e63ee1b7
+
 cd $ANDROID_BUILD_TOP/kernel/google/marlin/
 git checkout a06d3d5abcaf17258883e37efa24bceae908f335
 
@@ -2060,9 +2069,12 @@ cd $ANDROID_BUILD_TOP/vendor/to/
 git checkout 66c5c4f2cedcfe736ba624f770e2d9ea3f94dab8
 
 cd $ANDROID_BUILD_TOP/vendor/to/product/
-git checkout 8b82d4f3ad99150337f89ac3bf3221014df90578
+git checkout 69fff8efd8b7023058e73340ffcb19b09ffc6559
 
 cd $ANDROID_BUILD_TOP/vendor/xiaomi/
 git checkout 977ba0ad6e85155a7b7f1f73ed9af84ceadbcbfc
+
+cd $ANDROID_BUILD_TOP/vendor/yu/
+git checkout 2863b75578bdc18b79ac97f7683cfe1d7f7489e2
 
 cd $CUR_DIR
