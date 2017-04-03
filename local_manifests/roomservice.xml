@@ -96,4 +96,7 @@
   <project name="android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="cm" revision="cm-14.1" />
   <project name="proprietary_vendor_yu" path="vendor/yu" remote="tm" revision="cm-14.1" />
+  <project name="platform_device_lenovo_a6000" path="device/lenovo/a6000" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_lenovo_msm8916" path="kernel/lenovo/msm8916" remote="to-d" revision="oct-14.1" />
+  <project name="proprietary_vendor_lenovo" path="vendor/lenovo" remote="to-d" revision="oct-14.1" />
 </manifest>
