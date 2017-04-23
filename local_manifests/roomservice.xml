@@ -84,7 +84,7 @@
   <project name="platform_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="to-d" revision="oct-14.1" />
   <project name="android_device_xiaomi_armani" path="device/xiaomi/armani" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_xiaomi_armani" path="kernel/xiaomi/armani" remote="cm" revision="cm-14.1" />
-  <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="tm" revision="cm-14.1" />
+  <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="to-d" revision="oct-14.1" />
   <project name="android_device_xiaomi_cancro" path="device/xiaomi/cancro" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_xiaomi_cancro" path="kernel/xiaomi/cancro" remote="cm" revision="cm-14.1" />
   <project name="android_device_xiaomi_msm8996-common" path="device/xiaomi/msm8996-common" remote="cm" revision="cm-14.1" />
@@ -99,4 +99,6 @@
   <project name="platform_device_lenovo_a6000" path="device/lenovo/a6000" remote="to-d" revision="oct-14.1" />
   <project name="platform_kernel_lenovo_msm8916" path="kernel/lenovo/msm8916" remote="to-d" revision="oct-14.1" />
   <project name="proprietary_vendor_lenovo" path="vendor/lenovo" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_xiaomi_mido" path="device/xiaomi/mido" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="to-d" revision="oct-14.1" />
 </manifest>
