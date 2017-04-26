@@ -39,11 +39,6 @@
   <project name="platform_device_lge_d855" path="device/lge/d855" remote="to-d" revision="oct-14.1" />
   <project name="android_device_lge_hammerhead" path="device/lge/hammerhead" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="cm" revision="cm-14.1" />
-  <project name="android_device_samsung_jflteatt" path="device/samsung/jflteatt" remote="cm" revision="cm-14.1" />
-  <project name="platform_device_samsung_jf-common" path="device/samsung/jf-common" remote="to-d" revision="oct-14.1" />
-  <project name="android_kernel_samsung_jf" path="kernel/samsung/jf" remote="cm" revision="cm-14.1" />
-  <project name="android_device_samsung_jfltespr" path="device/samsung/jfltespr" remote="cm" revision="cm-14.1" />
-  <project name="android_device_samsung_jfltexx" path="device/samsung/jfltexx" remote="cm" revision="cm-14.1" />
   <project name="platform_device_lge_ls990" path="device/lge/ls990" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_google_marlin" path="device/google/marlin" remote="to-d" revision="oct-14.1" />
   <project name="proprietary_vendor_google" path="vendor/google" remote="to-d" revision="oct-14.1" />
