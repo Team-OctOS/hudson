@@ -6,7 +6,7 @@
   <project name="proprietary_vendor_huawei" path="vendor/huawei" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_motorola_athene" path="device/motorola/athene" remote="to-d" revision="oct-14.1" />
   <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" revision="cm-14.1" />
-  <project name="kraken_kernel_motorola_msm8952" path="kernel/motorola/msm8952" remote="to-d" revision="oct-14.1" />
+  <project name="android_kernel_motorola_msm8952" path="kernel/motorola/msm8952" remote="cm" revision="cm-14.1" />
   <project name="proprietary_vendor_motorola" path="vendor/motorola" remote="tm" revision="cm-14.1" />
   <project name="android_external_stlport" path="external/stlport" remote="cm" revision="cm-14.1" />
   <project name="android_external_bson" path="external/bson" remote="cm" revision="cm-14.1" />
@@ -96,4 +96,7 @@
   <project name="proprietary_vendor_lenovo" path="vendor/lenovo" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_xiaomi_mido" path="device/xiaomi/mido" remote="to-d" revision="oct-14.1" />
   <project name="platform_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_xiaomi_kenzo" path="device/xiaomi/kenzo" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_xiaomi_msm8956-common" path="device/xiaomi/msm8956-common" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_xiaomi_msm8956" path="kernel/xiaomi/msm8956" remote="to-d" revision="oct-14.1" />
 </manifest>
