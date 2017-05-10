@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Please do not manually edit this file-->
 <manifest>
+  <project name="platform_device_lenovo_a6000" path="device/lenovo/a6000" remote="to-d" revision="oct-14.1" />
+  <project name="android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="cm" revision="cm-14.1" />
+  <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" revision="cm-14.1" />
+  <project name="android_external_stlport" path="external/stlport" remote="cm" revision="cm-14.1" />
+  <project name="android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="cm" revision="cm-14.1" />
+  <project name="platform_kernel_lenovo_msm8916" path="kernel/lenovo/msm8916" remote="to-d" revision="oct-14.1" />
+  <project name="proprietary_vendor_lenovo" path="vendor/lenovo" remote="to-d" revision="oct-14.1" />
+  <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="cm" revision="cm-14.1" />
   <project name="android_device_huawei_angler" path="device/huawei/angler" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_huawei_angler" path="kernel/huawei/angler" remote="cm" revision="cm-14.1" />
   <project name="proprietary_vendor_huawei" path="vendor/huawei" remote="to-d" revision="oct-14.1" />
+  <project name="android_device_xiaomi_armani" path="device/xiaomi/armani" remote="cm" revision="cm-14.1" />
+  <project name="android_kernel_xiaomi_armani" path="kernel/xiaomi/armani" remote="cm" revision="cm-14.1" />
+  <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_motorola_athene" path="device/motorola/athene" remote="to-d" revision="oct-14.1" />
-  <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_motorola_msm8952" path="kernel/motorola/msm8952" remote="cm" revision="cm-14.1" />
   <project name="proprietary_vendor_motorola" path="vendor/motorola" remote="tm" revision="cm-14.1" />
-  <project name="android_external_stlport" path="external/stlport" remote="cm" revision="cm-14.1" />
   <project name="android_external_bson" path="external/bson" remote="cm" revision="cm-14.1" />
-  <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="cm" revision="cm-14.1" />
   <project name="android_device_oneplus_bacon" path="device/oneplus/bacon" remote="cm" revision="cm-14.1" />
   <project name="android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="cm" revision="cm-14.1" />
   <project name="platform_device_oppo_common" path="device/oppo/common" remote="to-d" revision="oct-14.1" />
@@ -19,7 +27,9 @@
   <project name="proprietary_vendor_oneplus" path="vendor/oneplus" remote="to-d" revision="oct-14.1" />
   <project name="android_device_lge_bullhead" path="device/lge/bullhead" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_lge_bullhead" path="kernel/lge/bullhead" remote="cm" revision="cm-14.1" />
-  <project name="proprietary_vendor_lge" path="vendor/lge" remote="to-d" revision="oct-14.1" />
+  <project name="proprietary_vendor_lge" path="vendor/lge" remote="tm" revision="cm-14.1" />
+  <project name="android_device_xiaomi_cancro" path="device/xiaomi/cancro" remote="cm" revision="cm-14.1" />
+  <project name="android_kernel_xiaomi_cancro" path="kernel/xiaomi/cancro" remote="cm" revision="cm-14.1" />
   <project name="android_device_samsung_d2att" path="device/samsung/d2att" remote="cm" revision="cm-14.1" />
   <project name="android_device_samsung_d2-common" path="device/samsung/d2-common" remote="cm" revision="cm-14.1" />
   <project name="android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="cm" revision="cm-14.1" />
@@ -30,73 +40,65 @@
   <project name="android_device_samsung_d2spr" path="device/samsung/d2spr" remote="cm" revision="cm-14.1" />
   <project name="android_device_samsung_d2tmo" path="device/samsung/d2tmo" remote="cm" revision="cm-14.1" />
   <project name="android_device_samsung_d2vzw" path="device/samsung/d2vzw" remote="cm" revision="cm-14.1" />
-  <project name="platform_device_lge_d850" path="device/lge/d850" remote="to-d" revision="oct-14.1" />
-  <project name="platform_device_lge_g3-common" path="device/lge/g3-common" remote="to-d" revision="oct-14.1" />
+  <project name="android_device_lge_d850" path="device/lge/d850" remote="cm" revision="cm-14.1" />
+  <project name="android_device_lge_g3-common" path="device/lge/g3-common" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_lge_g3" path="kernel/lge/g3" remote="cm" revision="cm-14.1" />
   <project name="android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="cm" revision="cm-14.1" />
-  <project name="android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="cm" revision="cm-14.1" />
-  <project name="platform_device_lge_d851" path="device/lge/d851" remote="to-d" revision="oct-14.1" />
-  <project name="platform_device_lge_d855" path="device/lge/d855" remote="to-d" revision="oct-14.1" />
-  <project name="android_device_lge_hammerhead" path="device/lge/hammerhead" remote="cm" revision="cm-14.1" />
-  <project name="android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="cm" revision="cm-14.1" />
-  <project name="platform_device_lge_ls990" path="device/lge/ls990" remote="to-d" revision="oct-14.1" />
-  <project name="platform_device_google_marlin" path="device/google/marlin" remote="to-d" revision="oct-14.1" />
-  <project name="proprietary_vendor_google" path="vendor/google" remote="to-d" revision="oct-14.1" />
-  <project name="platform_kernel_google_marlin" path="kernel/google/marlin" remote="to-d" revision="oct-14.1" />
-  <project name="platform_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="to-d" revision="oct-14.1" />
-  <project name="platform_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="to-d" revision="oct-14.1" />
+  <project name="android_device_lge_d851" path="device/lge/d851" remote="cm" revision="cm-14.1" />
+  <project name="android_device_lge_d855" path="device/lge/d855" remote="cm" revision="cm-14.1" />
+  <project name="android_device_xiaomi_msm8996-common" path="device/xiaomi/msm8996-common" remote="cm" revision="cm-14.1" />
+  <project name="android_device_xiaomi_gemini" path="device/xiaomi/gemini" remote="cm" revision="cm-14.1" />
+  <project name="android_kernel_xiaomi_msm8996" path="kernel/xiaomi/msm8996" remote="cm" revision="cm-14.1" />
   <project name="android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" remote="cm" revision="cm-14.1" />
   <project name="android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" remote="cm" revision="cm-14.1" />
   <project name="android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" remote="cm" revision="cm-14.1" />
+  <project name="android_device_lge_hammerhead" path="device/lge/hammerhead" remote="cm" revision="cm-14.1" />
+  <project name="android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="cm" revision="cm-14.1" />
+  <project name="platform_device_samsung_i9100" path="device/samsung/i9100" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_xiaomi_kenzo" path="device/xiaomi/kenzo" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_xiaomi_msm8956-common" path="device/xiaomi/msm8956-common" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_xiaomi_msm8956" path="kernel/xiaomi/msm8956" remote="to-d" revision="oct-14.1" />
+  <project name="android_device_lge_ls990" path="device/lge/ls990" remote="cm" revision="cm-14.1" />
+  <project name="platform_device_google_marlin" path="device/google/marlin" remote="to-d" revision="oct-14.1" />
+  <project name="proprietary_vendor_google" path="vendor/google" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_google_marlin" path="kernel/google/marlin" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_xiaomi_mido" path="device/xiaomi/mido" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_oneplus_oneplus2" path="device/oneplus/oneplus2" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_oneplus_msm8994" path="kernel/oneplus/msm8994" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="to-d" revision="oct-14.1" />
   <project name="android_kernel_leeco_msm8976" path="kernel/leeco/msm8976" remote="cm" revision="cm-14.1" />
   <project name="android_device_leeco_s2" path="device/leeco/s2" remote="cm" revision="cm-14.1" />
   <project name="proprietary_vendor_leeco" path="vendor/leeco" remote="tm" revision="cm-14.1" />
-  <project name="platform_device_samsung_serranolteusc" path="device/samsung/serranolteusc" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_samsung_serrano3gxx" path="device/samsung/serrano3gxx" remote="to-d" revision="oct-14.1" />
   <project name="android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="cm" revision="cm-14.1" />
   <project name="android_device_samsung_serrano-common" path="device/samsung/serrano-common" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="cm" revision="cm-14.1" />
-  <project name="platform_device_samsung_serrano3gxx" path="device/samsung/serrano3gxx" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_samsung_serranodsdd" path="device/samsung/serranodsdd" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_samsung_serranolteusc" path="device/samsung/serranolteusc" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_samsung_serranoltexx" path="device/samsung/serranoltexx" remote="to-d" revision="oct-14.1" />
   <project name="android_device_moto_shamu" path="device/moto/shamu" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_moto_shamu" path="kernel/moto/shamu" remote="cm" revision="cm-14.1" />
-  <project name="platform_device_lge_vs985" path="device/lge/vs985" remote="to-d" revision="oct-14.1" />
+  <project name="android_device_lge_vs985" path="device/lge/vs985" remote="cm" revision="cm-14.1" />
+  <project name="platform_device_lenovo_wt86528" path="device/lenovo/wt86528" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_lenovo_wt86528" path="kernel/lenovo/wt86528" remote="to-d" revision="oct-14.1" />
+  <project name="android_device_wingtech_wt88047" path="device/wingtech/wt88047" remote="cm" revision="cm-14.1" />
+  <project name="android_kernel_wingtech_msm8916" path="kernel/wingtech/msm8916" remote="cm" revision="cm-14.1" />
+  <project name="proprietary_vendor_wingtech" path="vendor/wingtech" remote="tm" revision="cm-14.1" />
   <project name="platform_device_Y550" path="device/huawei/Y550" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_msm8916-common" path="device/huawei/msm8916-common" remote="to-d" revision="oct-14.1" />
   <project name="platform_kernel_huawei_msm8916" path="kernel/huawei/msm8916" remote="to-d" revision="oct-14.1" />
   <project name="android_device_asus_Z00A" path="device/asus/Z00A" remote="cm" revision="cm-14.1" />
   <project name="android_device_asus_mofd-common" path="device/asus/mofd-common" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_asus_moorefield" path="kernel/asus/moorefield" remote="cm" revision="cm-14.1" />
-  <project name="proprietary_vendor_asus" path="vendor/asus" remote="to-d" revision="oct-14.1" />
+  <project name="proprietary_vendor_asus" path="vendor/asus" remote="tm" revision="cm-14.1" />
   <project name="android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="cm" revision="cm-14.1" />
   <project name="android_device_asus_Z00L" path="device/asus/Z00L" remote="cm" revision="cm-14.1" />
   <project name="android_device_asus_msm8916-common" path="device/asus/msm8916-common" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_asus_msm8916" path="kernel/asus/msm8916" remote="cm" revision="cm-14.1" />
   <project name="android_device_asus_Z00T" path="device/asus/Z00T" remote="cm" revision="cm-14.1" />
   <project name="android_device_asus_Z008" path="device/asus/Z008" remote="cm" revision="cm-14.1" />
-  <project name="platform_device_samsung_i9100" path="device/samsung/i9100" remote="to-d" revision="oct-14.1" />
-  <project name="platform_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="to-d" revision="oct-14.1" />
-  <project name="platform_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="to-d" revision="oct-14.1" />
-  <project name="android_device_xiaomi_armani" path="device/xiaomi/armani" remote="cm" revision="cm-14.1" />
-  <project name="android_kernel_xiaomi_armani" path="kernel/xiaomi/armani" remote="cm" revision="cm-14.1" />
-  <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="to-d" revision="oct-14.1" />
-  <project name="android_device_xiaomi_cancro" path="device/xiaomi/cancro" remote="cm" revision="cm-14.1" />
-  <project name="android_kernel_xiaomi_cancro" path="kernel/xiaomi/cancro" remote="cm" revision="cm-14.1" />
-  <project name="android_device_xiaomi_msm8996-common" path="device/xiaomi/msm8996-common" remote="cm" revision="cm-14.1" />
-  <project name="android_device_xiaomi_gemini" path="device/xiaomi/gemini" remote="cm" revision="cm-14.1" />
-  <project name="android_kernel_xiaomi_msm8996" path="kernel/xiaomi/msm8996" remote="cm" revision="cm-14.1" />
-  <project name="platform_device_oneplus_oneplus2" path="device/oneplus/oneplus2" remote="to-d" revision="oct-14.1" />
-  <project name="platform_kernel_oneplus_msm8994" path="kernel/oneplus/msm8994" remote="to-d" revision="oct-14.1" />
-  <project name="platform_device_yu_tomato" path="device/yu/tomato" remote="to-d" revision="oct-14.1" />
-  <project name="android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="cm" revision="cm-14.1" />
-  <project name="android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="cm" revision="cm-14.1" />
-  <project name="proprietary_vendor_yu" path="vendor/yu" remote="tm" revision="cm-14.1" />
-  <project name="platform_device_lenovo_a6000" path="device/lenovo/a6000" remote="to-d" revision="oct-14.1" />
-  <project name="platform_kernel_lenovo_msm8916" path="kernel/lenovo/msm8916" remote="to-d" revision="oct-14.1" />
-  <project name="proprietary_vendor_lenovo" path="vendor/lenovo" remote="to-d" revision="oct-14.1" />
-  <project name="platform_device_xiaomi_mido" path="device/xiaomi/mido" remote="to-d" revision="oct-14.1" />
-  <project name="platform_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="to-d" revision="oct-14.1" />
-  <project name="platform_device_xiaomi_kenzo" path="device/xiaomi/kenzo" remote="to-d" revision="oct-14.1" />
-  <project name="platform_device_xiaomi_msm8956-common" path="device/xiaomi/msm8956-common" remote="to-d" revision="oct-14.1" />
-  <project name="platform_kernel_xiaomi_msm8956" path="kernel/xiaomi/msm8956" remote="to-d" revision="oct-14.1" />
 </manifest>
