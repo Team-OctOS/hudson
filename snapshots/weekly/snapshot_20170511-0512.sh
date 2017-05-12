@@ -2045,7 +2045,7 @@ cd $ANDROID_BUILD_TOP/vendor/leeco/
 git checkout 933c9388e5673782d35838c38c9d96eeb0d1faae
 
 cd $ANDROID_BUILD_TOP/vendor/lenovo/
-git checkout f0e2041df881ff37e479c4f5176bbd54b348b423
+git checkout 0dd1fc7c2aaf9aa82a0a28ad74c5ab230306d210y
 
 cd $ANDROID_BUILD_TOP/vendor/lge/
 git checkout fc084b3cf8ead1cb697d64029fb4de2b22553ad0
