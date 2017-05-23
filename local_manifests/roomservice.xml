@@ -101,4 +101,7 @@
   <project name="android_kernel_asus_msm8916" path="kernel/asus/msm8916" remote="cm" revision="cm-14.1" />
   <project name="android_device_asus_Z00T" path="device/asus/Z00T" remote="cm" revision="cm-14.1" />
   <project name="android_device_asus_Z008" path="device/asus/Z008" remote="cm" revision="cm-14.1" />
+  <project name="proprietary_vendor_zuk_z2_plus" path="vendor/zuk/z2_plus" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_zuk_msm8996" path="kernel/zuk/msm8996" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_zuk_z2_plus" path="device/zuk/z2_plus" remote="to-d" revision="oct-14.1" />
 </manifest>
