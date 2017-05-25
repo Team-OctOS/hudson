@@ -2,7 +2,7 @@
 #
 # Team Octos source snapshot script
 #
-# Time of this snapshot: 20170524-1330
+# Time of this snapshot: 20170525-1828
 #
 # This file contains commands to set each repo to the position
 # when this snapshot was taken
@@ -242,19 +242,19 @@ cd $ANDROID_BUILD_TOP/device/xiaomi/cancro/
 git checkout ba27fa86b4559e718b3e38c933ce5df87d315701
 
 cd $ANDROID_BUILD_TOP/device/xiaomi/gemini/
-git checkout 99d437e16b2011f4762b0f601abf6c124589986f
+git checkout 67b785749718e10b54054d3a70911cf81ef5e61d
 
 cd $ANDROID_BUILD_TOP/device/xiaomi/kenzo/
 git checkout a740351555a15942e4317accd89b0f24e9c4653f
 
 cd $ANDROID_BUILD_TOP/device/xiaomi/mido/
-git checkout 2e1373e5de90692c7ecb321ae572826185ab7c98
+git checkout 21aa8a3b36aa568bc74f158e0c2d6ec630e73b0b
 
 cd $ANDROID_BUILD_TOP/device/xiaomi/msm8956-common/
 git checkout d0234a098be587f55e0cd4f42323fc66e11b9bba
 
 cd $ANDROID_BUILD_TOP/device/xiaomi/msm8996-common/
-git checkout 67e092247752f05f94b2b6b52fc1d90b17e1ea84
+git checkout eefe72b5ac389743c66a53691e3ea5b5f83d5f05
 
 cd $ANDROID_BUILD_TOP/device/zuk/z2_plus/
 git checkout 131e7cfa1730e2fab0adad692809aaf4f47c9469
@@ -1514,10 +1514,10 @@ cd $ANDROID_BUILD_TOP/kernel/xiaomi/cancro/
 git checkout 4bb3cd80a33821120a389a2ad8b9db0972b64e99
 
 cd $ANDROID_BUILD_TOP/kernel/xiaomi/msm8953/
-git checkout 3f3616c262f6f17d16c9fab85332bb4cfe8a27c8
+git checkout 4e568e3be347b8f7e337a59f21a961ae1122c765
 
 cd $ANDROID_BUILD_TOP/kernel/xiaomi/msm8956/
-git checkout 3a720e4aad7a589cbb71b17f891eaf82e27c1c76
+git checkout 396813401e1ce9359a97fd163b0e95a001f91734
 
 cd $ANDROID_BUILD_TOP/kernel/xiaomi/msm8996/
 git checkout f0fc6dd61d79949e8af63edfc914df18837dd3d3
