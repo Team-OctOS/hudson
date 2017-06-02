@@ -2,7 +2,7 @@
 #
 # Team Octos source snapshot script
 #
-# Time of this snapshot: 20170531-1544
+# Time of this snapshot: 20170602-1319
 #
 # This file contains commands to set each repo to the position
 # when this snapshot was taken
@@ -167,7 +167,7 @@ cd $ANDROID_BUILD_TOP/device/oneplus/bacon/
 git checkout a821e2800caf596fd9370eb8e8e97f5fd69e2d72
 
 cd $ANDROID_BUILD_TOP/device/oneplus/oneplus2/
-git checkout c36e0aac0228b165006a96101bd9de3ca7007da9
+git checkout f48f8f36d94da937c50a574e4e5c7f25b05fb6e9
 
 cd $ANDROID_BUILD_TOP/device/oneplus/oneplus3/
 git checkout e02af9fd3aaceaf094d3ab72df23d1fbfc13eeaf
@@ -1490,7 +1490,7 @@ cd $ANDROID_BUILD_TOP/kernel/oneplus/msm8974/
 git checkout 0f29566b5fad388cc4a07402f9651d86f1fe2b45
 
 cd $ANDROID_BUILD_TOP/kernel/oneplus/msm8994/
-git checkout b05e36913e77404e5cb22e3ad4a41aeb5dd66f9e
+git checkout bf29a4fcee23f57104c063b211f4757aee804be4
 
 cd $ANDROID_BUILD_TOP/kernel/oneplus/msm8996/
 git checkout 0ad12ceafc9b9cce9006929e58806e1b219fccb0
@@ -2096,7 +2096,7 @@ cd $ANDROID_BUILD_TOP/vendor/to/
 git checkout 174c3ea4733e26d9ec23a5169fc81da5bac555d3
 
 cd $ANDROID_BUILD_TOP/vendor/to/product/
-git checkout 5ffc6d32a6a303b0276fecdf6f3b6c39ea0b43eb
+git checkout 354282c9a0184c7b1b3a95207ab2fc07477451d0
 
 cd $ANDROID_BUILD_TOP/vendor/wingtech/
 git checkout 83bff19b63e835f1c668137ccc41a121e2af1edf
