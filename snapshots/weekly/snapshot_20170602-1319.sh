@@ -2096,7 +2096,7 @@ cd $ANDROID_BUILD_TOP/vendor/to/
 git checkout 174c3ea4733e26d9ec23a5169fc81da5bac555d3
 
 cd $ANDROID_BUILD_TOP/vendor/to/product/
-git checkout 354282c9a0184c7b1b3a95207ab2fc07477451d0
+git checkout 64935d14d29877689829757f4e5a9a8bdde51e26
 
 cd $ANDROID_BUILD_TOP/vendor/wingtech/
 git checkout 83bff19b63e835f1c668137ccc41a121e2af1edf
