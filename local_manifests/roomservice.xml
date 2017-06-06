@@ -100,4 +100,8 @@
   <project name="proprietary_vendor_zuk_z2_plus" path="vendor/zuk/z2_plus" remote="to-d" revision="oct-14.1" />
   <project name="platform_kernel_zuk_msm8996" path="kernel/zuk/msm8996" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_zuk_z2_plus" path="device/zuk/z2_plus" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_motorola_msm8953" path="kernel/motorola/msm8953" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_motorola_msm8937" path="kernel/motorola/msm8937" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_motorola_cedric" path="device/motorola/cedric" remote="to-d" revision="oct-14.1" />
+  <project name="proprietary_vendor_motorola_cedric" path="vendor/motorola/cedric" remote="to-d" revision="oct-14.1" />
 </manifest>
