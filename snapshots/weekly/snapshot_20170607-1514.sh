@@ -164,13 +164,13 @@ cd $ANDROID_BUILD_TOP/device/motorola/athene/
 git checkout bbdc5a37d1c3aa52448d6590c1a4a2ba92ea3cbc
 
 cd $ANDROID_BUILD_TOP/device/motorola/cedric/
-git checkout 7d975ba8c8d079565f15a799da48a8df6bb55986
+git checkout ef03fbfd425ddfdcbd5cad750023e6a4593497a9
 
 cd $ANDROID_BUILD_TOP/device/oneplus/oneplus2/
 git checkout f48f8f36d94da937c50a574e4e5c7f25b05fb6e9
 
 cd $ANDROID_BUILD_TOP/device/oneplus/oneplus3/
-git checkout e02af9fd3aaceaf094d3ab72df23d1fbfc13eeaf
+git checkout 47619617147c5a608205054d9cdff501da8c2472
 
 cd $ANDROID_BUILD_TOP/device/oppo/common/
 git checkout 395fbc01a856664516be928ce2aea6911a3f2ecb
@@ -2072,7 +2072,7 @@ cd $ANDROID_BUILD_TOP/vendor/nxp-nfc/opensource/libnfc-nci/
 git checkout dc62b784317be482533fd49ab0097401e0806249
 
 cd $ANDROID_BUILD_TOP/vendor/oneplus/
-git checkout 1b7bebc6a2c65ade27b96d7f4c5e94acdf0bd519
+git checkout 0ab037bd668d64b80482531eb71ccceb8229b3d2
 
 cd $ANDROID_BUILD_TOP/vendor/qcom/opensource/bluetooth/
 git checkout c42da71330622be202fcd0d5862f595186c8f7e0
