@@ -81,9 +81,9 @@
   <project name="android_device_lge_vs985" path="device/lge/vs985" remote="cm" revision="cm-14.1" />
   <project name="platform_device_lenovo_wt86528" path="device/lenovo/wt86528" remote="to-d" revision="oct-14.1" />
   <project name="platform_kernel_lenovo_wt86528" path="kernel/lenovo/wt86528" remote="to-d" revision="oct-14.1" />
-  <project name="android_device_wingtech_wt88047" path="device/wingtech/wt88047" remote="cm" revision="cm-14.1" />
+  <project name="platform_device_wingtech_wt88047" path="device/wingtech/wt88047" remote="to-d" revision="oct-14.1" />
   <project name="android_kernel_wingtech_msm8916" path="kernel/wingtech/msm8916" remote="cm" revision="cm-14.1" />
-  <project name="proprietary_vendor_wingtech" path="vendor/wingtech" remote="tm" revision="cm-14.1" />
+  <project name="vendor_wingtech" path="vendor/wingtech" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_Y550" path="device/huawei/Y550" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_msm8916-common" path="device/huawei/msm8916-common" remote="to-d" revision="oct-14.1" />
   <project name="platform_kernel_huawei_msm8916" path="kernel/huawei/msm8916" remote="to-d" revision="oct-14.1" />
