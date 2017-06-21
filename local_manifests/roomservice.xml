@@ -104,4 +104,7 @@
   <project name="platform_kernel_motorola_msm8937" path="kernel/motorola/msm8937" remote="to-d" revision="oct-14.1" />
   <project name="platform_device_motorola_cedric" path="device/motorola/cedric" remote="to-d" revision="oct-14.1" />
   <project name="proprietary_vendor_motorola_cedric" path="vendor/motorola/cedric" remote="to-d" revision="oct-14.1" />
+  <project name="platform_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_motorola_surnia" path="device/motorola/surnia" remote="to-d" revision="oct-14.1" />
+  <project name="platform_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="to-d" revision="oct-14.1" />
 </manifest>
