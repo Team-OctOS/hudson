@@ -1998,7 +1998,7 @@ cd $ANDROID_BUILD_TOP/system/security/
 git checkout a125888091b1ea2d8aefb482f912a44a532c0995
 
 cd $ANDROID_BUILD_TOP/system/sepolicy/
-git checkout 3a5b28224155be1dccbfc9f09c7d014cda92d443
+git checkout 619106c92056d15e70242232df9fc62c6c1ce1ba
 
 cd $ANDROID_BUILD_TOP/system/tools/aidl/
 git checkout 6192de565e84cf8b52525ab16412a8627d0dce8e
@@ -2106,7 +2106,7 @@ cd $ANDROID_BUILD_TOP/vendor/samsung/
 git checkout 86bdfad4ef06c911c1ebeec75fc9679aa0d772b5
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout 8e6373f5e99ed0b2f45ea2a4bae3c348ee110e6d
+git checkout a61aa79aeb6a48a6a20dea7f3cc9162fd15a3a02
 
 cd $ANDROID_BUILD_TOP/vendor/to/product/
 git checkout 263c31f1e277845b1327811ed7b303bc07beedc3
