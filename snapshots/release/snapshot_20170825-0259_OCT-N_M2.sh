@@ -2120,7 +2120,7 @@ cd $ANDROID_BUILD_TOP/vendor/samsung/
 git checkout db18113e8454941a7cad73335e628c9d9bc97353
 
 cd $ANDROID_BUILD_TOP/vendor/to/
-git checkout a17ff9a1d73a15c71fb84b75e1da02f001295e9b
+git checkout 6453744f53cd207f7ff3808007acae0295d4c49e
 
 cd $ANDROID_BUILD_TOP/vendor/to/product/
 git checkout 9c2e7e79d84b813c6fe2797ee18c06f160156fd9
