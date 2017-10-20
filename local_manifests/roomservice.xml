@@ -15,7 +15,7 @@
   <project name="android_device_xiaomi_armani" path="device/xiaomi/armani" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_xiaomi_armani" path="kernel/xiaomi/armani" remote="cm" revision="cm-14.1" />
   <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="to-d" revision="oct-14.1" />
-  <project name="platform_device_motorola_athene" path="device/motorola/athene" remote="to-d" revision="oct-14.1" />
+  <project name="android_device_motorola_athene" path="device/motorola/athene" remote="cm" revision="cm-14.1" />
   <project name="android_kernel_motorola_msm8952" path="kernel/motorola/msm8952" remote="cm" revision="cm-14.1" />
   <project name="proprietary_vendor_motorola" path="vendor/motorola" remote="tm" revision="cm-14.1" />
   <project name="android_external_bson" path="external/bson" remote="cm" revision="cm-14.1" />
